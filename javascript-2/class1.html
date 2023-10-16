@@ -443,7 +443,7 @@ printName()</code></pre>
           </ol>
         </section>
 
-        <!-- Scope conclusion -->
+        <!-- Scope difference btwn Const, Let, Var -->
         <section>
           <h3>
             Scope<br />
@@ -452,6 +452,60 @@ printName()</code></pre>
           <p class="fs-32">
             While all three variable keywords can be globally scoped and function-scoped, only <code>const</code> and
             <code>let</code> are block-scoped
+          </p>
+        </section>
+
+        <!-- Global Scope Caveat -->
+        <section>
+          <h3>Global Scope Caveat</h3>
+          <p class="fs-28 width-900">What will the console statements print?</p>
+          <pre><code class="js">let myAge = 10
+
+function makeMeOlder(){
+  myAge += 17
+  return myAge
+}
+
+function printMyRealAge(){
+  return myAge
+}
+
+console.log( myAge )
+
+console.log( makeMeOlder() )
+
+console.log( printMyRealAge() )
+          </code></pre>
+        </section>
+
+        <!-- Global Scope Alternative -->
+        <section>
+          <h3>Global Scope Fix</h3>
+          <p class="fs-28 width-900">How might we refactor this code?</p>
+          <pre><code class="js">let myAge = 10
+
+function makeMeOlder(){
+  myAge += 17
+  return myAge
+}
+
+function printMyRealAge(){
+  return myAge
+}
+
+console.log( myAge )
+
+console.log( makeMeOlder() )
+
+console.log( printMyRealAge() )
+          </code></pre>
+        </section>
+
+        <section>
+          <h3>Best Practice</h3>
+          <p class="fs-28 width-900">
+            Minimize the use of global variables since their values can change across a codebase and create
+            unpredictable results
           </p>
         </section>
 
@@ -613,16 +667,16 @@ const functionName = param => code
         </section>
 
         <!-- Home Practice -->
-        <section>
+        <!-- <section>
           <h3>Home / Extra Practice</h3>
           <p class="fs-32">
             <a
-              href="./practice/class1.md"
+              href="#"
               target="_blank"
               >Class 1 Exercises</a
             >
           </p>
-        </section>
+        </section> -->
 
         <!-- Next Class -->
         <section>
