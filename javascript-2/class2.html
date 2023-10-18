@@ -71,9 +71,7 @@
           <ul>
             <li>Array Review</li>
             <li>Array Iterators</li>
-            <li>Higher Order Functions</li>
-            <li>CallBack Functions</li>
-            <li>Mid Series Feedback</li>
+            <li>Mid-Series Feedback</li>
           </ul>
         </section>
 
@@ -83,7 +81,7 @@
           <p>4:45 PST / 6:45 CST / 7:45 EST</p>
         </section>
 
-        <!-- Arrays -->
+        <!-- Title: Arrays -->
         <section>
           <h3>Arrays</h3>
         </section>
@@ -100,9 +98,15 @@
 
 let lotteryNumbers = [2, 24, 54, 9, 30, 44]
   
-let randomValues = ['hello', 66, true, ['item1', 'item2'] ]
+let randomValues = [
+  'hello world', 
+  66, 
+  true, 
+  lotteryNumbers, 
+  { movie: 'Barbie', year: 2023 } 
+]
   </code></pre>
-          <p class="gdi-p">
+          <p class="fs-24">
             <a
               href="https://www.javascripttutorial.net/javascript-array/"
               target="_blank"
@@ -114,12 +118,54 @@ let randomValues = ['hello', 66, true, ['item1', 'item2'] ]
         <!-- Array Methods -->
         <section>
           <h3>Array Methods</h3>
-          <p
-            class="gdi-p"
-            style="max-width: 700px; margin: 0 auto 24px auto">
-            JavaScript has default array methods that allow us to work with the data in an array
+          <p class="fs-32 width-800 mb-32">
+            JavaScript has default (aka built-in) array methods that allow us to work with the data in an array
           </p>
-          <p>
+          <p class="fs-24">
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
+              target="_blank"
+              >Arrays (MDN)</a
+            >
+          </p>
+          <p class="fs-24">
+            <a
+              href="https://www.digitalocean.com/community/tutorials/how-to-use-array-methods-in-javascript-mutator-methods"
+              target="_blank"
+              >Array Methods in JavaScript: Mutator Methods (Digital Ocean)</a
+            >
+          </p>
+          <p class="fs-24">
+            <a
+              href="https://www.digitalocean.com/community/tutorials/how-to-use-array-methods-in-javascript-accessor-methods"
+              target="_blank"
+              >Array Methods in JavaScript: Accessor Methods (Digital Ocean)</a
+            >
+          </p>
+          <p class="fs-24">
+            <a
+              href="https://www.digitalocean.com/community/tutorials/how-to-use-array-methods-in-javascript-iteration-methods"
+              target="_blank"
+              >Array Methods in JavaScript: Iteration Methods (Digital Ocean)</a
+            >
+          </p>
+        </section>
+
+        <!-- Review / Practice: Basic Array Methods -->
+        <section>
+          <h3>Basic Array Methods</h3>
+          <h4>Review - Practice</h4>
+          <pre><code class="js">let asianCapitals = ['Seoul', 'Dhaka', 'Manilla', 'Bangkok']</code></pre>
+          <ol class="fs-28 mb-16">
+            <li><code>Sort</code> the array to be in alphabetical order</li>
+            <li>Add or <code>push</code> 'Tokyo' into the array</li>
+            <li>Print the <code>length</code> of the array to the console</li>
+            <li>Determine if the array <code>includes</code> 'Lhasa',</li>
+            <li>Add 'Lhasa' to be the third capital</li>
+            <li>Remove the first capital in the array</li>
+          </ol>
+
+          <p class="fs-24 mt-16">
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
               target="_blank"
@@ -128,41 +174,35 @@ let randomValues = ['hello', 66, true, ['item1', 'item2'] ]
           </p>
         </section>
 
-        <!-- Review / Practice: Basic Array Methods -->
-        <section>
-          <h3>Basic Array Methods: A Review</h3>
-          <ul>
-            <li><code>Sort</code> the array below to be in alphabetical order</li>
-            <li>Then <code>push</code> 'Tokyo' into the array</li>
-            <li>Does the array <code>include</code> 'Lhasa', Tibet's capital?</li>
-          </ul>
-          <pre><code class="js">let asianCapitals = ['Seoul', 'Dhaka', 'Manilla', 'Bangkok']</code></pre>
-        </section>
-
-        <!-- Array Iteration Methods -->
+        <!-- Title: Array Iteration Methods -->
         <section>
           <h3>Array Iteration Methods</h3>
         </section>
 
+        <!-- Array Iterators - .map example -->
         <section>
-          <h3>Array Iteration Methods</h3>
-          <p
-            class="gdi-p"
-            style="max-width: 800px; margin: 0 auto 30px auto">
-            Array iterators loop or iterate through an array and perform an action on each item in the array
+          <h3>Array Iterators</h3>
+          <p class="width-800 fs-32 mb-32">
+            Array iterators loop (iterate) through an array and perform an action on each item in the array
           </p>
-          <p
-            class="gdi-p"
-            style="max-width: 800px; margin: 0 auto 24px auto">
-            Array iterators require a
-            <span class="highlight--yellow">second function to be passed as a parameter</span>
-          </p>
-          <p
-            class="gdi-p"
-            style="max-width: 800px; margin: 0 auto 24px auto">
-            This second function contains the action to be applied to each element
-          </p>
-          <p>
+          <pre><code class="js">// Using .map() array iterator
+
+// Square or multiply each number in the array by itself
+
+let numberList = [1 ,2, 3, 4]
+
+const doubledNumberList = numberList.map( num => {
+
+  return num * num;
+
+})
+
+console.log(doubledNumberList) 
+
+// Output: [1,4,9,16]
+</code></pre>
+
+          <p class="fs-24">
             <a
               href="https://www.w3schools.com/js/js_array_iteration.asp"
               target="_blank"
@@ -171,25 +211,235 @@ let randomValues = ['hello', 66, true, ['item1', 'item2'] ]
           </p>
         </section>
 
+        <!-- Array Iteration Syntax -->
+        <section>
+          <h3>Array Iteration Syntax</h3>
+          <p class="fs-28">Iterators are typically written with arrow function syntax</p>
+          <pre class="mb-32"><code class="js">// An array:
+
+let arrayName = [ item1, item2, item3, item4 ]
+</code></pre>
+          <pre class="mb-32"><code class="js">// Array iteration #1:
+
+arrayName.arrayIterationMethod( eachArrayItem => {
+
+  // code specifying what to do to each array item
+
+})
+</code></pre>
+        </section>
+
+        <!-- Common Array Iterators -->
+        <section>
+          <h3>Common Array Iteration Methods</h3>
+          <div
+            class="flex mb-32"
+            style="width: 700px; margin: 0 auto">
+            <ul style="list-style: none">
+              <li><code>.map()</code></li>
+              <li><code>.forEach()</code></li>
+              <li><code>.filter()</code></li>
+              <li><code>.find()</code></li>
+              <li><code>.findIndex()</code></li>
+            </ul>
+            <ul style="list-style: none">
+              <li><code>.findLast()</code></li>
+              <li><code>.findLastIndex()</code></li>
+              <li><code>.reduce()</code></li>
+              <li><code>.every()</code></li>
+              <li><code>.some()</code></li>
+            </ul>
+          </div>
+          <p class="fs-24 mt-16">
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
+              target="_blank"
+              >Arrays (MDN)</a
+            >
+          </p>
+          <p class="fs-24">
+            <a
+              href="https://www.digitalocean.com/community/tutorials/how-to-use-array-methods-in-javascript-iteration-methods"
+              >How to Use Array Iteration Methods in JavaScript (Digital Ocean)</a
+            >
+          </p>
+        </section>
+
+        <!-- .map() -->
+        <section>
+          <h3><code>.map()</code></h3>
+          <p class="width-750 fs-28">
+            Loops through an array; performs an action on each element and returns a new array of the results
+          </p>
+          <pre><code class="js">// Add the string 'rock-' to each word in array
+
+let wordList = ['bottom', 'candy', 'star', 'garden']
+
+// Iteration:
+let rockWordList = wordList.map( word => {
+
+  return `rock-${word}`
+
+})
+
+console.log(rockWordList)
+
+// Return new array:
+
+// ['rock-bottom', 'rock-candy', 'rock-star', 'rock-garden']       
+          </code></pre>
+          <p class="fs-24 mt-32">
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map"
+              target="_blank"
+              >Array.prototype.map() - MDN</a
+            >
+          </p>
+        </section>
+
+        <!-- .filter() -->
+        <section>
+          <h3><code>.filter()</code></h3>
+          <p class="width-750 fs-28">
+            Loops through an array; checks if each item meets a specified condition; and returns a new array of the
+            elements that pass the test
+          </p>
+          <pre><code class="js">// Filter out words that contain the string 'cat'
+  
+let arrayOfWords = ['avocado', 'advocate', 'catty', 'catacomb']
+
+// Iteration:
+let catWordList = arrayOfWords.filter( word => {
+
+  return word.includes('cat')
+
+})
+
+console.log(catWordList) 
+
+// Return new array: 
+
+// ["advocate", "catty", "catacomb"]</code></pre>
+
+          <p class="fs-24 mt-32">
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"
+              target="_blank"
+              >Array.prototype.filter() - MDN</a
+            >
+          </p>
+        </section>
+
+        <!-- How do iterators work? -->
+        <section>
+          <h4>How do array iterators work?</h4>
+        </section>
+
+        <!-- Array Iterators: Breakdown -->
+        <section>
+          <h3>Array Iteration: Breakdown</h3>
+          <p class="width-800 fs-32 mb-32">
+            An array iterator requires a
+            <span class="highlight--yellow">second function to be passed as a parameter</span>
+          </p>
+          <p class="width-800 fs-32 mb-32">
+            This second function specifies what needs to be done to each element in the array
+          </p>
+        </section>
+
+        <!-- Array Iterators: .map() Breakdown -->
+        <section>
+          <h3><code>.map()</code> Breakdown</h3>
+          <pre><code class="js">// A function that adds the word 'rock-' to a string value
+
+function addRockToWord(str){
+
+  return `rock-${str}`
+
+}</code></pre>
+
+          <pre><code class="js">let wordList = ['bottom', 'candy', 'star', 'garden']
+
+// .map() in its simplest form:
+
+// let rockWordList = wordList.map()
+
+// .map will accept addRockToWord as a parameter
+
+let rockWordList = wordList.map(
+
+  function addRockToWord(str){
+
+    return `rock-${str}`
+
+  }
+
+)
+
+console.log(rockWordList)
+</code></pre>
+        </section>
+
+        <!-- Array Iterators: .filter() Breakdown -->
+        <section>
+          <h3><code>.filter()</code> Breakdown</h3>
+          <pre><code class="js">// A function that checks if a word contains the string 'cat'
+
+function verifyWordHasCat(str){
+
+  if(str.includes('cat')){
+    return true
+  }
+  return false
+}</code></pre>
+
+          <pre><code class="js">let arrayOfWords = ['avocado', 'advocate', 'catty', 'catacomb']
+
+// .filter() in its simplest form:
+
+// let catWordList = arrayOfWords.filter()
+
+// .filter will accept verifyWordHasCat as a parameter
+
+let catWordList = arrayOfWords.filter(
+
+  function verifyWordHasCat(str){
+
+    if(str.includes('cat')){
+      return true
+    }
+    return false
+  }
+)
+
+console.log(catWordList)
+</code></pre>
+        </section>
+
+        <!-- Why are iterators unique -->
+        <section>
+          <h4>What makes array iterator methods unique?</h4>
+        </section>
+
         <!-- New Terms: Higher Order and Callback Functions -->
         <section>
           <h3>New Terms</h3>
-          <p class="fs-32 width-800 mb-32">
-            Array iterators are a type of function known as a
-            <span class="highlight--yellow">higher order function</span>
+          <p class="fs-28 width-800 mb-32">
+            Array iterators are types of functions known as
+            <span class="highlight--yellow">higher order functions</span>
           </p>
-          <p class="fs-32 width-800 mb-32">
-            A higher order function accepts another function as a parameter or can return a function as an output
+          <p class="fs-28 width-800 mb-32">
+            A higher order function can use another function as a parameter or can return a function as an output
           </p>
-          <p class="fs-32 width-800">
+          <p class="fs-28 width-800">
             A function that can be passed as a parameter is known as a
             <span class="highlight--yellow">callback function</span>
           </p>
         </section>
 
-        <!-- Array Iteration Syntax -->
+        <!-- Array Iteration: Breakdown Syntax -->
         <section>
-          <h3>Array Iteration Syntax</h3>
+          <h3>Array Iteration: Breakdown Syntax</h3>
           <pre><code class="js">// An array
 
 let arrayName = [ item1, item2, item3, item4]
@@ -205,293 +455,154 @@ arrayName.arrayIterationMethod( callbackFunction() {
         </section>
 
         <!-- Breakdown: Array Iteration Syntax -->
-        <section>
-          <h3>Syntax Breakdown</h3>
-          <p class="fs-28 mb-16 width-800">
-            Let's see the syntax in practice with the <code>.map()</code> method that returns a new array
-          </p>
-          <pre><code class="js">
-let numbers = [ 13, 6, -3, 15]
-
-// Apply .map() method
-
-let doubled = numbers.map( function multiplyByTwo(num) {
-
-  return num * 2
-
-} )
-
-console.log(doubled) // [26,12,-6,30]
-</code></pre>
-        </section>
 
         <!-- Breakdown: Array Iteration Syntax -->
         <section>
           <h3>Syntax Breakdown</h3>
-          <p class="fs-28 mb-16 width-800">
-            <code>.map()</code>, the array iterator, is the
-            <span class="highlight--yellow">higher-order function</span>
+          <p class="fs-28 mb-16 width-750">
+            In the previous examples, <code>.map()</code>, <code>.filter()</code>, the array iterators, are
+            <span class="highlight--yellow">higher-order functions</span>
           </p>
-          <p class="fs-28 mb-16 width-800">
-            <code>multiplyByTwo()</code>, the function passed as a parameter, is the
-            <span class="highlight--yellow">callback function</span>
+          <p class="fs-28 mb-16 width-750">
+            <code>addRockToWord</code>, <code>verifyWordHasCat</code>--the functions passed as parameters to the
+            iterator methods--are
+            <span class="highlight--yellow">callback functions</span>
           </p>
           <p class="fs-28 mb-16 width-800">
             The instruction in the callback function is applied to each element in the array
           </p>
-          <pre><code class="js">
-let numbers = [ 13, 6, -3, 15]
-
-// Apply .map() method
-
-let doubled = numbers.map( function multiplyByTwo(num) {
-
-  return num * 2
-
-} )
-
-console.log(doubled) // [26,12,-6,30]
-</code></pre>
         </section>
 
         <!-- Longhand and Shortand Iteration Syntax -->
         <section>
-          <h3>Longhand vs Shorthand Syntax</h3>
+          <h3>Shorthand Syntax</h3>
           <p class="fs-32 width-800">
-            The code syntax we just practiced is considered longhand; you're more likely to see and use
-            <span class="highlight--yellow">arrow functions</span> with array iterators
+            The syntax we've used in the <code>breakdown</code> examples is considered verbose; you're more likely to
+            see and use <span class="highlight--yellow">arrow functions</span> with array iterators
           </p>
         </section>
 
         <!-- Iterators and Arrow Syntax -->
         <section>
           <h4>Iterators and Arrow Function Syntax</h4>
-          <p class="fs-28 width-800 mb-16">Arrow functions allow us to write iteration methods a bit more concisely</p>
-          <ul class="fs-28">
+          <p class="fs-28">Without arrow syntax</p>
+          <pre><code class="js">let rockWordList = wordList.map(
+  function addRockToWord(str){
+    return `rock-${str}`
+} )
+</code></pre>
+
+          <p class="fs-28">With arrow syntax</p>
+          <pre><code class="js">let rockWordList = wordList.map( (str) => {
+  return `rock-${str}`
+} )
+</code></pre>
+          <ul class="fs-24">
             <li>Remove the <code>function</code> keyword and function name</li>
-            <li>Add an arrow before the first opening curly brace <code>{</code></li>
-            <li>That's it!</li>
+            <li>Add an arrow before the first opening curly bracket</li>
           </ul>
-          <pre><code class="js">
-let numbers = [ 13, 6, -3, 15]
-
-let doubled = numbers.map( (num) => {
-
-  return num * 2
-
-} )
-
-console.log(doubled) // [26,12,-6,30]
-</code></pre>
         </section>
 
         <!-- Iterators and Arrow Syntax -->
         <section>
           <h4>Iterators and Arrow Function Syntax</h4>
-          <p class="fs-28 width-800 mb-16">We can strip the code down</p>
-          <ul class="fs-28">
-            <li>
-              Because we only have one parameter <code>'num'</code> in the testing function, we can omit the
-              <code>()</code> around it
-            </li>
-          </ul>
-          <pre><code class="js">
-let numbers = [ 13, 6, -3, 15]
-
-let doubled = numbers.map( num => {
-
-  return num * 2
-
-} )
-
-console.log(doubled) // [26,12,-6,30]
-</code></pre>
-        </section>
-
-        <!-- Iterators and Arrow Syntax -->
-        <section>
-          <h4>Iterators and Arrow Function Syntax</h4>
-          <p class="fs-28 width-800 mb-16">
+          <p class="fs-28 width-750 mb-16">
             The rules we learned for writing arrow function shorthand apply with iterators
           </p>
-          <p class="fs-28 width-800 mb-16">
-            If an arrow function expression is simple enough, we can omit the
-            <code>return</code> keyword and keep our code to one line
+          <p class="fs-28 width-750 mb-16">
+            With only one parameter <code>'str'</code> in the expression, we can omit the parentheses around it
           </p>
-          <pre><code class="js">
-let numbers = [ 13, 6, -3, 15]
-
-let doubled = numbers.map( num => num * 2 )
-
-console.log(doubled) // [26,12,-6,30]
+          <pre><code class="js">let rockWordList = wordList.map( str => {
+  return `rock-${str}`
+} )
 </code></pre>
         </section>
 
+        <!-- Iterators and Arrow Syntax -->
+        <section>
+          <h4>Iterators and Arrow Function Syntax</h4>
+          <p class="fs-28 width-800 mb-16">
+            If an arrow function expression is simple enough, we can omit the
+            <code>return</code> keyword and keep the code to one line
+          </p>
+          <pre><code class="js">let rockWordList = wordList.map( str =>  `rock-${str}` )
+</code></pre>
+        </section>
+
+        <!-- Practice makes perfect -->
         <section>
           <h3>Practice, Practice, Practice</h3>
           <p class="fs-28 mb-32">Using iterators with arrow functions can be confusing initially!</p>
 
-          <p class="fs-28 width-800 mb-32">
-            Practicing the syntax often (following example code in MDN documentation, for instance) will help us adapt
-            to writing this way
-          </p>
+          <p class="fs-28 width-800 mb-32">Practicing the syntax often will help us adapt to writing this way</p>
         </section>
 
-        <!-- Common Array Iterators -->
-        <section>
-          <h3>Common Array Iteration Methods</h3>
-          <div
-            class="flex mb-32"
-            style="width: 700px; margin: 0 auto">
-            <ul style="list-style: none">
-              <li><code>.map()</code></li>
-              <li><code>.forEach()</code></li>
-              <li><code>.filter()</code></li>
-              <li><code>.find()</code></li>
-            </ul>
-            <ul style="list-style: none">
-              <li><code>.reduce()</code></li>
-              <li><code>.every()</code></li>
-              <li><code>.some()</code></li>
-            </ul>
-          </div>
-          <p>
-            <a
-              href="https://www.digitalocean.com/community/tutorials/how-to-use-array-methods-in-javascript-iteration-methods"
-              >How to Use Array Iteration Methods in JavaScript</a
-            >
-          </p>
-        </section>
-
-        <!-- .map() -->
-        <section>
-          <h3><code>.map()</code></h3>
-          <p
-            class="gdi-p"
-            style="max-width: 700px; margin: 0 auto 24px auto">
-            Creates a new array that contains the results of a callback function that's been applied to every element in
-            the original array
-          </p>
-          <pre><code class="js">const numbers = [1,2,3,4]
-
-const doubleNumbers = numbers.map((num) => {
-  return num * num
-})
-
-console.log(doubleNumbers) // Output: [1,4,9,16]
-
-// Arrow syntax shorthand version:
-
-// const doubleNumbers = numbers.map(num => num * num)
-</code></pre>
-          <p class="gdi-p">
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map"
-              target="_blank"
-              >Array.prototype.map() - MDN</a
-            >
-          </p>
-        </section>
-
-        <!-- Practice: .map() -->
+        <!-- Practice: .every() -->
         <section>
           <h3>Let's Develop It!</h3>
-          <p
-            class="gdi-p"
-            style="max-width: 700px; margin: 0 auto 24px auto">
-            Loop through the <code>names</code> array using <code>.map()</code>; return a new array with each name used
-            in a greeting, such as:
-            <span class="highlight--yellow">'Hello (name)'</span>
-          </p>
-          <pre><code class="js">const names = ['Ana', 'Sandra', 'Fabi']
+          <ul class="fs-28">
+            <li>
+              What iterator method could we use to determine if <code>every</code> name in the array is at least five
+              characters long?
+            </li>
+            <li>We want to return a boolean value</li>
+          </ul>
+          <pre><code class="js">const namesList = ['Ana', 'Yuriko', 'Sandra', 'Fabi', 'Felicia']
+</code></pre>
+        </section>
 
+        <!-- Practice: .findLastIndex, .lastIndexOf  -->
+        <section>
+          <h3>Let's Develop It!</h3>
+          <ul class="fs-28">
+            <li>
+              What iterator method could we use to find the <code>last index</code> of the name "sara" in the array of
+              student names?
+            </li>
+          </ul>
+          <pre><code class="js">let studentNamesArr = [
+  'sara', 'amber', 'katalina', 
+  'sara', 'giorgio', 'luca',
+  'yuriko', 'sara', 'asha'
+]
 </code></pre>
         </section>
 
         <!-- Array Index Values -->
         <section>
           <h3>Array Index Values</h3>
-          <p
-            class="gdi-p"
-            style="max-width: 800px; margin: 0 auto 24px auto">
+          <p class="width-800 fs-28 mb-32">
             When looping through items in an array, iterators are also keeping track of index positions
           </p>
-          <p
-            class="gdi-p"
-            style="max-width: 800px; margin: 0 auto 24px auto">
-            We can reference or return these index positions as results
-          </p>
+          <p class="width-800 fs-28">We can reference or return these index positions as results</p>
           <pre><code class="js">const zeeNames = ['Zoe', 'Zadie', 'Zazee']
 
 let getNamePosition = zeeNames.map((name, index) => {
-  return `The name ${name} has an index value of ${index} in the array.`;
+
+  return `The name ${name} has an index position of ${index}.`;
+
 })
 
 console.log(getNamePosition)</code></pre>
         </section>
 
-        <!-- .filter() -->
-        <section>
-          <h3><code>.filter()</code></h3>
-          <p
-            class="gdi-p"
-            style="max-width: 700px; margin: 0 auto 24px auto">
-            Creates a new array with elements that pass the test condition of a callback function
-          </p>
-          <pre><code class="js">// Filter words that don't contain the string 'cat'
-  
-let catStrings = ['avocado', 'advocate', 'catty', 'catacomb']
-
-let nonCatStrings = catStrings.filter((item) => {
-  return !item.includes('cat')
-})
-
-console.log(nonCatStrings) 
-
-// Arrow syntax shorthand version:
-
-// const nonCatStrings = catStrings.filter(item => !item.includes('cat'))</code></pre>
-
-          <p class="gdi-p">
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"
-              target="_blank"
-              >Array.prototype.filter() - MDN</a
-            >
-          </p>
-        </section>
-
-        <!-- Practice: .filter with index values -->
-        <section>
-          <h3>Let's Develop It!</h3>
-          <p
-            class="gdi-p"
-            style="max-width: 700px; margin: 0 auto 24px auto">
-            Filter out words that <code>do contain</code> the string <code>'cat'</code>; return the
-            <code>index</code> position of each item into a new array
-          </p>
-          <pre><code class="js">let catStrings = ['avocado', 'advocate', 'catty', 'catacomb']
-</code></pre>
-        </section>
-
         <!-- Return Values -->
         <section>
           <h3>Return Values</h3>
-          <p
-            class="gdi-p"
-            style="max-width: 800px; margin: 0 auto 24px auto">
-            While some iteration methods create a new array, others return elements from the original array or a boolean
-            value; and one particular method, the
-            <code>forEach</code>, does not return any value at all
+          <p class="fs-32 mb-16 width-900">
+            Some iteration methods create new arrays; others return numerical or boolean values
+          </p>
+          <p class="fs-32 width-900">
+            One particular iterator,
+            <code class="highlight--yellow">forEach</code>, does not <code class="highlight--yellow">return</code> any
+            value at all
           </p>
         </section>
 
         <!-- .forEach -->
         <section>
           <h3><code>.forEach()</code></h3>
-          <p
-            class="gdi-p"
-            style="max-width: 800px; margin: 0 auto 24px auto">
+          <p class="fs-32 width-800 mb-32">
             Runs an action on every element in an array; unlike other methods, it does not return an actual value
           </p>
           <pre><code class="js">let ageList = [4,5,6,7]
@@ -501,7 +612,7 @@ const updatedAgeList = ageList.forEach( element => element + 5 )
 console.log(updatedAgeList) // Returns undefined
 
 </code></pre>
-          <p class="gdi-p">
+          <p class="fs-24">
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"
               target="_blank"
@@ -510,67 +621,55 @@ console.log(updatedAgeList) // Returns undefined
           </p>
         </section>
 
+        <!-- .forEach, for Loops -->
         <section>
           <h3><code>.forEach()</code></h3>
-          <p
-            class="gdi-p"
-            style="max-width: 700px; margin: 0 auto 24px auto">
-            The <code>forEach</code> behaves similarly to the <code>for</code> loop and the <code>for of</code> loop
+          <p class="fs-28 width-750">
+            The <code>forEach</code> behaves similarly to the <code>for</code> loop and the <code>for...of</code> loop
           </p>
           <pre><code class="js">let ageList = [4,5,6,7]
 
-ageList.forEach( element => console.log(element + 5) ) 
-// Output: 9, 10, 11, 12
 
-for(let i = 0; i  < ageList.length; i++){
-  console.log( ageList[i] + 5)
-}
-// Output: 9, 10, 11, 12
+// .forEach()
+ageList.forEach( element => console.log( element + 5 ) ) 
 
-for(let age of ageList){
-  console.log(age + 5)
+
+// for loop
+for( let i = 0; i  < ageList.length; i++ ){
+
+  console.log( ageList[i] + 5 )
+
 }
+
+
+// for ... of loop
+for( let age of ageList ){
+
+  console.log( age + 5 )
+
+}
+
+
 // Output: 9, 10, 11, 12
 </code></pre>
-          <p class="gdi-p">
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"
-              target="_blank"
-              >.forEach() - MDN</a
-            >
-          </p>
         </section>
 
-        <!-- Which loop method to use? -->
+        <!-- Explore! -->
         <section>
-          <h3>When to Use <code>.forEach</code>?</h3>
-          <p class="gdi-p width-800">
-            <span class="highlight--yellow">forEach</span> can be an alternative to using a
-            <span class="highlight--yellow">for</span> loop or a <span class="highlight--yellow">for...of</span> loop;
-            all three iterate through every element in an array
-          </p>
-        </section>
-
-        <section>
-          <h3>What About Other Methods?</h3>
-          <p class="gdi-p">A few tips:</p>
-          <ul class="mb-32">
-            <li>Use <code>.map</code> to change items in an array</li>
-            <li>Use <code>.filter</code> to select a subset of an array</li>
-            <li>Use <code>.find</code> to select one item in an array</li>
-          </ul>
-          <p class="gdi-p">
+          <h4>Explore the other iteration methods!</h4>
+          <p class="fs-32 width-800 mt-32 mb-32">
             <a
               href="https://medium.com/@JeffLombardJr/understanding-foreach-map-filter-and-find-in-javascript-f91da93b9f2c"
               target="_blank"
-              >Why and when to use forEach, map,<br />
-              filter, reduce, and find in JavaScript</a
+              >Why and when to use forEach, map, filter, reduce, and find in JavaScript</a
             >
           </p>
-        </section>
-
-        <section>
-          <h3>Explore the other iteration methods!</h3>
+          <p class="fs-32 width-800">
+            <a
+              href="https://www.digitalocean.com/community/tutorials/how-to-use-array-methods-in-javascript-iteration-methods"
+              >How to Use Array Iteration Methods in JavaScript (Digital Ocean)</a
+            >
+          </p>
         </section>
 
         <!-- Home/  Extra Practice -->
@@ -578,7 +677,7 @@ for(let age of ageList){
           <h3>Extra Practice</h3>
           <p class="fs-32">
             <a
-              href="#"
+              href="https://replit.com/@tinuola/JS2-Class2-Practice"
               target="_blank"
               >Class 2 Exercises</a
             >
@@ -588,18 +687,22 @@ for(let age of ageList){
         <!-- MUST USE SLIDE - Course Feedback Survey-->
         <section>
           <h3>Mid-Cohort Feedback</h3>
-          <p>
+          <p class="fs-32">
             <a
-              href=""
-              target="_blank"></a>
+              href="https://forms.gle/wink6FzoaDm9fKBH7"
+              target="_blank"
+              >Survey</a
+            >
           </p>
         </section>
 
         <!-- Next Class -->
         <section>
           <h3>Class 3 - Agenda</h3>
-          <ul>
-            <li>Objects & Object Methods</li>
+          <ul class="fs-32">
+            <li>Destructuring Arrays and Objects</li>
+            <li>Spread and Rest Operators</li>
+            <li>Default Parameters / Arguments</li>
           </ul>
         </section>
 
