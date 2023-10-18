@@ -71,7 +71,7 @@
           <ul>
             <li>Array Review</li>
             <li>Array Iterators</li>
-            <li>Mid-Series Feedback</li>
+            <li>Mid-Course Feedback</li>
           </ul>
         </section>
 
@@ -79,6 +79,37 @@
         <section>
           <h3>Stretch - "Bio" Break</h3>
           <p>4:45 PST / 6:45 CST / 7:45 EST</p>
+        </section>
+
+        <!-- Class 1 Review -->
+        <section>
+          <h3>Class 1 Review</h3>
+          <h4>True or False</h4>
+          <ol class="fs-24">
+            <li>Variables declared with <code>let</code> cannot be reassigned</li>
+            <li>Variables declared with <code>const</code> must be initialized with a value</li>
+            <li>Variables declared in a function can be used globally</li>
+            <li>Variables declared with <code>var, const, let</code> are function scoped</li>
+            <li>Variables declared with <code>var, const, let</code> are blocked scoped</li>
+          </ol>
+        </section>
+
+        <section>
+          <h3>Class 1 Review</h3>
+          <h4>True or False</h4>
+          <ol class="fs-24">
+            <li>❌ Variables declared with <code>let</code> cannot be reassigned
+              <ul><li><code>let</code> declared variables can be reassigned, but not redeclared</li></ul>
+            </li>
+            <li>✅ Variables declared with <code>const</code> must be initialized with a value</li>
+            <li>❌ Variables declared in a function can be used globally
+              <ul><li>Variables declared in a function can only be used inside their parent function</li></ul>
+            </li>
+            <li>✅ Variables declared with <code>var, let, const</code> are function scoped</li>
+            <li>❌ Variables declared with <code>var, let, const</code> are blocked scoped
+              <ul><li>Only <code>let, const</code> are block scoped</li></ul>
+            </li>
+          </ol>
         </section>
 
         <!-- Title: Arrays -->
@@ -89,7 +120,7 @@
         <!-- Review: Arrays -->
         <section>
           <h3>Arrays: A Quick Review</h3>
-          <ul>
+          <ul class="fs-28">
             <li>Allow us to create ordered lists of values</li>
             <li>Can contain different data types</li>
             <li>Are zero-indexed</li>
@@ -98,15 +129,10 @@
 
 let lotteryNumbers = [2, 24, 54, 9, 30, 44]
   
-let randomValues = [
-  'hello world', 
-  66, 
-  true, 
-  lotteryNumbers, 
-  { movie: 'Barbie', year: 2023 } 
-]
-  </code></pre>
-          <p class="fs-24">
+let randomValues = [ 'hello world', 66, true, 
+                    lotteryNumbers, primaryColors, 
+                    { movie: 'Barbie', year: 2023 } ] </code></pre>
+          <p class="fs-20">
             <a
               href="https://www.javascripttutorial.net/javascript-array/"
               target="_blank"
@@ -121,28 +147,28 @@ let randomValues = [
           <p class="fs-32 width-800 mb-32">
             JavaScript has default (aka built-in) array methods that allow us to work with the data in an array
           </p>
-          <p class="fs-24">
+          <p class="fs-20">
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
               target="_blank"
               >Arrays (MDN)</a
             >
           </p>
-          <p class="fs-24">
+          <p class="fs-20">
             <a
               href="https://www.digitalocean.com/community/tutorials/how-to-use-array-methods-in-javascript-mutator-methods"
               target="_blank"
               >Array Methods in JavaScript: Mutator Methods (Digital Ocean)</a
             >
           </p>
-          <p class="fs-24">
+          <p class="fs-20">
             <a
               href="https://www.digitalocean.com/community/tutorials/how-to-use-array-methods-in-javascript-accessor-methods"
               target="_blank"
               >Array Methods in JavaScript: Accessor Methods (Digital Ocean)</a
             >
           </p>
-          <p class="fs-24">
+          <p class="fs-20">
             <a
               href="https://www.digitalocean.com/community/tutorials/how-to-use-array-methods-in-javascript-iteration-methods"
               target="_blank"
@@ -160,12 +186,12 @@ let randomValues = [
             <li><code>Sort</code> the array to be in alphabetical order</li>
             <li>Add or <code>push</code> 'Tokyo' into the array</li>
             <li>Print the <code>length</code> of the array to the console</li>
-            <li>Determine if the array <code>includes</code> 'Lhasa',</li>
+            <li>Determine if the array <code>includes</code> 'Lhasa'</li>
             <li>Add 'Lhasa' to be the third capital</li>
             <li>Remove the first capital in the array</li>
           </ol>
 
-          <p class="fs-24 mt-16">
+          <p class="fs-20 mt-16">
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
               target="_blank"
@@ -202,7 +228,7 @@ console.log(doubledNumberList)
 // Output: [1,4,9,16]
 </code></pre>
 
-          <p class="fs-24">
+          <p class="fs-20">
             <a
               href="https://www.w3schools.com/js/js_array_iteration.asp"
               target="_blank"
@@ -250,14 +276,14 @@ arrayName.arrayIterationMethod( eachArrayItem => {
               <li><code>.some()</code></li>
             </ul>
           </div>
-          <p class="fs-24 mt-16">
+          <p class="fs-20 mt-16">
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
               target="_blank"
               >Arrays (MDN)</a
             >
           </p>
-          <p class="fs-24">
+          <p class="fs-20">
             <a
               href="https://www.digitalocean.com/community/tutorials/how-to-use-array-methods-in-javascript-iteration-methods"
               >How to Use Array Iteration Methods in JavaScript (Digital Ocean)</a
@@ -288,7 +314,7 @@ console.log(rockWordList)
 
 // ['rock-bottom', 'rock-candy', 'rock-star', 'rock-garden']       
           </code></pre>
-          <p class="fs-24 mt-32">
+          <p class="fs-20 mt-32">
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map"
               target="_blank"
@@ -321,7 +347,7 @@ console.log(catWordList)
 
 // ["advocate", "catty", "catacomb"]</code></pre>
 
-          <p class="fs-24 mt-32">
+          <p class="fs-20 mt-32">
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"
               target="_blank"
@@ -455,8 +481,6 @@ arrayName.arrayIterationMethod( callbackFunction() {
         </section>
 
         <!-- Breakdown: Array Iteration Syntax -->
-
-        <!-- Breakdown: Array Iteration Syntax -->
         <section>
           <h3>Syntax Breakdown</h3>
           <p class="fs-28 mb-16 width-750">
@@ -468,9 +492,9 @@ arrayName.arrayIterationMethod( callbackFunction() {
             iterator methods--are
             <span class="highlight--yellow">callback functions</span>
           </p>
-          <p class="fs-28 mb-16 width-800">
+          <!-- <p class="fs-28 mb-16 width-800">
             The instruction in the callback function is applied to each element in the array
-          </p>
+          </p> -->
         </section>
 
         <!-- Longhand and Shortand Iteration Syntax -->
@@ -612,7 +636,7 @@ const updatedAgeList = ageList.forEach( element => element + 5 )
 console.log(updatedAgeList) // Returns undefined
 
 </code></pre>
-          <p class="fs-24">
+          <p class="fs-20">
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"
               target="_blank"
