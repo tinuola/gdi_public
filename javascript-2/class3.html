@@ -72,6 +72,7 @@
             <li>Destructuring Arrays & Objects</li>
             <li><code>Spread</code> Operator</li>
             <li><code>Rest</code> Operator</li>
+            <li>Default Parameters</li>
           </ul>
         </section>
 
@@ -90,8 +91,8 @@
         <section>
           <h3>Destructuring</h3>
           <p class="fs-32 width-800">
-            <span class="highlight--yellow">Destructuring</span> is an ES6 feature that allows us to extract specific
-            data or values from arrays and objects and assign them to new variables
+            <span class="highlight--yellow">Destructuring</span> allows us to extract specific data or values from
+            arrays and objects and assign them to new variables
           </p>
 
           <p class="fs-20 mt-32">
@@ -108,6 +109,10 @@
               >Array vs Object Destructuring in JavaScript (FreeCodeCamp)</a
             >
           </p>
+        </section>
+
+        <section>
+          <h3>Destructuring Arrays</h3>
         </section>
 
         <!-- Pre ES6: Assigning Array Values -->
@@ -209,11 +214,16 @@ console.log(mySister, myCousin)
           <h3>Let's Develop It!</h3>
           <ul class="fs-28">
             <li>Destructure the array below</li>
-            <li>Extract a single variable: <code>favoriteMeal</code> (your choice!)</li>
+            <li>Extract <code>lunch</code> into a single variable: <code>favoriteMeal</code></li>
             <li>Skip the rest!</li>
           </ul>
           <pre><code class="js">let meals = ['breakfast', 'lunch', 'dinner']
 </code></pre>
+        </section>
+
+        <!-- Title: Destructuring Objects -->
+        <section>
+          <h3>Destructuring Objects</h3>
         </section>
 
         <!-- Destructuring Objects -->
@@ -234,9 +244,9 @@ console.log(mySister, myCousin)
   snake: 'sssss'
 }
 
-const catSound   = animalSounds.cat
-const dogSound   = animalSounds.dog
-const snakeSound = animalSounds.snake
+let catSound   = animalSounds.cat
+let dogSound   = animalSounds.dog
+let snakeSound = animalSounds.snake
 
 console.log( catSound, dogSound, snakeSound )
 
@@ -247,7 +257,7 @@ console.log( catSound, dogSound, snakeSound )
         <section>
           <h3>ES6: Destructuring Objects</h3>
           <p class="fs-32 width-800">
-            With objects, we can unpack or extract its values by referencing its
+            With an object, we can unpack or extract its values by referencing their
             <code>keys</code>
           </p>
           <pre><code class="js">const animalSounds = {
@@ -256,7 +266,7 @@ console.log( catSound, dogSound, snakeSound )
   snake: 'sssss'
 }
 
-const { cat, dog, snaked } = animalSounds
+const { cat, dog, snake } = animalSounds
 
 console.log( cat, dog, snake )
 
@@ -271,7 +281,7 @@ console.log( cat, dog, snake )
         </code></pre>
         </section>
 
-        <!-- Destructuring objects -->
+        <!-- Destructuring Objects: New Variable Names -->
         <section>
           <h3>Destructuring Objects</h3>
           <p class="fs-32 width-800">
@@ -284,12 +294,12 @@ console.log( cat, dog, snake )
 }
 
 const { 
-  cat: catSound, 
-  dog: dogSound, 
-  snake: snakeSound 
+  cat: sound1, 
+  dog: sound2, 
+  snake: sound3 
 } = animalSounds
 
-console.log( catSound, dogSound, snakeSound )
+console.log( sound1, sound2, sound3 )
 
 // Output: meow bark sssss</code></pre>
         </section>
@@ -331,27 +341,28 @@ console.log(dog)
         <section>
           <h3>Let's Develop It!</h3>
           <ul class="fs-28">
-            <li>Destructure the object below into distinct variables</li>
-            <li>Verify in the console</li>
+            <li>Destructure the object below into distinct variables:</li>
+            <li><code>breakfast</code> and <code>dessert</code></li>
+            <li>Verify the output in the console</li>
           </ul>
           <pre><code class="js">let menu = {
-  breakfast: 'pancakes',
-  lunch: 'tacos',
-  dinner: 'sushi',
-  dessert: 'tiramisu'
+  meal1: 'pancakes',
+  meal2: 'tacos',
+  meal3: 'sushi',
+  meal4: 'tiramisu'
 }</code></pre>
         </section>
 
-        <!-- Opening Slides: Spread Operator -->
+        <!-- Title: Spread Operator -->
         <section>
           <h3>Spread Operator</h3>
         </section>
 
-        <!-- Spread Operator Syntax -->
+        <!-- Spread Operator Symbol -->
         <section>
-          <h3>Syntax: <code>...</code></h3>
+          <h3>Symbol: <code>...</code></h3>
           <p class="fs-32 width-800 mb-32">
-            We use the <code>Spread</code> operator to copy or combine an array or object into another array or object
+            We use the <code>Spread</code> operator to copy or combine arrays and objects
           </p>
           <p class="fs-32 width-800 mb-32">
             The <code>Spread</code> operator syntax is signified by three dots:
@@ -456,7 +467,7 @@ console.log(spiderman8)
 </code></pre>
         </section>
 
-        <!-- Spread Operator: Arrays - Example 2 -->
+        <!-- Spread Operator: Objects - Example 2 -->
         <section>
           <h3>Spread Operator: Objects</h3>
           <p class="fs-32 width-800">Combining Objects</p>
@@ -489,10 +500,10 @@ console.log(spiderman8data)
         <section>
           <h3>Let's Develop It!</h3>
           <p class="fs-32 width-800">
-            Using the <code>spread</code> operator, combine the two objects below into a brand new object:
+            Using the <code>spread</code> operator, combine the two objects into a brand new object:
             <code>dogData</code>
           </p>
-          <pre><code class="js">let dog = {
+          <pre><code class="js">let doggo = {
   name: 'Toby',
   breed: 'French Bulldog'
 }
@@ -556,17 +567,59 @@ addTwoNumbers( 2, 4, 5, 6, 12 )
           </p>
         </section>
 
-        <!-- Slide -->
+        <!-- Default Parameters desc -->
         <section>
           <h3>Default Parameters</h3>
-          <pre><code class="js">// code</code></pre>
+          <p class="fs-32 width-900 mb-32">
+            Allow us to declare default parameter values if or when a function is called or executed without arguments
+          </p>
           <p class="fs-20">
             <a
-              href="#"
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters"
               target="_blank"
-              >text</a
+              >Default Parameters</a
             >
+            (MDN)
           </p>
+        </section>
+
+        <!-- Default Parameters example -->
+        <section>
+          <h3>Default Parameters</h3>
+          <p>Function called with no arguments:</p>
+          <pre><code class="js">function addXandY(x,y){
+  return x + y;
+}
+
+let result = addXandY()
+
+console.log (result) // Output: NaN
+</code></pre>
+          <p class="mt-32">Function called with default parameters:</p>
+          <p class="fs-24"><code class="highlight--yellow">x = 0, y = 0</code></p>
+          <pre><code class="js">function addXandY(x = 0, y = 0){
+  return x + y;
+}
+
+let result = addXandY()
+
+console.log (result) // Output: 0
+</code></pre>
+        </section>
+
+        <!-- Default Parameters practice -->
+        <section>
+          <h3>Default Parameters: Practice</h3>
+          <ul class="fs-28">
+            <li>
+              Create a function <code>displayUsername</code> that takes two arguments: a first name and a last name
+            </li>
+            <li>
+              If no arguments are passed, the function returns the sentence:
+              <span class="highlight--yellow">"Hello, my name is Jane Doe."</span>
+            </li>
+            <li>Extra challenge: Use arrow function syntax</li>
+          </ul>
         </section>
 
         <!-- Slide -->
@@ -582,8 +635,8 @@ addTwoNumbers( 2, 4, 5, 6, 12 )
           </p>
         </section> -->
 
-        <!-- Home/  Extra Practice -->
-        <section>
+        <!-- Extra Practice -->
+        <!-- <section>
           <h3>Extra Practice</h3>
           <p class="fs-32">
             <a
@@ -592,7 +645,7 @@ addTwoNumbers( 2, 4, 5, 6, 12 )
               >Class 3 Exercises</a
             >
           </p>
-        </section>
+        </section> -->
 
         <!-- MUST USE SLIDE - Course Feedback Survey-->
         <!-- <section>
