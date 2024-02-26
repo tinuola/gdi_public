@@ -472,6 +472,14 @@ console.log( printMyRealAge() )
           </code></pre>
         </section>
 
+        <section>
+          <h3>Best Practice</h3>
+          <p class="fs-28 width-900">
+            Minimize the use of global variables since their values can change across a codebase and create
+            unpredictable results
+          </p>
+        </section>
+
         <!-- Global Scope Alternative -->
         <section>
           <h3>Global Scope Fix</h3>
@@ -493,14 +501,6 @@ console.log( makeMeOlder() )
 
 console.log( printMyRealAge() )
           </code></pre>
-        </section>
-
-        <section>
-          <h3>Best Practice</h3>
-          <p class="fs-28 width-900">
-            Minimize the use of global variables since their values can change across a codebase and create
-            unpredictable results
-          </p>
         </section>
 
         <!-- Arrow Functions -->
@@ -647,6 +647,7 @@ const multiplyByFive = num => num * 5
   return sum
 }
 
+
 function cubedNumber (num) {
   return num * num * num
 }
@@ -659,6 +660,12 @@ const functionName = () => {}
 const functionName = param => code
 </code></pre>
         </section>
+
+        <!-- Regular Function vs Arrow Function  -->
+        <!-- <section>
+          <h3>Caveat</h3>
+          <p>Arrow functions have to be initialized before they can be used</p>
+        </section> -->
 
         <!-- Home Practice -->
         <!-- <section>
@@ -676,8 +683,8 @@ const functionName = param => code
         <section>
           <h3>Class 2 - Agenda</h3>
           <ul>
-            <li>Array Iterators</li>
-            <li>CallBack Functions</li>
+            <li>Array Iteration Methods</li>
+            <li>Callback Functions</li>
             <li>Higher Order Functions</li>
           </ul>
         </section>
