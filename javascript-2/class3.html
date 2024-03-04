@@ -79,7 +79,7 @@
         <!-- Stretch Break -->
         <section>
           <h3>Stretch - "Bio" Break</h3>
-          <p>4:45 PST / 6:45 CST / 7:45 EST</p>
+          <p>4:30 PST / 6:30 CST / 7:30 EST</p>
         </section>
 
         <!-- Title: Destructuring -->
@@ -354,14 +354,28 @@ console.log(dog)
 }</code></pre>
         </section>
 
+        <!-- Example of Destructing in React -->
+        <section>
+          <h4>Example</h4>
+          <h3>Destructuring in React</h3>
+          <img src="./images/destructuring-react.png" alt="Destructing in React">
+          <p class="fs-24">
+            Ref: <a
+              href="https://react.dev/reference/react/useState"
+              target="_blank"
+              >useState Hook (React.dev)</a
+            >
+          </p>
+        </section>
+
         <!-- Title: Spread Operator -->
         <section>
           <h3>Spread Operator</h3>
         </section>
 
-        <!-- Spread Operator Symbol -->
+        <!-- Spread Operator Syntax -->
         <section>
-          <h3>Symbol: <code>...</code></h3>
+          <h3>Syntax: <code>...</code></h3>
           <p class="fs-32 width-800 mb-32">
             We use the <code>Spread</code> operator to copy or combine arrays and objects
           </p>
@@ -409,15 +423,13 @@ console.log( bigCities )
           <p class="fs-32">Example 2</p>
           <pre><code class="js">let usCities = ['New York City', 'Los Angeles']
 
-let bigCities = ['London', 'Tokyo', 'Barcelona']
+let dupUsCities = [...usCities]
 
-bigCities = [...bigCities, ...usCities]
-
-console.log(bigCities)
+console.log(dupUsCities)
 
 // Output: 
 
-// ['London', 'Tokyo', 'Barcelona', 'New York City', 'Los Angeles']
+// ['New York City', 'Los Angeles']
 </code></pre>
         </section>
 
@@ -427,13 +439,15 @@ console.log(bigCities)
           <p class="fs-32">Example 3</p>
           <pre><code class="js">let usCities = ['New York City', 'Los Angeles']
 
-let dupUsCities = [...usCities]
+let bigCities = ['London', 'Tokyo', 'Barcelona']
 
-console.log(dupUsCities)
+bigCities = [...bigCities, ...usCities]
+
+console.log(bigCities)
 
 // Output: 
 
-// ['New York City', 'Los Angeles']
+// ['London', 'Tokyo', 'Barcelona', 'New York City', 'Los Angeles']
 </code></pre>
         </section>
 
@@ -513,6 +527,21 @@ let owner = {
   ownerName: 'Lola Ojo',
   city: 'Los Angeles' 
 }</code></pre>
+        </section>
+
+        <!--  -->
+        <section>
+          <h4>Example</h4>
+          <h3>Spread Operator in React</h3>
+          <img src="./images/spread-react-1.png" width="600px" alt="Spread in React">
+          <img src="./images/spread-react-2.png" width="600px" alt="Spread in React">
+          <p class="fs-24">
+            Ref: <a
+              href="https://react.dev/learn/updating-objects-in-state"
+              target="_blank"
+              >Updating Objects in State (React.dev)</a
+            >
+          </p>
         </section>
 
         <!-- Title: Rest Operator -->
