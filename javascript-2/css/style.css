@@ -28,6 +28,10 @@ p.gdi-p {
   font-weight: 600;
 }
 
+h3.bold-800 {
+  font-weight: 800;
+}
+
 .highlight--yellow {
   background-color: rgba(240, 225, 130, 0.7);
   padding-left: 0.35rem;
