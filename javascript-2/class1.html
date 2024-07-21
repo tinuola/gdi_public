@@ -4,54 +4,67 @@
     <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <!-- Update with GDI Course Name / Description -->
     <meta
       name="description"
-      content="Girl Develop It JavaScript Fundamentals 2 Cohort Series" />
+      content="GDI JavaScript Fundamentals 2 Series"
+    />
     <meta
       name="author"
-      content="Girl Develop It" />
+      content="Girl Develop It"
+    />
     <meta
       name="apple-mobile-web-app-capable"
-      content="yes" />
+      content="yes"
+    />
     <meta
       name="apple-mobile-web-app-status-bar-style"
-      content="black-translucent" />
+      content="black-translucent"
+    />
 
     <!-- Update with GDI Course Name -->
-    <title>GDI - JavaScript Fundamentals 2, Class 1</title>
+    <title>GDI: JavaScript Fundamentals 2 - Class 1</title>
 
     <link
       rel="icon"
       type="image/x-icon"
-      href="../shared-assets/imgs/favicon.ico" />
+      href="../shared-assets/imgs/favicon.ico"
+    />
 
     <!-- RevealJS CDN -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reset.css" />
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reset.css"
+    />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.css" />
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/theme/simple.css"
-      id="theme" />
+      id="theme"
+    />
 
     <!-- GDI Custom Theme -->
     <link
       rel="stylesheet"
-      href="../shared-assets/css/gdi-theme.css" />
+      href="../shared-assets/css/gdi-theme.css"
+    />
 
     <!-- Theme used for syntax highlighted code -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/monokai.min.css" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/monokai.min.css"
+    />
 
     <!-- Course Custom Styles if Applicable-->
     <link
       rel="stylesheet"
-      href="./css/style.css" />
+      href="./css/style.css"
+    />
   </head>
   <body>
     <div class="reveal">
@@ -75,10 +88,9 @@
           </ul>
         </section>
 
-        <!-- Stretch Break -->
+        <!-- Stretch Break: Add Times -->
         <section>
-          <h3>Stretch - "Bio" Break</h3>
-          <p>4:45 PST / 6:45 CST / 7:45 EST</p>
+          <h3>Session - Stretch Break</h3>
         </section>
 
         <!-- JavaScript ES6 -->
@@ -105,7 +117,9 @@
           <h3>ECMAScript</h3>
           <ul>
             <li>A set of standards for how JavaScript should work</li>
-            <li>Standards are set by a working group called <code>TC39</code></li>
+            <li>
+              Standards are set by a working group called <code>TC39</code>
+            </li>
           </ul>
           <p class="fs-24 mt-16">
             <a
@@ -125,7 +139,9 @@
             <li>1999: Third Edition</li>
             <li>2003: Fourth Edition (Abandoned)</li>
             <li>2009-2011: ES5</li>
-            <li style="color: #f05b62; font-weight: bold">2015: ES6 (ES2015)</li>
+            <li style="color: #f05b62; font-weight: bold">
+              2015: ES6 (ES2015)
+            </li>
           </ul>
         </section>
 
@@ -142,7 +158,8 @@
             <a
               href="http://blog.thefirehoseproject.com/posts/12-reasons-es6-future-javascript-web-development/"
               target="_blank"
-              >12 Reasons Why ES6 is the future of JavaScript and Web Development</a
+              >12 Reasons Why ES6 is the future of JavaScript and Web
+              Development</a
             >
           </p>
         </section>
@@ -167,7 +184,8 @@
           </div>
           <p
             class="mt-16"
-            style="color: #f05b62; font-weight: bold">
+            style="color: #f05b62; font-weight: bold"
+          >
             ES-Next (June)
           </p>
           <p class="width-750 mt-16 fs-24">
@@ -212,7 +230,9 @@
         <!-- Variable Declarations -->
         <section>
           <h3>Variable Declaration</h3>
-          <p class="fs-32">ES6 introduced two new keywords to declare variables</p>
+          <p class="fs-32">
+            ES6 introduced two new keywords to declare variables
+          </p>
           <p class="fs-32"><code>let</code> and <code>const</code></p>
         </section>
 
@@ -255,7 +275,9 @@ middleName = "Michio" // Re-assigning the variable
         <section>
           <h3><code>const</code> Variable Keyword</h3>
           <ul class="fs-28">
-            <li>Variables declared with <code>const</code> have to initialized</li>
+            <li>
+              Variables declared with <code>const</code> have to initialized
+            </li>
             <li>Variables cannot be re-assigned or re-declared</li>
             <li>Used for values that should be constant or unchanged</li>
           </ul>
@@ -296,7 +318,8 @@ userName = "Jackie" // Re-assigned; this will throw an error
         <section>
           <h3>Scope</h3>
           <p class="fs-32 mb-16">
-            Scope is how JavaScript manages the ability to use or access declared variables across a codebase
+            Scope is how JavaScript manages the ability to use or access
+            declared variables across a codebase
           </p>
 
           <p class="fs-24">
@@ -315,7 +338,9 @@ userName = "Jackie" // Re-assigned; this will throw an error
           <ul class="fs-32 mb-16">
             <li>Global</li>
             <li>Function</li>
-            <li>Block <span class="highlight--yellow">(Introduced in ES6)</span></li>
+            <li>
+              Block <span class="highlight--yellow">(Introduced in ES6)</span>
+            </li>
           </ul>
           <p class="fs-24">
             <a
@@ -331,8 +356,9 @@ userName = "Jackie" // Re-assigned; this will throw an error
           <h3>Global Scope</h3>
           <p class="fs-32 width-800">
             A variable declared in the global scope (i.e.,
-            <span class="highlight--yellow">not declared inside a function, a code block, etc.</span>) can be used
-            anywhere in the code
+            <span class="highlight--yellow"
+              >not declared inside a function, a code block, etc.</span
+            >) can be used anywhere in the code
           </p>
 
           <pre><code class="js">let year = 2005; // Variable in global scope
@@ -355,7 +381,10 @@ if(true){
         <!-- Function scope -->
         <section>
           <h3>Function Scope</h3>
-          <p class="fs-32 width-750">A variable declared inside a function can only be used in that same function</p>
+          <p class="fs-32 width-750">
+            A variable declared inside a function can only be used in that same
+            function
+          </p>
           <pre><code class="js">function printNewYear(){
 
   let y2k = 2000;
@@ -374,8 +403,8 @@ console.log(y2k) // Error
         <section>
           <h3>Block Scope</h3>
           <p class="fs-32 width-750">
-            A variable declared inside of a code block <code>{ }</code> can only be used inside that block; for example,
-            an <code>if </code> block
+            A variable declared inside of a code block <code>{ }</code> can only
+            be used inside that block; for example, an <code>if </code> block
           </p>
           <pre><code class="js">let age = 20 
 
@@ -413,25 +442,39 @@ printName()</code></pre>
         <section>
           <h3>Scope Practice (contd)</h3>
           <ol class="fs-28">
-            <li>Run the <code>printName()</code> function; what is the output?</li>
             <li>
-              Change the <code>var</code> keyword in the <code>if</code> block to <code>let</code>, and run the function
-              again; what happens?
+              Run the <code>printName()</code> function; what is the output?
             </li>
             <li>
-              Copy the <code>console</code> statement and paste it under the <code>firstName</code> declaration; you
-              should now have two <code>console</code> statements
+              Change the <code>var</code> keyword in the <code>if</code> block
+              to <code>let</code>, and run the function again; what happens?
             </li>
-            <li>Comment out the second <code>console</code> statement and run your code; what is the output?</li>
+            <li>
+              Copy the <code>console</code> statement and paste it under the
+              <code>firstName</code> declaration; you should now have two
+              <code>console</code> statements
+            </li>
+            <li>
+              Comment out the second <code>console</code> statement and run your
+              code; what is the output?
+            </li>
           </ol>
         </section>
 
         <section>
           <h3>Scope Practice (contd)</h3>
           <ol class="fs-28">
-            <li>Create an <code>else</code> block after the <code>if</code> block</li>
-            <li>Duplicate the code in the <code>if</code> block to the <code>else</code> block</li>
-            <li>Change the value of <code>firstName</code> in the <code>else</code> block to "Nikki"</li>
+            <li>
+              Create an <code>else</code> block after the <code>if</code> block
+            </li>
+            <li>
+              Duplicate the code in the <code>if</code> block to the
+              <code>else</code> block
+            </li>
+            <li>
+              Change the value of <code>firstName</code> in the
+              <code>else</code> block to "Nikki"
+            </li>
             <li>Change the value of <code>num</code> variable to 6</li>
             <li>Run the code; what is the output?</li>
           </ol>
@@ -444,8 +487,9 @@ printName()</code></pre>
             <code>const</code> and <code>let</code>
           </h3>
           <p class="fs-32">
-            While all three variable keywords can be globally scoped and function-scoped, only <code>const</code> and
-            <code>let</code> are block-scoped
+            While all three variable keywords can be globally scoped and
+            function-scoped, only <code>const</code> and <code>let</code> are
+            block-scoped
           </p>
         </section>
 
@@ -475,8 +519,8 @@ console.log( printMyRealAge() )
         <section>
           <h3>Best Practice</h3>
           <p class="fs-28 width-900">
-            Minimize the use of global variables since their values can change across a codebase and create
-            unpredictable results
+            Minimize the use of global variables since their values can change
+            across a codebase and create unpredictable results
           </p>
         </section>
 
@@ -512,8 +556,8 @@ console.log( printMyRealAge() )
         <section>
           <h3>Arrow Functions</h3>
           <p class="fs-32">
-            Introduced in ES6, <code>arrow functions</code> provide an alternative and more concise way to write
-            function syntax
+            Introduced in ES6, <code>arrow functions</code> provide an
+            alternative and more concise way to write function syntax
           </p>
           <p class="fs-24">
             <a
@@ -591,7 +635,10 @@ const functionName = () => {
         <section>
           <h3>Arrow Function Shorthands</h3>
           <ul class="fs-28">
-            <li>An arrow function with a single parameter can omit the parentheses around the parameter</li>
+            <li>
+              An arrow function with a single parameter can omit the parentheses
+              around the parameter
+            </li>
           </ul>
           <pre><code class="js">function greetFriend (firstName) {
 
@@ -613,7 +660,8 @@ const greetFriend = firstName => {
           <h3>Arrow Function Shorthands</h3>
           <ul class="fs-28">
             <li>
-              An arrow function with a single or simple expression can omit the curly brackets and the
+              An arrow function with a single or simple expression can omit the
+              curly brackets and the
               <code>return</code> keyword
             </li>
           </ul>
@@ -634,7 +682,8 @@ const multiplyByFive = num => num * 5
         <section>
           <h3>Caveat</h3>
           <p class="fs-32 width-800">
-            If an arrow function has no parameter or has more than one parameter, the parentheses are required
+            If an arrow function has no parameter or has more than one
+            parameter, the parentheses are required
           </p>
         </section>
 
@@ -689,14 +738,10 @@ const functionName = param => code
           </ul>
         </section>
 
-        <!-- MUST USE SLIDE - Course Feedback Survey-->
+        <!-- Class Feedback Survey, if using -->
         <!-- <section>
           <h3>Class Feedback</h3>
-          <p>
-            <a
-              href=""
-              target="_blank"></a>
-          </p>
+          <p><a href="" target="_blank"></a></p>
         </section> -->
 
         <!-- Q&A -->
@@ -710,7 +755,8 @@ const functionName = param => code
             src="../shared-assets/imgs/gdi-logos/gdi-circle-logo_peach.png"
             alt="GDI Logo"
             width="300px"
-            class="noborder" />
+            class="noborder"
+          />
           <br />
           <h2>Thank You!</h2>
         </section>
@@ -725,7 +771,8 @@ const functionName = param => code
             src="../shared-assets/imgs/gdi-logos/gdi-logo_peach.png"
             alt="GDI Logo"
             width="40px"
-            class="noborder" />
+            class="noborder"
+          />
           <p>JavaScript Fundamentals 2 - Class 1</p>
           <a
             rel="license"

@@ -4,54 +4,67 @@
     <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <!-- Update with GDI Course Name / Description -->
     <meta
       name="description"
-      content="Girl Develop It JavaScript Fundamentals 2 Cohort Series" />
+      content="GDI JavaScript Fundamentals 2 Series"
+    />
     <meta
       name="author"
-      content="Girl Develop It" />
+      content="Girl Develop It"
+    />
     <meta
       name="apple-mobile-web-app-capable"
-      content="yes" />
+      content="yes"
+    />
     <meta
       name="apple-mobile-web-app-status-bar-style"
-      content="black-translucent" />
+      content="black-translucent"
+    />
 
     <!-- Update with GDI Course Name -->
-    <title>GDI - JavaScript Fundamentals 2, Class 3</title>
+    <title>GDI: JavaScript Fundamentals 2 - Class 3</title>
 
     <link
       rel="icon"
       type="image/x-icon"
-      href="../shared-assets/imgs/favicon.ico" />
+      href="../shared-assets/imgs/favicon.ico"
+    />
 
     <!-- RevealJS CDN -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reset.css" />
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reset.css"
+    />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.css" />
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/theme/simple.css"
-      id="theme" />
+      id="theme"
+    />
 
     <!-- GDI Custom Theme -->
     <link
       rel="stylesheet"
-      href="../shared-assets/css/gdi-theme.css" />
+      href="../shared-assets/css/gdi-theme.css"
+    />
 
     <!-- Theme used for syntax highlighted code -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/monokai.min.css" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/monokai.min.css"
+    />
 
     <!-- Course Custom Styles if Applicable-->
     <link
       rel="stylesheet"
-      href="./css/style.css" />
+      href="./css/style.css"
+    />
   </head>
   <body>
     <div class="reveal">
@@ -76,10 +89,9 @@
           </ul>
         </section>
 
-        <!-- Stretch Break -->
+        <!-- Stretch Break: Add Times -->
         <section>
-          <h3>Stretch - "Bio" Break</h3>
-          <p>4:30 PST / 6:30 CST / 7:30 EST</p>
+          <h3>Session - Stretch Break</h3>
         </section>
 
         <!-- Title: Destructuring -->
@@ -91,8 +103,9 @@
         <section>
           <h3>Destructuring</h3>
           <p class="fs-32 width-800">
-            <span class="highlight--yellow">Destructuring</span> allows us to extract specific data or values from
-            arrays and objects and assign them to new variables
+            <span class="highlight--yellow">Destructuring</span> allows us to
+            extract specific data or values from arrays and objects and assign
+            them to new variables
           </p>
 
           <p class="fs-20 mt-32">
@@ -122,7 +135,8 @@
             Assigning Array Values
           </h3>
           <p class="fs-32 width-800">
-            If we wanted to create new variables from items in an array, we would have to do so individually
+            If we wanted to create new variables from items in an array, we
+            would have to do so individually
           </p>
           <pre><code class="js">let people = ['layla', 'keiko', 'amina', 'temi']
 
@@ -142,7 +156,10 @@ console.log( mySister, myBFF, myCoworker, myCousin)
         <!-- Destructuring Arrays -->
         <section>
           <h3>ES6: Destructuring Arrays</h3>
-          <p class="fs-32 width-800">With destructuring, we can extract values more efficiently -- with less code</p>
+          <p class="fs-32 width-800">
+            With destructuring, we can extract values more efficiently -- with
+            less code
+          </p>
           <pre><code class="js">let people = ['layla', 'keiko', 'amina', 'temi']
 
 let [ mySister, myBFF, myCoworker, myCousin ] = people
@@ -155,7 +172,9 @@ console.log( mySister, myBFF, myCoworker, myCousin)
         <!-- Destructuring Syntax: Arrays -->
         <section>
           <h3>Destructuring Syntax: Arrays</h3>
-          <p class="fs-32 width-800">We are copying items from an array and assiging them to variables</p>
+          <p class="fs-32 width-800">
+            We are copying items from an array and assiging them to variables
+          </p>
           <pre><code class="js">let [ variable1, variable2.....variableN ] = array
 </code></pre>
         </section>
@@ -177,7 +196,10 @@ console.log( mySister, myBFF, myCoworker, myCousin)
         <!-- Omitting Array values -->
         <section>
           <h3>Destructuring</h3>
-          <p class="fs-32 width-800">With destructuring, we can extract specific values and leave others out</p>
+          <p class="fs-32 width-800">
+            With destructuring, we can extract specific values and leave others
+            out
+          </p>
           <pre><code class="js">let people = ['layla', 'keiko', 'amina', 'temi']
 
 let [ mySister, , , myCousin ] = people
@@ -214,7 +236,10 @@ console.log(mySister, myCousin)
           <h3>Let's Develop It!</h3>
           <ul class="fs-28">
             <li>Destructure the array below</li>
-            <li>Extract <code>lunch</code> into a single variable: <code>favoriteMeal</code></li>
+            <li>
+              Extract <code>lunch</code> into a single variable:
+              <code>favoriteMeal</code>
+            </li>
             <li>Skip the rest!</li>
           </ul>
           <pre><code class="js">let meals = ['breakfast', 'lunch', 'dinner']
@@ -230,7 +255,8 @@ console.log(mySister, myCousin)
         <section>
           <h3>Destructuring Objects</h3>
           <p class="fs-32 width-800">
-            Destructuring also works with objects; the syntax is similar to how arrays are destructured
+            Destructuring also works with objects; the syntax is similar to how
+            arrays are destructured
           </p>
         </section>
 
@@ -257,7 +283,8 @@ console.log( catSound, dogSound, snakeSound )
         <section>
           <h3>ES6: Destructuring Objects</h3>
           <p class="fs-32 width-800">
-            With an object, we can unpack or extract its values by referencing their
+            With an object, we can unpack or extract its values by referencing
+            their
             <code>keys</code>
           </p>
           <pre><code class="js">const animalSounds = {
@@ -276,7 +303,10 @@ console.log( cat, dog, snake )
         <!-- Destructuring Objects: Syntax -->
         <section>
           <h3>Destructuring Syntax: Objects</h3>
-          <p class="fs-32 width-800">We are copying property values from an object by referencing its keys</p>
+          <p class="fs-32 width-800">
+            We are copying property values from an object by referencing its
+            keys
+          </p>
           <pre><code class="js">let { key1, key2.....keyN } = object
         </code></pre>
         </section>
@@ -285,7 +315,8 @@ console.log( cat, dog, snake )
         <section>
           <h3>Destructuring Objects</h3>
           <p class="fs-32 width-800">
-            If we prefer to use new variable names instead of the key names, we can assign them this way:
+            If we prefer to use new variable names instead of the key names, we
+            can assign them this way:
           </p>
           <pre><code class="js">const animalSounds = {
   cat: 'meow',
@@ -308,8 +339,9 @@ console.log( sound1, sound2, sound3 )
         <section>
           <h3>Destructuring Order in Objects</h3>
           <p class="fs-32 width-800">
-            Because objects are not zero-indexed, the order in which they are destructured does not matter as long as
-            the correct <code>key</code> is referenced
+            Because objects are not zero-indexed, the order in which they are
+            destructured does not matter as long as the correct
+            <code>key</code> is referenced
           </p>
           <pre><code class="js">const { dog, snake, cat } = animalSounds
 
@@ -322,7 +354,8 @@ console.log( sound1, sound2, sound3 )
         <section>
           <h3>Extracting Specific Values</h3>
           <p class="fs-32 width-800">
-            We can extract specific values, but unlike arrays, we don't need to use blank spaces as placeholders
+            We can extract specific values, but unlike arrays, we don't need to
+            use blank spaces as placeholders
           </p>
           <pre><code class="js">const animalSounds = {
   cat: 'meow',
@@ -342,8 +375,14 @@ console.log(dog)
           <h3>Let's Develop It!</h3>
           <ul class="fs-28">
             <li>Destructure the object below</li>
-            <li>Extract <code>pancakes</code> and <code>tiramisu</code> into distinct variables:</li>
-            <li><code class="highlight--yellow">breakfast</code> and <code class="highlight--yellow">dessert</code></li>
+            <li>
+              Extract <code>pancakes</code> and <code>tiramisu</code> into
+              distinct variables:
+            </li>
+            <li>
+              <code class="highlight--yellow">breakfast</code> and
+              <code class="highlight--yellow">dessert</code>
+            </li>
             <li>Verify the output in the console</li>
           </ul>
           <pre><code class="js">let menu = {
@@ -358,9 +397,13 @@ console.log(dog)
         <section>
           <h4>Example</h4>
           <h3>Destructuring in React</h3>
-          <img src="./images/destructuring-react.png" alt="Destructing in React">
+          <img
+            src="./images/destructuring-react.png"
+            alt="Destructing in React"
+          />
           <p class="fs-24">
-            Ref: <a
+            Ref:
+            <a
               href="https://react.dev/reference/react/useState"
               target="_blank"
               >useState Hook (React.dev)</a
@@ -377,7 +420,8 @@ console.log(dog)
         <section>
           <h3>Syntax: <code>...</code></h3>
           <p class="fs-32 width-800 mb-32">
-            We use the <code>Spread</code> operator to copy or combine arrays and objects
+            We use the <code>Spread</code> operator to copy or combine arrays
+            and objects
           </p>
           <p class="fs-32 width-800 mb-32">
             The <code>Spread</code> operator syntax is signified by three dots:
@@ -515,7 +559,8 @@ console.log(spiderman8data)
         <section>
           <h3>Let's Develop It!</h3>
           <p class="fs-32 width-800">
-            Using the <code>spread</code> operator, combine the two objects into a brand new object:
+            Using the <code>spread</code> operator, combine the two objects into
+            a brand new object:
             <code>dogData</code>
           </p>
           <pre><code class="js">let doggo = {
@@ -533,10 +578,19 @@ let owner = {
         <section>
           <h4>Example</h4>
           <h3>Spread Operator in React</h3>
-          <img src="./images/spread-react-1.png" width="600px" alt="Spread in React">
-          <img src="./images/spread-react-2.png" width="600px" alt="Spread in React">
+          <img
+            src="./images/spread-react-1.png"
+            width="600px"
+            alt="Spread in React"
+          />
+          <img
+            src="./images/spread-react-2.png"
+            width="600px"
+            alt="Spread in React"
+          />
           <p class="fs-24">
-            Ref: <a
+            Ref:
+            <a
               href="https://react.dev/learn/updating-objects-in-state"
               target="_blank"
               >Updating Objects in State (React.dev)</a
@@ -553,14 +607,16 @@ let owner = {
         <section>
           <h3>Rest Operator</h3>
           <p class="fs-32 width-800">
-            If this new <code>...</code> syntax isn't strange or confusing enough, it is the same exact syntax for
-            another ES6 feature called the <code>Rest</code> operator!
+            If this new <code>...</code> syntax isn't strange or confusing
+            enough, it is the same exact syntax for another ES6 feature called
+            the <code>Rest</code> operator!
           </p>
           <p class="fs-20 width-800 mt-32">
             <a
               href="https://www.freecodecamp.org/news/javascript-rest-vs-spread-operators/"
               target="_blank"
-              >JavaScript Rest vs Spread Operator – What’s the Difference? (FreeCodeCamp)</a
+              >JavaScript Rest vs Spread Operator – What’s the Difference?
+              (FreeCodeCamp)</a
             >
           </p>
         </section>
@@ -568,9 +624,12 @@ let owner = {
         <!-- Rest Operator -->
         <section>
           <h3><code>Rest</code> Operator</h3>
-          <p class="fs-32 width-800 mb-32">The <code>Rest</code> operator is often used with functions</p>
+          <p class="fs-32 width-800 mb-32">
+            The <code>Rest</code> operator is often used with functions
+          </p>
           <p class="fs-32 width-800">
-            It does the opposite of the <code>Spread</code> operator--it packs up 'leftover' values into an array
+            It does the opposite of the <code>Spread</code> operator--it packs
+            up 'leftover' values into an array
           </p>
         </section>
 
@@ -596,9 +655,11 @@ addTwoNumbers( 2, 4, 5, 6, 12 )
           <h3>Caveat</h3>
           <p
             class="gdi-p"
-            style="max-width: 750px; margin: 0 auto 24px auto">
-            Unlike the <code>spread</code> operator variable which can be placed in any order, the
-            <code>rest</code> operator parameter must come last
+            style="max-width: 750px; margin: 0 auto 24px auto"
+          >
+            Unlike the <code>spread</code> operator variable which can be placed
+            in any order, the <code>rest</code> operator parameter must come
+            last
           </p>
         </section>
 
@@ -611,7 +672,8 @@ addTwoNumbers( 2, 4, 5, 6, 12 )
         <section>
           <h3>Default Parameters</h3>
           <p class="fs-32 width-900 mb-32">
-            Allow us to declare default parameter values if or when a function is called or executed without arguments
+            Allow us to declare default parameter values if or when a function
+            is called or executed without arguments
           </p>
           <p class="fs-20">
             <a
@@ -636,7 +698,9 @@ let result = addXandY()
 console.log (result) // Output: NaN
 </code></pre>
           <p class="mt-32">Function called with default parameters:</p>
-          <p class="fs-24"><code class="highlight--yellow">x = 0, y = 0</code></p>
+          <p class="fs-24">
+            <code class="highlight--yellow">x = 0, y = 0</code>
+          </p>
           <pre><code class="js">function addXandY(x = 0, y = 0){
   return x + y;
 }
@@ -652,11 +716,14 @@ console.log (result) // Output: 0
           <h3>Default Parameters: Practice</h3>
           <ul class="fs-28">
             <li>
-              Create a function <code>displayUsername</code> that takes two arguments: a first name and a last name
+              Create a function <code>displayUsername</code> that takes two
+              arguments: a first name and a last name
             </li>
             <li>
               If no arguments are passed, the function returns the sentence:
-              <span class="highlight--yellow">"Hello, my name is Jane Doe."</span>
+              <span class="highlight--yellow"
+                >"Hello, my name is Jane Doe."</span
+              >
             </li>
             <li>Extra challenge: Use arrow function syntax</li>
           </ul>
@@ -674,8 +741,7 @@ console.log (result) // Output: 0
           </p>
         </section>
 
-
-        <!-- Slide -->
+        <!-- Slide Template -->
         <!-- <section>
           <h3>Title</h3>
           <pre><code class="js">// code</code></pre>
@@ -688,16 +754,10 @@ console.log (result) // Output: 0
           </p>
         </section> -->
 
-        <!-- MUST USE SLIDE - Course Feedback Survey-->
+        <!-- Class Feedback Survey, if using -->
         <!-- <section>
           <h3>Class Feedback</h3>
-          <p class="fs-32">
-            <a
-              href="#"
-              target="_blank"
-              >Survey</a
-            >
-          </p>
+          <p><a href="" target="_blank"></a></p>
         </section> -->
 
         <!-- Next Class -->
@@ -719,7 +779,8 @@ console.log (result) // Output: 0
             src="../shared-assets/imgs/gdi-logos/gdi-circle-logo_peach.png"
             alt="GDI Logo"
             width="300px"
-            class="noborder" />
+            class="noborder"
+          />
           <br />
           <h2>Thank You!</h2>
         </section>
@@ -734,7 +795,8 @@ console.log (result) // Output: 0
             src="../shared-assets/imgs/gdi-logos/gdi-logo_peach.png"
             alt="GDI Logo"
             width="40px"
-            class="noborder" />
+            class="noborder"
+          />
           <p>JavaScript Fundamentals 2 - Class 3</p>
           <a
             rel="license"

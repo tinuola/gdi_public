@@ -4,54 +4,67 @@
     <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <!-- Update with GDI Course Name / Description -->
     <meta
       name="description"
-      content="Girl Develop It JavaScript Fundamentals 2 Cohort Series" />
+      content="GDI JavaScript Fundamentals 2 Series"
+    />
     <meta
       name="author"
-      content="Girl Develop It" />
+      content="Girl Develop It"
+    />
     <meta
       name="apple-mobile-web-app-capable"
-      content="yes" />
+      content="yes"
+    />
     <meta
       name="apple-mobile-web-app-status-bar-style"
-      content="black-translucent" />
+      content="black-translucent"
+    />
 
     <!-- Update with GDI Course Name -->
-    <title>GDI - JavaScript Fundamentals 2, Class 4</title>
+    <title>GDI: JavaScript Fundamentals 2 - Class 4</title>
 
     <link
       rel="icon"
       type="image/x-icon"
-      href="../shared-assets/imgs/favicon.ico" />
+      href="../shared-assets/imgs/favicon.ico"
+    />
 
     <!-- RevealJS CDN -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reset.css" />
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reset.css"
+    />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.css" />
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/theme/simple.css"
-      id="theme" />
+      id="theme"
+    />
 
     <!-- GDI Custom Theme -->
     <link
       rel="stylesheet"
-      href="../shared-assets/css/gdi-theme.css" />
+      href="../shared-assets/css/gdi-theme.css"
+    />
 
     <!-- Theme used for syntax highlighted code -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/monokai.min.css" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/monokai.min.css"
+    />
 
     <!-- Course Custom Styles if Applicable-->
     <link
       rel="stylesheet"
-      href="./css/style.css" />
+      href="./css/style.css"
+    />
   </head>
   <body>
     <div class="reveal">
@@ -79,18 +92,18 @@
           </ul>
         </section>
 
-        <!-- Stretch Break -->
+        <!-- Stretch Break: Add Times -->
         <section>
-          <h3>Stretch - "Bio" Break</h3>
-          <p>4:30 PST / 6:30 CST / 7:30 EST</p>
+          <h3>Session - Stretch Break</h3>
         </section>
 
         <!-- Single Threaded -->
         <section>
           <p class="fs-32 width-800">
             JavaScript is a
-            <span class="highlight--yellow">single-threaded</span> language; meaning it executes code in order and can
-            only do so one command at a time
+            <span class="highlight--yellow">single-threaded</span> language;
+            meaning it executes code in order and can only do so one command at
+            a time
           </p>
           <p class="fs-24 mt-32">
             <a
@@ -108,19 +121,24 @@
 
           <p class="fs-32 width-800 mb-32">
             You place your order for a drink
-            <span class="highlight--yellow">BUT</span> you can't order your appetizer until you finish your drink
+            <span class="highlight--yellow">BUT</span> you can't order your
+            appetizer until you finish your drink
           </p>
 
-          <p class="fs-32 width-800 mb-32">You can't order your entree until you finish your appetizer</p>
+          <p class="fs-32 width-800 mb-32">
+            You can't order your entree until you finish your appetizer
+          </p>
           <p class="fs-32 width-800 mb-32">And on and on and on...</p>
 
-          <p class="fs-32 width-800">It would be a very long and tedious meal!</p>
+          <p class="fs-32 width-800">
+            It would be a very long and tedious meal!
+          </p>
         </section>
 
         <section>
           <h4 class="width-900">
-            If that sounds like a tedious dining experience, imagine the equivalent when running a website or an
-            application
+            If that sounds like a tedious dining experience, imagine the
+            equivalent when running a website or an application
           </h4>
         </section>
 
@@ -128,8 +146,9 @@
         <section>
           <h3>Asynchronous JavaScript</h3>
           <p class="fs-32 width-800 mb-32">
-            Asynchronous JavaScript is how we get around the single-threaded nature of the language, by using specific
-            features and protocols such as:
+            Asynchronous JavaScript is how we get around the single-threaded
+            nature of the language, by using specific features and protocols
+            such as:
           </p>
           <ul>
             <li>setTimeout()</li>
@@ -147,25 +166,29 @@
         <!-- Definition: setTimeout() -->
         <section>
           <h3>setTimeout()</h3>
-          <p class="fs-32 width-900 mb-32"><code>setTimeout()</code> is a method we can use to execute code after a specified amount of time has expired</p>
+          <p class="fs-32 width-900 mb-32">
+            <code>setTimeout()</code> is a method we can use to execute code
+            after a specified amount of time has expired
+          </p>
           <p class="fs-24 mt-32">
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/API/setTimeout"
               target="_blank"
               >setTimeout()</a
             >
-            (MDN)<br> <a
-            href="https://www.freecodecamp.org/news/javascript-settimeout-how-to-set-a-timer-in-javascript-or-sleep-for-n-seconds/"
-            target="_blank"
-            >How to Use setTimeout in JavaScript</a
-          >(freecodecamp)
+            (MDN)<br />
+            <a
+              href="https://www.freecodecamp.org/news/javascript-settimeout-how-to-set-a-timer-in-javascript-or-sleep-for-n-seconds/"
+              target="_blank"
+              >How to Use setTimeout in JavaScript</a
+            >(freecodecamp)
           </p>
         </section>
 
         <!-- Simple code without setTimeout() -->
         <section>
           <h3>Code without <code>setTimeout()</code></h3>
-<pre><code class="js">console.log ('Hello!')
+          <pre><code class="js">console.log ('Hello!')
 
 console.log('Goodbye now!')
 
@@ -176,13 +199,12 @@ console.log('What a lovely day!')
 // Goodbye now!
 // What a lovely day!
 </code></pre>
-
         </section>
 
         <!-- Simple code with setTimeout() -->
         <section>
           <h3>Code with <code>setTimeout()</code></h3>
-<pre><code class="js">console.log ('Hello!')
+          <pre><code class="js">console.log ('Hello!')
 
 
 setTimeout(() => {
@@ -207,7 +229,7 @@ setTimeout(() => {
         <!-- setTimeOut Synax and Examples -->
         <section>
           <h3>Syntax: Callback Function</h3>
-<pre><code class="js">
+          <pre><code class="js">
 setTimeout( callback, time, parameter )
 
 // Callback function declared separately 
@@ -235,7 +257,7 @@ function runGreeting(name){
 
         <section>
           <h3>Syntax: Anonymous Function</h3>
-<pre><code class="js">
+          <pre><code class="js">
 setTimeout( function(){
   // code to execute
 }, time)
@@ -250,7 +272,7 @@ setTimeout( function(){
 
         <section>
           <h3>Syntax: Arrow Function</h3>
-<pre><code class="js">setTimeout(() => {
+          <pre><code class="js">setTimeout(() => {
   // code to execute
 }, time)
 
@@ -284,27 +306,42 @@ setTimeout(() => console.log('Hello Sadie'), 6000)
         <section>
           <h3>Promises</h3>
           <p class="fs-32 width-900 mb-32">
-            Promises allow us to write code that can be executed asynchronously or out of order, meaning other code can
-            run synchronously without interruption
+            Promises allow us to write code that can be executed asynchronously
+            or out of order, meaning other code can run synchronously without
+            interruption
           </p>
 
           <p class="fs-32 width-900 mb-32">
-            Promises are predominantly used with server or API calls--requests that may take some time to complete
+            Promises are predominantly used with server or API calls--requests
+            that may take some time to complete
           </p>
         </section>
 
         <!-- Promise states -->
         <section>
           <h3>Promise States</h3>
-          <p class="fs-32 width-800 mb-32">When we write a <code>promise</code>, our code is in one of three states:</p>
+          <p class="fs-32 width-800 mb-32">
+            When we write a <code>promise</code>, our code is in one of three
+            states:
+          </p>
           <ul>
-            <li><span class="highlight--yellow">Pending:</span> Initial state of the operation</li>
-            <li><span class="highlight--yellow">Fulfilled:</span> The operation was successful</li>
-            <li><span class="highlight--yellow">Rejected:</span> The operation failed</li>
+            <li>
+              <span class="highlight--yellow">Pending:</span> Initial state of
+              the operation
+            </li>
+            <li>
+              <span class="highlight--yellow">Fulfilled:</span> The operation
+              was successful
+            </li>
+            <li>
+              <span class="highlight--yellow">Rejected:</span> The operation
+              failed
+            </li>
           </ul>
           <p class="fs-32 width-800 mt-32">
-            When a promise is fulfilled, we get some value or data back; when it is rejected, we get an error
-            message--a reason for the failed request
+            When a promise is fulfilled, we get some value or data back; when it
+            is rejected, we get an error message--a reason for the failed
+            request
           </p>
         </section>
 
@@ -320,13 +357,16 @@ setTimeout(() => console.log('Hello Sadie'), 6000)
         <!-- Promise in Practice -->
         <section>
           <h3>Promise Syntax</h3>
-          <p class="fs-32 width-800 mb-32">Let's create a simple <code>promise</code> to see its full syntax</p>
+          <p class="fs-32 width-800 mb-32">
+            Let's create a simple <code>promise</code> to see its full syntax
+          </p>
 
           <p class="fs-32 width-800 mb-32">The scenario:</p>
 
           <p class="fs-32 width-800">
-            I promise to bake muffins if you find blueberries at the supermarket; if you don't find blueberries, buy
-            muffins at the bakery instead
+            I promise to bake muffins if you find blueberries at the
+            supermarket; if you don't find blueberries, buy muffins at the
+            bakery instead
           </p>
           <pre><code class="js">const muffinPromise = new Promise()</code></pre>
         </section>
@@ -355,11 +395,18 @@ muffinPromise
         <section>
           <h3>Syntax Breakdown - Part 1</h3>
           <p class="fs-32 width-800 mb-32">
-            A <code>promise</code> takes two <span class="highlight--yellow">callback functions</span>:
+            A <code>promise</code> takes two
+            <span class="highlight--yellow">callback functions</span>:
           </p>
           <ul>
-            <li><span class="highlight--yellow">resolve</span>: runs when the request is successful</li>
-            <li><span class="highlight--yellow">reject</span>: runs when the request fails</li>
+            <li>
+              <span class="highlight--yellow">resolve</span>: runs when the
+              request is successful
+            </li>
+            <li>
+              <span class="highlight--yellow">reject</span>: runs when the
+              request fails
+            </li>
           </ul>
           <pre><code class="js">const muffinPromise = new Promise( ( resolve, reject ) => {
 
@@ -380,10 +427,15 @@ muffinPromise
           </p>
           <ul
             class="fs-28"
-            style="list-style: none">
-            <li><code class="highlight--yellow">.then()</code>: code to run when the request is successful</li>
+            style="list-style: none"
+          >
             <li>
-              <code class="highlight--yellow">.catch()</code>: code to run or error message to display if request fails
+              <code class="highlight--yellow">.then()</code>: code to run when
+              the request is successful
+            </li>
+            <li>
+              <code class="highlight--yellow">.catch()</code>: code to run or
+              error message to display if request fails
             </li>
           </ul>
           <pre><code class="js">const muffinPromise = new Promise( ( resolve, reject ) => {
@@ -399,7 +451,9 @@ muffinPromise
 
         <!-- Chaining then and catch -->
         <section>
-          <p class="fs-32 width-800"><code>.then</code> and <code>.catch</code> are chained when used</p>
+          <p class="fs-32 width-800">
+            <code>.then</code> and <code>.catch</code> are chained when used
+          </p>
 
           <pre><code class="js">
 muffinPromise
@@ -413,7 +467,8 @@ muffinPromise
           <img
             src="./images/confusion.jpg"
             alt=""
-            width="500px" />
+            width="500px"
+          />
           <!-- https://www.npr.org/sections/13.7/2015/12/14/459651340/sometimes-confusion-is-a-good-thing -->
           <p class="fs-32">A good explainer video about Promises:</p>
           <p class="fs-24">
@@ -433,9 +488,16 @@ muffinPromise
         <!-- Public APIs -->
         <section>
           <h3>Public APIs</h3>
-          <p class="fs-28 width-800 mb-32">Public or open APIs contain data or code that developers can use freely</p>
-          <p class="fs-28 width-900 mb-32">We make requests to these APIs and get data back in response</p>
-          <p class="fs-28 width-800 mb-32">Collections of Free, Open API Listings:</p>
+          <p class="fs-28 width-800 mb-32">
+            Public or open APIs contain data or code that developers can use
+            freely
+          </p>
+          <p class="fs-28 width-900 mb-32">
+            We make requests to these APIs and get data back in response
+          </p>
+          <p class="fs-28 width-800 mb-32">
+            Collections of Free, Open API Listings:
+          </p>
 
           <ul class="fs-28">
             <li>
@@ -471,10 +533,12 @@ muffinPromise
         <section>
           <h3>Fetch API</h3>
           <p class="fs-28 width-800 mb-32">
-            The Fetch API is a protocol or method that we use to make requests to external servers
+            The Fetch API is a protocol or method that we use to make requests
+            to external servers
           </p>
           <p class="fs-28 width-800 mb-32">
-            Understanding how <code>promises</code> work is important because a Fetch request always returns a
+            Understanding how <code>promises</code> work is important because a
+            Fetch request always returns a
             <code>Promise</code>
           </p>
 
@@ -490,8 +554,12 @@ muffinPromise
         <!-- Basic Fetch Syntax -->
         <section>
           <h3>Basic Fetch Syntax</h3>
-          <p class="fs-32 width-800 mb-32">The fetch method takes in a <code>string</code> url value</p>
-          <p class="fs-32 width-800 mb-32">The url is the API destination; where the data lives</p>
+          <p class="fs-32 width-800 mb-32">
+            The fetch method takes in a <code>string</code> url value
+          </p>
+          <p class="fs-32 width-800 mb-32">
+            The url is the API destination; where the data lives
+          </p>
           <pre><code class="js">let variableName = fetch( url )</code></pre>
         </section>
 
@@ -512,36 +580,42 @@ muffinPromise
           <pre><code class="js">let getDogImage = fetch( 'https://dog.ceo/api/breeds/image/random' )
 
 console.log( getDogImage )</code></pre>
-          <p class="fs-28 width-800 mt-32">What happens when we log <code>getDogImage</code> to the console?</p>
+          <p class="fs-28 width-800 mt-32">
+            What happens when we log <code>getDogImage</code> to the console?
+          </p>
         </section>
 
         <section>
           <img
             src="./images/fetch-api-1.png"
             width="600"
-            alt="" />
+            alt=""
+          />
           <p class="fs-32 width-800 mb-32">
-            We get a successful, or fulfilled or <code>resolved</code> Promise that's <code>pending</code>--this means
-            we have data waiting to be used!
+            We get a successful, or fulfilled or <code>resolved</code> Promise
+            that's <code>pending</code>--this means we have data waiting to be
+            used!
           </p>
           <img
             src="./assets/images/pending-promise.png"
-            alt="" />
+            alt=""
+          />
         </section>
 
         <section>
           <img
             src="./images/fetch-api-2.png"
             width="600"
-            alt="" />
+            alt=""
+          />
         </section>
 
         <!-- Resolving Promise -->
         <section>
           <h3>Enter the Promise Handlers!</h3>
           <p class="fs-32 width-800 mb-32">
-            Remember when we used <code>.then()</code> and <code>.catch()</code> in our
-            <code>muffinPromise</code> example?
+            Remember when we used <code>.then()</code> and
+            <code>.catch()</code> in our <code>muffinPromise</code> example?
           </p>
           <p class="fs-32 width-800 mb-32">
             We'll use these two methods to unpack our resolved
@@ -557,12 +631,16 @@ console.log( getDogImage )</code></pre>
         <!-- Response Data -->
         <section>
           <h3>Response Data</h3>
-          <p class="fs-32 width-800 mb-32">We get back an <code>object</code> with data we can now use!</p>
+          <p class="fs-32 width-800 mb-32">
+            We get back an <code>object</code> with data we can now use!
+          </p>
           <img
             src="./images/promise-data.png"
-            alt="" />
+            alt=""
+          />
           <p class="fs-32 width-800">
-            Do you have a similar object in your console? Post the url value from the
+            Do you have a similar object in your console? Post the url value
+            from the
             <code>message</code> key to a new tab; what do you see?
           </p>
         </section>
@@ -572,12 +650,12 @@ console.log( getDogImage )</code></pre>
           <h3>Response Data Breakdown</h3>
           <ul class="fs-28">
             <li>
-              The first <code>.then</code> receives a response back from the server in a raw format that still needs to
-              be converted
+              The first <code>.then</code> receives a response back from the
+              server in a raw format that still needs to be converted
             </li>
             <li>
-              The second <code>.then</code> performs this conversion--turning the raw data into <code>json</code> format
-              which we can then use
+              The second <code>.then</code> performs this conversion--turning
+              the raw data into <code>json</code> format which we can then use
               <ul style="margin-top: 16px">
                 <li><code>json</code> stands for JavaScript Object Notation</li>
                 <li>
@@ -592,13 +670,17 @@ console.log( getDogImage )</code></pre>
                   Install
                   <a
                     href="https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en"
-                    target="_blank">
+                    target="_blank"
+                  >
                     JSON Formatter Browser Extension</a
                   >
                 </li>
               </ul>
             </li>
-            <li>The <code>.catch</code> is the backup action to take in case the request is not successful</li>
+            <li>
+              The <code>.catch</code> is the backup action to take in case the
+              request is not successful
+            </li>
           </ul>
           <pre><code class="js">.then( (response)  => response.json())
 .then( (data) => console.log(data))
@@ -608,7 +690,8 @@ console.log( getDogImage )</code></pre>
         <!-- API Practice -->
         <section>
           <h3 class="fs-32 width-800 mb-32">
-            What can we do with API data? We can display or use it on our websites and web applications
+            What can we do with API data? We can display or use it on our
+            websites and web applications
           </h3>
         </section>
 
@@ -625,15 +708,23 @@ console.log( getDogImage )</code></pre>
         <!-- Definition: Async-Await -->
         <section>
           <h3>Async and Await</h3>
-          <p class="fs-32 width-900 mb-32"><code>async</code> and <code>await</code> operators are used to manage asynchronous JavaScript operations</p>
+          <p class="fs-32 width-900 mb-32">
+            <code>async</code> and <code>await</code> operators are used to
+            manage asynchronous JavaScript operations
+          </p>
         </section>
 
         <!-- Definition: Async-Await -->
         <section>
           <h3>Async and Await</h3>
-          <p class="fs-32 width-900 mb-32">An <code>async</code> function makes a request that will return a <code>promise</code>; the <code>await</code> operator is used <span class="highlight--yellow">inside of the function</span> to wait for the <code>promise</code> to resolve or reject</p>
+          <p class="fs-32 width-900 mb-32">
+            An <code>async</code> function makes a request that will return a
+            <code>promise</code>; the <code>await</code> operator is used
+            <span class="highlight--yellow">inside of the function</span> to
+            wait for the <code>promise</code> to resolve or reject
+          </p>
 
-<pre><code class="js">async function getDogImage() {
+          <pre><code class="js">async function getDogImage() {
 
   const response = await fetch('https://dog.ceo/api/breeds/image/random');
 
@@ -646,18 +737,31 @@ getDogImage()
 </code></pre>
 
           <p class="fs-20">
-            <a href="https://www.freecodecamp.org/news/javascript-async-await/" target="_blank">How to Use Async/Await in JavaScript</a> (freecodecamp)
+            <a
+              href="https://www.freecodecamp.org/news/javascript-async-await/"
+              target="_blank"
+              >How to Use Async/Await in JavaScript</a
+            >
+            (freecodecamp)
           </p>
           <p class="fs-20">
-            <a href="https://www.digitalocean.com/community/tutorials/js-async-functions" target="_blank">Exploring Async/Await Functions in JavaScript</a> (Digital Ocean)
+            <a
+              href="https://www.digitalocean.com/community/tutorials/js-async-functions"
+              target="_blank"
+              >Exploring Async/Await Functions in JavaScript</a
+            >
+            (Digital Ocean)
           </p>
         </section>
 
         <!-- Error Handling -->
         <section>
           <h3>Error Handling</h3>
-          <p class="fs-32 width-900 mb-32">With <code>async-await</code>, we use  <code>try...catch</code> blocks to deal with potential errors</p>
-<pre><code class="js">async function getDogImage() {
+          <p class="fs-32 width-900 mb-32">
+            With <code>async-await</code>, we use
+            <code>try...catch</code> blocks to deal with potential errors
+          </p>
+          <pre><code class="js">async function getDogImage() {
 
   try {
 
@@ -680,7 +784,7 @@ getDogImage()
         <!-- Arrow Functions -->
         <section>
           <h3>Arrow Function Syntax</h3>
-<pre><code class="js">const getDogImage = async () => {
+          <pre><code class="js">const getDogImage = async () => {
 
   try {
 
@@ -703,8 +807,7 @@ getDogImage()
         <!-- Practice -->
         <section>
           <h3>Practice: <code>Async-Await</code> with Github API</h3>
-          <p class="fs-32">
-          </p>
+          <p class="fs-32"></p>
         </section>
 
         <!-- More API Practice -->
@@ -740,7 +843,7 @@ getDogImage()
           </ul>
         </section>
 
-        <!-- Example Slide -->
+        <!-- Slide Template -->
         <!-- <section>
           <h3>Title</h3>
           <pre><code class="js">// code</code></pre>
@@ -758,7 +861,8 @@ getDogImage()
           <h3>You Did It!</h3>
           <img
             src="../shared-assets/imgs/stock-img/celebration_clay-banks-unsplash.jpg"
-            alt="" />
+            alt=""
+          />
         </section>
 
         <!-- Resources for JavaScript Practice -->
@@ -836,14 +940,10 @@ getDogImage()
           </ul>
         </section>
 
-        <!-- MUST USE SLIDE - Course Feedback Survey-->
+        <!-- Course Feedback Survey, if using -->
         <!-- <section>
-          <h3>Final Course Feedback</h3>
-          <p>
-            <a
-              href=""
-              target="_blank"></a>
-          </p>
+          <h3>Course Feedback</h3>
+          <p><a href="" target="_blank"></a></p>
         </section> -->
 
         <!-- Q&A -->
@@ -857,7 +957,8 @@ getDogImage()
             src="../shared-assets/imgs/gdi-logos/gdi-circle-logo_peach.png"
             alt="GDI Logo"
             width="300px"
-            class="noborder" />
+            class="noborder"
+          />
           <br />
           <h2>Thank You!</h2>
         </section>
@@ -872,7 +973,8 @@ getDogImage()
             src="../shared-assets/imgs/gdi-logos/gdi-logo_peach.png"
             alt="GDI Logo"
             width="40px"
-            class="noborder" />
+            class="noborder"
+          />
           <p>JavaScript Fundamentals 2 - Class 4</p>
           <a
             rel="license"
