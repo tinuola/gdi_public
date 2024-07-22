@@ -1,0 +1,1461 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <!-- Update with GDI Course Name / Description -->
+    <meta
+      name="description"
+      content="GDI Web Design Essentials 1 - 4-Class Series"
+    />
+    <meta
+      name="author"
+      content="Girl Develop It"
+    />
+    <meta
+      name="apple-mobile-web-app-capable"
+      content="yes"
+    />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <!-- Update with GDI Course Name -->
+    <title>GDI: Web Design Essentials 1 - Class 1</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../shared-assets/imgs/favicon.ico"
+    />
+    <!-- RevealJS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reset.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/theme/simple.css"
+      id="theme"
+    />
+    <!-- GDI Custom Theme -->
+    <link
+      rel="stylesheet"
+      href="../shared-assets/css/gdi-theme.css"
+    />
+    <!-- Theme used for syntax highlighted code -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/monokai.min.css"
+    />
+    <!-- Course Custom Styles if Applicable-->
+    <link
+      rel="stylesheet"
+      href="./css/style.css"
+    />
+  </head>
+  <body>
+    <div class="reveal">
+      <!-- Start of Slides container -->
+      <!-- Any section element in this container is displayed as a single slide -->
+      <!-- Comment out rather than delete slide instructions -->
+      <div class="slides">
+        <!-- Course and Class Titles -->
+        <section>
+          <h2>Web Design Essentials 1</h2>
+          <h3>Class 1</h3>
+        </section>
+
+        <!-- Class Agenda -->
+        <section>
+          <h3>AGENDA</h3>
+          <ul>
+            <li>Intro: Websites & Web Design</li>
+            <li>Code Environment Setup: REPL</li>
+            <li>
+              HTML: Commonly Used Elements
+              <ul>
+                <li>Headings, Paragraphs, Lists, Links, Images</li>
+              </ul>
+            </li>
+            <li>Q&A</li>
+          </ul>
+        </section>
+
+        <!-- Stretch Break: Add Times -->
+        <section>
+          <h3>Session - Stretch Break</h3>
+          <h4>5-Minute Break Every Hour</h4>
+        </section>
+
+        <!-- Title Slide -->
+        <section>
+          <h3>What is a Website?</h3>
+        </section>
+
+        <!-- Term: Website -->
+        <section>
+          <h3>What is a Website?</h3>
+          <ul class="fs-28">
+            <li class="mb-16">
+              A single page or a group of connected pages that share a domain
+              name
+            </li>
+            <li class="mb-16">
+              Typically provides static text and visual content; one-way
+              information
+            </li>
+            <li>Occasional user interactivity (Ex: Button clicks)</li>
+          </ul>
+        </section>
+
+        <!-- Title Slide -->
+        <section>
+          <h3>Website vs Web Application</h3>
+        </section>
+
+        <!-- Terms: Web Applications -->
+        <section>
+          <h3>Web Applications</h3>
+          <ul class="fs-28">
+            <li class="mb-16">
+              Software or program that's accessible <br />through a web browser
+            </li>
+            <li>
+              Websites with more complex functionality and development:<br />
+              <ul>
+                <li class="mt-16 highlight--yellow">
+                  Authentication, Reactive/Interactive, State Management,
+                  eCommerce
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Example Web Applications -->
+        <section>
+          <h3>Web Applications</h3>
+          <ul class="fs-28">
+            <li>NetFlix</li>
+            <li>Discord</li>
+            <li>Instagram</li>
+            <li>Facebook</li>
+          </ul>
+        </section>
+
+        <!-- Additional Terms to Know -->
+        <section>
+          <h3>Additional Terms to Know</h3>
+          <ul class="fs-28">
+            <li class="mb-32">
+              <span class="gdi-pink">Client-side or Frontend</span>: Aspects of
+              a website, web application or interface that a user sees or
+              engages with
+            </li>
+            <li>
+              <span class="gdi-pink">Server-side or Backend</span>: Where data
+              and source code is stored; where the "client-side" sends a request
+              to and receives a response from
+            </li>
+          </ul>
+        </section>
+
+        <!-- Title Slide -->
+        <section>
+          <h3>What is Web Design?</h3>
+        </section>
+
+        <!-- Term: Web Design -->
+        <section>
+          <h3>Web Design</h3>
+          <p>The process of planning, structuring and creating a website</p>
+        </section>
+
+        <!-- Anatomy of a website -->
+        <section>
+          <h3>Anatomy of a Website</h3>
+          <div>
+            <p>Content (Text + Media)</p>
+            <p>+ HTML (Structure + Semantics)</p>
+            <p>+ CSS (Presentation + Design)</p>
+            <p>+ JavaScript (Interactivity)</p>
+            <p>= Website</p>
+          </div>
+        </section>
+
+        <!-- Course Focus -->
+        <section>
+          <h3>Course Focus</h3>
+          <div>
+            <p>Content (Text + Media)</p>
+            <p class="highlight--pink inline-block">
+              + HTML (Structure + Semantics)
+            </p>
+            <br />
+            <p class="highlight--pink inline-block">
+              + CSS (Presentation + Design)
+            </p>
+            <p>+ JavaScript (Interactivity)</p>
+            <p>= Website</p>
+          </div>
+        </section>
+
+        <!-- Tooling -->
+        <section>
+          <h3>Web Design Tools</h3>
+        </section>
+
+        <!-- Browsers -->
+        <section>
+          <h3>Web Browsers</h3>
+          <ul>
+            <li>Chrome</li>
+            <li>Firefox</li>
+            <li>Safari</li>
+            <li>Edge</li>
+          </ul>
+        </section>
+
+        <!-- Code Editors -->
+        <section>
+          <h3>Code Editors</h3>
+          <ul>
+            <li>Visual Studio Code</li>
+            <li>Atom</li>
+            <li>Sublime Text</li>
+          </ul>
+        </section>
+
+        <!-- Working with Code Editors -->
+        <section>
+          <h3>Working with Code Editors</h3>
+          <ul class="fs-28">
+            <li>
+              Built-in functionality such as auto-completion and
+              auto-formatting, code highlighting
+            </li>
+            <li>
+              Come with integrated tools allowing developers to work in the same
+              interface
+            </li>
+            <li>Great for working with large or more complex projects</li>
+            <li>Can be extended with plugins for added functionality</li>
+            <li>Visual appearance can be customized with themes</li>
+          </ul>
+        </section>
+
+        <!-- Web Site Builders -->
+        <section>
+          <h3>Website Builders</h3>
+          <ul>
+            <li>Squarespace</li>
+            <li>WordPress</li>
+            <li>Wix</li>
+            <li>Shopify</li>
+          </ul>
+        </section>
+
+        <!-- Online Code Editors -->
+        <section>
+          <h3>Online Code Editors & Sandboxes</h3>
+          <ul>
+            <li>REPL.it</li>
+            <li>Codepen.io</li>
+            <li>Codesandbox.io</li>
+          </ul>
+        </section>
+
+        <!-- Additional Tools -->
+        <section>
+          <h3>Additional & Optional Tools</h3>
+          <ul>
+            <li>Web Browser Developer Tools</li>
+            <li>Version Control: Git (Github, BitBucket)</li>
+            <li>CSS and JavaScript Frameworks/Libraries</li>
+            <li>Command Line (aka Terminal, Bash)</li>
+          </ul>
+        </section>
+
+        <!-- Cohort Code Environment -->
+        <section>
+          <h3>For this cohort, our code environment is:</h3>
+          <h3>REPLit</h3>
+        </section>
+
+        <!-- Create/ Open Account -->
+        <section>
+          <h3>REPLit</h3>
+          <ul>
+            <li>
+              Create a free account on
+              <a
+                href="https://replit.com/"
+                target="_blank"
+                >Replit.com</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <!-- Code Environment Demo -->
+        <section>
+          <h3>REPLit Demo</h3>
+        </section>
+
+        <!-- Title Slide -->
+        <section>
+          <h2>HTML</h2>
+        </section>
+
+        <!-- What is HTML? -->
+        <section>
+          <h3>What is HTML?</h3>
+          <p class="gdi-p">
+            HTML stands for:
+            <code class="gdi-pink">Hyper Text Markup Language</code>
+          </p>
+        </section>
+
+        <section>
+          <h3>What is HTML?</h3>
+          <p class="fs-32 width-750">
+            HTML is the language that allows us to build websites by adding
+            <code class="gdi-pink">content</code> and
+            <code class="gdi-pink">structure</code>
+          </p>
+          <img
+            src="./imgs/constructed-house.jpg"
+            width="500px"
+            alt="Plywood construction of a house"
+          />
+        </section>
+
+        <!-- HTML Elements & Tags -->
+        <section>
+          <h3>HTML Elements & Tags</h3>
+          <p class="fs-32 width-750">
+            HTML is composed of
+            <code class="gdi-pink">HTML elements and HTML tags</code>, which are
+            used to organize content on a page and to describe the type of
+            content.
+          </p>
+        </section>
+
+        <section>
+          <h3>HTML Elements</h3>
+          <p class="fs-32">
+            HTML elements provide the blueprint for a web page.
+          </p>
+          <img
+            style="width: 600px; height: auto"
+            src="./imgs/blueprint2.jpeg"
+            alt="blueprint of a house"
+          />
+        </section>
+
+        <section>
+          <!-- <h3>What is HTML?</h3> -->
+          <h4>"Under the hood" of a Website</h4>
+          <img
+            src="./imgs/homepage-html.png"
+            alt="Screenshot of the Girl Develop It page source code"
+          />
+        </section>
+
+        <!-- HTML Element-->
+        <section>
+          <h3>HTML Element</h3>
+          <ul class="fs-28">
+            <li class="mb-16">An individual component of HTML</li>
+            <li class="mb-16">
+              Wrapped between opening and closing
+              <code class="gdi-pink"> HTML tags</code>
+              <ul>
+                <li>*A few elements require only an opening tag</li>
+              </ul>
+            </li>
+            <li>
+              Common HTML Elements:
+              <ul>
+                <li>
+                  Paragraph, heading, table, lists, section, footer, link, image
+                  and more
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <pre><code class ="html xml">&lt;tagname&gt;Content&lt;/tagname&gt;</code></pre>
+          <pre><code class ="html">&lt;p&gt;This is a paragraph element.&lt;/p&gt;
+
+&lt;section&gt;This is a section element.&lt;/section&gt;
+  </code></pre>
+          <small
+            ><a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
+              target="_blank"
+              >List of HTML Elements & Tags (MDN)</a
+            ></small
+          >
+        </section>
+
+        <!-- Anatomy of an Element -->
+        <section>
+          <h4>Anatomy of an HTML Element</h4>
+          <img
+            src="./imgs/element-breakdown.png"
+            alt="Element breakdown"
+          />
+        </section>
+
+        <!-- HTML Tag -->
+        <section>
+          <h3>HTML Tag</h3>
+          <ul class="fs-28">
+            <li class="mb-16">
+              Letter or word that identifies a content's purpose
+            </li>
+            <li class="mb-16">
+              Marks the start and end of an <code>HTML element</code>
+            </li>
+            <li class="mb-16">
+              Written with opening and closing angle brackets
+            </li>
+          </ul>
+          <pre><code class ="html xml">&lt;tagname&gt;Content&lt;/tagname&gt;</code></pre>
+          <pre><code class ="html">&lt;p&gt;Paragraphs are wrapped in p tags.&lt;/p&gt;
+
+&lt;form&gt;Forms are created with the form tag.&lt;/form&gt;
+  </code></pre>
+          <p class="fs-18">
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
+              target="_blank"
+              >List of HTML Elements & Tags (MDN)</a
+            >
+          </p>
+        </section>
+
+        <!--Anatomy of a Tag -->
+        <section>
+          <h3>Anatomy of a Tag</h3>
+          <img
+            src="./imgs/tagbreakdown.png"
+            alt="Tag breakdown"
+            width="400px"
+            style="border: none; box-shadow: none"
+          />
+        </section>
+
+        <section>
+          <h3>Anatomy of a Website</h3>
+          <ul style="line-height: 1.75">
+            <li>
+              HTML elements and tags create our
+              <code class="gdi-pink">content</code>
+            </li>
+            <li>
+              Organizing HTML elements creates
+              <code style="color: #f05b62">structure</code>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Let's Develop It' -->
+        <section>
+          <h3>Let's Develop It'</h3>
+          <ul>
+            <li>Start a new project in REPL</li>
+            <li>Use/Select the <code>HTML-CSS-JS</code> template</li>
+          </ul>
+        </section>
+
+        <!-- <DocType> -->
+        <section>
+          <h3><code>&lt;Doctype&gt;</code></h3>
+          <p class="width-750">
+            The first element on an HTML page is the <code>Doctype</code>, which
+            tells the browser what language to use to read and display the page
+          </p>
+          <pre><code class = "html"> &lt;!DOCTYPE html&gt; </code></pre>
+        </section>
+
+        <!-- <html> Tag  -->
+        <section>
+          <h3><code>&lt;html&gt;</code> Tag</h3>
+          <p class="width-800">
+            After the <code>&lt;DOCTYPE&gt;</code>, the rest of a page's
+            elements must be contained between a pair of opening and closing
+            <code>&lt;html&gt;</code> tags
+          </p>
+          <pre><code class="html">&lt;!DOCTYPE html&gt;
+
+  &lt;html&gt;
+
+  &lt;/html&gt;</code></pre>
+        </section>
+
+        <section>
+          <h3><code>&lt;html&gt;</code> Tag</h3>
+          <p class="width-750">
+            The <code>&lt;html&gt;</code> tag holds two <code>nested</code> (or
+            "child") tags:
+          </p>
+          <ul>
+            <li><code>&lt;head&gt;</code> <code>&lt;/head&gt;</code></li>
+            <li><code>&lt;body&gt;</code> <code>&lt;/body&gt;</code></li>
+          </ul>
+          <pre><code class="html">&lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+    &lt;head&gt;
+    ...
+    &lt;/head&gt;
+    &lt;body&gt;
+    ...
+    &lt;/body&gt;
+  &lt;/html&gt;
+  </code></pre>
+        </section>
+
+        <!-- Nesting -->
+        <section>
+          <h3>Nesting</h3>
+          <p
+            class="gdi-p"
+            style="max-width: 700px; margin: 0 auto"
+          >
+            Nesting is what happens when HTML tags and elements are contained or
+            placed inside each other
+          </p>
+          <img
+            src="./imgs/owls.jpeg"
+            alt="Owl figurines of varying sizes"
+          />
+        </section>
+
+        <!-- Nesting Order -->
+        <section>
+          <h3>Nesting Order</h3>
+          <p class="gdi-p">Whichever element OPENS first CLOSES last</p>
+          <pre><code class="html">&lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+      &lt;head&gt;
+      ...
+      &lt;/head&gt;
+      &lt;body&gt;
+      ...
+      &lt;/body&gt;
+    &lt;/html&gt;
+    </code></pre>
+        </section>
+
+        <!-- <head> tag -->
+        <section>
+          <h3><code>&lt;head&gt;</code> Tag</h3>
+          <p class="width-750">
+            The <code>&lt;head&gt;</code> tag contains information about the
+            page that is useful only to the browser
+          </p>
+          <pre><code class="html">&lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+    &lt;head&gt;
+      &lt;meta charset="utf-8"/&gt;
+      &lt;meta name="viewport" 
+            content="width=device-width, initial-scale=1"/&gt;
+      &lt;title&gt;Title of the page &lt;/title&gt;
+    &lt;/head&gt;
+    ...
+    ...
+  &lt;/html&gt;
+  </code></pre>
+        </section>
+
+        <!-- <head> tag -->
+        <section>
+          <h3><code>&lt;head&gt;</code> Tag</h3>
+          <ul>
+            <li class="mb-16">
+              With the exception of a page's title, content in the
+              <code>&lt;head&gt;</code> tag is not visible to users
+            </li>
+            <li>
+              An HTML page can contain only one opening and closing
+              <code>&lt;head&gt;</code> tag
+            </li>
+          </ul>
+        </section>
+
+        <!-- <meta> tags -->
+        <section>
+          <h3><code>&lt;meta&gt;</code> Tags</h3>
+          <p class="width-800">
+            The <code>&lt;meta&gt;</code> tag is used to define metadata for an
+            HTML document and can also give additional instruction to the
+            browser about how to display a page
+          </p>
+          <pre><code class = "html">&lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+    &lt;head&gt;
+      &lt;meta charset="utf-8"/&gt;
+      &lt;meta name="viewport" 
+            content="width=device-width, initial-scale=1"/&gt;
+      &lt;title&gt;Title of the page &lt;/title&gt;
+    &lt;/head&gt;
+  &lt;/html&gt;
+  </code></pre>
+          <p class="fs-20">
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML"
+              target="_blank"
+              >What's in the head? Metadata in HTML (MDN)</a
+            >
+          </p>
+        </section>
+
+        <!-- Title and Link tags -->
+        <section>
+          <h3>Title and Link Tags</h3>
+          <ul class="width-750">
+            <li class="mb-32">
+              <code>&lt;link&gt;</code>: Links a page to internal or external
+              resources such as stylesheets, fonts and more
+            </li>
+            <li>
+              <code>&lt;title&gt;</code>: Defines the title of a page, which is
+              then displayed on the browser title bar
+            </li>
+          </ul>
+          <pre><code class = "html">&lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+    &lt;head&gt;
+      ...
+      &lt;link href="style.css" rel="stylesheet" type="text/css" /&gt;
+      &lt;title&gt;Title of the page &lt;/title&gt;
+    &lt;/head&gt;
+  &lt;/html&gt;
+  </code></pre>
+        </section>
+
+        <!-- Let's Develop It' -->
+        <section>
+          <h3>Let's Develop It!</h3>
+          <ul>
+            <li>
+              Add the title of our project between the
+              <code>&lt;title&gt;</code> tags nested in the
+              <code>&lt;head&gt;</code> tag
+            </li>
+          </ul>
+        </section>
+
+        <!-- <body> tag -->
+        <section>
+          <h3><code>&lt;body&gt;</code> Tag</h3>
+          <ul class="width-750">
+            <li>
+              The <code>&lt;body&gt;</code> tag holds all HTML elements and tags
+              that represent a page's content
+            </li>
+            <li>
+              Content nested in between the <code>&lt;body&gt;</code> tag is
+              what is visible to users
+            </li>
+            <li>
+              An HTML page can only contain one opening and closing
+              <code>&lt;body&gt;</code> tag
+            </li>
+          </ul>
+          <pre><code class="html">&lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+    &lt;head&gt;
+    ...
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;p&gt;This is body content which can
+      be text, images, links, video, etc.&lt;/p&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;
+  </code></pre>
+        </section>
+
+        <!-- Title Slide -->
+        <section>
+          <h3>Adding Content</h3>
+        </section>
+
+        <!-- Structured Content -->
+        <section>
+          <h3>Structured Content</h3>
+          <p class="width-750">
+            To create content that users will easily understand, we have to add
+            structure or some type of hierarchy to our HTML page
+          </p>
+        </section>
+
+        <section>
+          <h3>Structured Content</h3>
+          <img
+            src="./imgs/sample-website.png"
+            alt="Sample website"
+          />
+        </section>
+
+        <!-- Heading tags -->
+        <section>
+          <h3>Headings</h3>
+          <p>Titles, headlines, subtitles, section headings</p>
+          <img
+            src="./imgs/example-headings.png"
+            alt=""
+          />
+        </section>
+
+        <section>
+          <h3>Headings</h3>
+          <p class="width-750">
+            There are six numbered HTML heading tags; the numbers indicate
+            hierarchy or importance
+          </p>
+          <pre><code class="html">&lt;h1&gt;Heading 1&lt;/h1&gt;
+
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+
+&lt;h6&gt;Heading 6&lt;/h6&gt;</code></pre>
+        </section>
+
+        <section>
+          <h1>This is an h1</h1>
+          <h2>This is an h2</h2>
+          <h3>This is an h3</h3>
+          <h4>This is an h4</h4>
+          <h5>This is an h5</h5>
+          <h6>This is an h6</h6>
+        </section>
+
+        <section>
+          <h3>Headings</h3>
+          <p class="gdi-p width-750">
+            Despite appearances, heading tags signify
+            <code><span class="highlight--yellow">importance</span></code
+            >, not size
+          </p>
+          <ul class="fs-28 mt-16">
+            <li><code>&lt;h1&gt;</code> tags are used for main headings</li>
+            <li>
+              <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code> ..., all other
+              tags are subheadings
+            </li>
+          </ul>
+        </section>
+
+        <!-- Rules for Headings -->
+        <section>
+          <h3>Convention for Headings</h3>
+          <ul>
+            <li class="mb-16">
+              There should only be one <code>&lt;h1&gt;</code> tag per page
+            </li>
+            <li class="mb-16">All other tags can be used multiple times</li>
+            <li class="mb-16">
+              For accessibility best practice, tags should be used in order:
+              <ul>
+                <li>Ex: An &lt;h2&gt; should come before an &lt;h3&gt;</li>
+              </ul>
+            </li>
+            <li class="highlight--yellow">Use CSS to size headings</li>
+          </ul>
+        </section>
+
+        <!-- Let's Develop It' -->
+        <section>
+          <h3>Let's Develop It!</h3>
+          <p class="width-600 mb-32">
+            Using the
+            <a
+              href="https://raw.githubusercontent.com/tinuola/gdi_public/main/project-assets/fe-mentor/recipe-page_vDESK.png"
+              target="_blank"
+              >project image</a
+            >
+            for guidance, add the following to your HTML page:
+          </p>
+          <ul>
+            <li>A main heading or headline</li>
+            <li>Subheadings</li>
+          </ul>
+        </section>
+
+        <!-- Paragraphs -->
+        <section>
+          <h3>Paragraphs</h3>
+          <p class="width-750 mb-32">
+            The paragraph or <code>&lt;p&gt;</code> tag helps format or arrange
+            text into readable parts
+          </p>
+          <pre><code class="html"><p>Lorem ipsum dolor sit amet.</p>
+
+<p>Lorem ipsum consectetur adipiscing elit.</p>
+
+<p>Lorem ipsum dolor sit amet magna aliqua. </p></code></pre>
+        </section>
+
+        <!-- Let's Develop It -->
+        <section>
+          <h3>Let's Develop It!</h3>
+          <ul>
+            <li>
+              <a
+                href="https://raw.githubusercontent.com/tinuola/gdi_public/main/project-assets/fe-mentor/recipe-page_content.txt"
+                target="_blank"
+                >Copy the project's intro text in its raw form</a
+              >
+            </li>
+            <li>
+              Add the intro text beneath the
+              <code>&lt;h1&gt;</code> tag
+            </li>
+
+            <li>Format the text with <code>&lt;p&gt;</code> tags</li>
+          </ul>
+        </section>
+
+        <!-- Commenting HTML Code -->
+        <section>
+          <h3>Commenting HTML Code</h3>
+          <p class="width-750 fs-32">
+            We use <code>comments</code> to add notes or descriptive information
+            to our code
+          </p>
+          <pre><code class="html">&lt;!-- Comment goes here --&gt;
+
+&lt;!-- A short poem --&gt;
+<p>Imagine there's no Heaven<br>It's easy if 
+you try<br>No hell below us <br>Above us only sky</p></code></pre>
+          <p class="fs-20 highlight--yellow inline-block">
+            Keyboard shortcut for commenting code: <code>Command</code> and
+            <code>/</code>
+          </p>
+        </section>
+
+        <section>
+          <h3>Commenting HTML Code</h3>
+          <p class="width-750">
+            Because comments are only visible in the code and not rendered to
+            the screen, we can also use comments to temporarily disable code
+          </p>
+          <pre><code class="html">&lt;!-- Comment goes here --&gt;
+
+&lt;!-- A short poem --&gt;
+&lt;!--<p>Imagine there's no Heaven<br>It's easy if 
+you try<br>No hell below us <br>Above us only sky</p>--&gt;</code></pre>
+          <p class="fs-20 highlight--yellow inline-block">
+            Keyboard shortcut for commenting code: <code>Command</code> and
+            <code>/</code>
+          </p>
+        </section>
+
+        <!-- Let's Develop It -->
+        <section>
+          <h3>Let's Develop It!</h3>
+          <p class="gdi-p width-750">
+            Practice commenting and uncommenting any portion of the project's
+            code
+          </p>
+        </section>
+
+        <!-- Lists -->
+        <section>
+          <h3>Lists</h3>
+          <p class="fs-32 width-750">
+            We can organize items using list elements
+          </p>
+          <img
+            src="./imgs/example-lists.png"
+            alt=""
+          />
+        </section>
+
+        <!-- List & List Item Elements -->
+        <section>
+          <h3>List Elements</h3>
+          <ul class="fs-28 width-600">
+            <li class="mb-16">
+              HTML has two <code>List element</code> types:
+              <code class="gdi-pink">ordered</code> and
+              <code class="gdi-pink">unordered</code>
+            </li>
+            <li>
+              Both types are
+              <em class="highlight--yellow">containers</em> for the
+              <code>List Item element</code> or <code> &lt;li&gt;</code> tag
+            </li>
+          </ul>
+          <pre><code class="html">&lt;ol&gt;
+ &lt;li&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+          <pre><code class="html">&lt;ul&gt;
+ &lt;li&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        </section>
+
+        <!-- <ol> Tag -->
+        <section>
+          <h3><code>&lt;ol&gt;</code> Ordered List Tag</h3>
+
+          <pre><code class="html">&lt;ol&gt;
+  &lt;li&gt;First ordered list item&lt;/li&gt;
+  &lt;li&gt;Second ordered list Item&lt;/li&gt;
+  &lt;li&gt;Third ordered list Item&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+          <ol>
+            <li>First ordered list item</li>
+            <li>Second ordered list Ite</li>
+            <li>Third ordered list item</li>
+          </ol>
+        </section>
+
+        <!-- <ul> Tag -->
+        <section>
+          <h3><code>&lt;ul&gt;</code> Unordered List Tag</h3>
+
+          <pre><code class="html">&lt;ul&gt;
+  &lt;li&gt;Unordered list item&lt;/li&gt;
+  &lt;li&gt;Unordered list Item&lt;/li&gt;
+  &lt;li&gt;Unordered list Item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+          <ul>
+            <li>Unordered list item</li>
+            <li>Unordered list Ite</li>
+            <li>Unordered list item</li>
+          </ul>
+        </section>
+
+        <!-- List Item Element -->
+        <section>
+          <h3>List Item Element</h3>
+          <p class="width-750">
+            A <code>List Item element</code>
+            <span class="highlight--yellow">must be nested </span>inside a
+            container-parent <code>List element</code>
+          </p>
+          <pre><code class="html">&lt;ol&gt;
+ &lt;li&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+          <pre><code class="html">&lt;ul&gt;
+ &lt;li&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        </section>
+
+        <!-- Nested Lists -->
+        <section>
+          <h3>Nested Lists</h3>
+          <p>Lists can be nested inside each other</p>
+          <p>
+            <span class="highlight--pink">Caveat</span>: Keep track of matching
+            the closing tags!
+          </p>
+          <pre><code class="html">&lt;ul&gt;
+  &lt;li&gt;A list item&lt;/li&gt;
+  &lt;li&gt;A list Item
+    &lt;ol&gt;
+      &lt;li&gt;A nested list item&lt;/li&gt;
+      &lt;li&gt;A nested list item
+        &lt;ul&gt;
+          &lt;li&gt;Yet another nested list item&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+          <ul>
+            <li>A list item</li>
+            <li>
+              A list item
+              <ol>
+                <li>A nested list item</li>
+                <li>
+                  A nested list item
+                  <ul>
+                    <li>Yet another nested item</li>
+                  </ul>
+                </li>
+              </ol>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Let's Develop It -->
+        <section>
+          <h3>Let's Develop It!</h3>
+          <p class="fs-32 width-750 mb-16">
+            Our
+            <a
+              href="https://raw.githubusercontent.com/tinuola/gdi_public/main/project-assets/fe-mentor/recipe-page_vDESK.png"
+              target="_blank"
+              >project</a
+            >
+            has multiple lists
+          </p>
+          <ul class="fs-28 mb-16">
+            <li>Create the list types under their respective headings</li>
+            <li>Use the appropriate list tags</li>
+          </ul>
+          <p class="fs-20">
+            <a
+              href="https://raw.githubusercontent.com/tinuola/gdi_public/main/project-assets/fe-mentor/recipe-page_content.txt"
+              target="_blank"
+              >Project Text</a
+            >
+          </p>
+        </section>
+
+        <!-- Links -->
+        <section>
+          <h3>Links</h3>
+          <p class="width-750 mb-16">
+            Links (or <em>hyperlinks</em>) can be used to connect an HTML page
+            to other pages in the same project or to external sites
+          </p>
+          <p class="width-750">
+            Links can connect to files, email addresses, databases--anything
+            with a URL address
+          </p>
+        </section>
+
+        <!-- Anchor tag -->
+        <section>
+          <h3><code>&lt;a&gt;</code> Anchor Tag</h3>
+          <p class="gdi-p width-750">
+            Links are created with the anchor tag:
+            <code>&lt;a&gt;&lt;/a&gt;</code>
+          </p>
+          <pre><code class="html" style="min-width: 44em;">&lt;a href="http://www.girldevelopit.com"&gt;Girl Develop It&lt;/a&gt;
+          </code></pre>
+          <p class="fs-20 width-750 mt-32 highlight--pink inline-block">
+            <strong
+              >Linking with the <code>&lt;a&gt;</code> tag should not be
+              confused with the <code>&lt;link&gt;</code> tag which is only used
+              in the <code>&lt;head&gt;</code> tag</strong
+            >
+          </p>
+        </section>
+
+        <!-- Creating a link -->
+        <section>
+          <h3>Creating a Link</h3>
+          <p>Three parts are required to create a link:</p>
+          <ul class="fs-28 width-750">
+            <li class="mb-16">
+              The <code>&lt;a&gt;&lt;/a&gt;</code> anchor tag
+            </li>
+            <li class="mb-16">
+              An <code>href</code>
+              <span class="highlight--yellow">attribute</span>: Where the link
+              goes to
+            </li>
+            <li>
+              <strong>Content</strong>: Text or image that becomes the clickable
+              link
+            </li>
+          </ul>
+          <br />
+          <pre><code class="html" style="min-width: 44em;">&lt;a href="http://www.girldevelopit.com"&gt;Girl Develop It&lt;/a&gt;
+          </code></pre>
+        </section>
+
+        <!-- Attributes -->
+        <section>
+          <h3>Tag Attributes</h3>
+          <ul class="width-750">
+            <li class="mb-16">
+              Attributes define additional characteristics of an HTML element or
+              tag
+            </li>
+            <li>An attribute has two parts: Name & Value</li>
+          </ul>
+          <pre><code class ="html">&lt;tagname name="value"&gt;content&lt;/tagname&gt;</code></pre>
+        </section>
+
+        <!-- HREF attribute -->
+        <section>
+          <h3>href Attribute</h3>
+          <p><code>href</code> attribute can point to:</p>
+          <ul class="fs-28">
+            <li>an external URL</li>
+            <li>an internal page (same root directory or project)</li>
+            <li>a telephone number</li>
+            <li>an email address</li>
+            <li>a section on the same page (a bookmark)</li>
+          </ul>
+        </section>
+
+        <!-- Relative & Absolute links -->
+        <section>
+          <h3>Absolute & Relative Paths</h3>
+          <ul class="fs-28 width-750">
+            <code>Absolute Path:</code>
+            <li>
+              Points to the full name or address (including the root directory)
+              of a file or page:
+            </li>
+            <li class="gdi-pink mb-32">
+              "https://girldevelopit.com/community/some-file.html"
+            </li>
+            <code>Relative Path:</code>
+            <li>Points to content from within the same domain or directory:</li>
+            <li class="gdi-pink">"community/some-file.html"</li>
+          </ul>
+        </section>
+
+        <!-- Let's Develop It -->
+        <section>
+          <h3>Let's Develop It!</h3>
+          <ul class="width-750 fs-28">
+            <li class="mb-16">
+              Add an anchor tag to the text:
+              <span class="highlight--yellow">"classic omelette"</span> in the
+              project description/intro section
+            </li>
+            <li>
+              The anchor should point to this Wikipedia page about omelettes:
+              https://en.wikipedia.org/wiki/Omelette
+            </li>
+          </ul>
+        </section>
+
+        <!-- Link States  -->
+        <section>
+          <h3>Link Styles and States</h3>
+          <p>
+            The default appearance of a link is
+            <span style="text-decoration: underline">underlined text</span>
+          </p>
+          <p>
+            The <code>state</code> or status of a link also affects its
+            appearance:
+          </p>
+          <ul class="fs-28 mb-16">
+            <li>An unvisited link is <span style="color: blue">blue</span></li>
+            <li>A visited link is <span style="color: purple">purple</span></li>
+            <li>An active link is <span style="color: red">red</span></li>
+          </ul>
+          <p>CSS can be used to change the appearance of a link's state</p>
+        </section>
+
+        <!-- Link Targets  -->
+        <section>
+          <h3><code>target</code> Attribute</h3>
+          <p class="fs-28 width-750">
+            <code>target</code> is an optional anchor tag attribute that tells
+            the browser where to open a link:
+          </p>
+          <p class="mt-32">
+            <code class="highlight--yellow">_self</code>: In the current window
+            (the default behavior)
+          </p>
+          <pre><code class="html">&lt;a href="home.html" target="_self"&gt;Link Text&lt;/a&gt;</code></pre>
+          <p class="mb-16">
+            <code class="highlight--yellow">_blank</code>: In a new browser
+            window
+          </p>
+          <pre><code class="html">&lt;a href="home.html" target="_blank"&gt;Link Text&lt;/a&gt;</code></pre>
+        </section>
+
+        <!-- Let's Develop It -->
+        <section>
+          <h3>Let's Develop It!</h3>
+          <p>
+            Update the link you just created to open in a new browser window
+          </p>
+        </section>
+
+        <!-- Title Slide -->
+        <section>
+          <h3>Images</h3>
+        </section>
+
+        <!-- Image Tag -->
+        <section>
+          <h3><code>&lt;img/&gt;</code> Tag</h3>
+          <p class="width-800 mb-32">
+            Using the image tag, images can be added to a web page
+          </p>
+          <pre><code class="html" style="min-width: 44em;">&lt;img src="images/gdi-logo.png" alt="GDI Logo"/&gt;</code></pre>
+        </section>
+
+        <!-- Self Closing Img Tag -->
+        <section>
+          <h3><code>&lt;img/&gt;</code> Tag</h3>
+          <p class="fs-28 width-800 mb-32">
+            The <code>&lt;img/&gt;</code> tag is our first example of a
+            self-closing tag.
+          </p>
+          <p class="fs-28 width-750">
+            The forward slash is optional; though some code editors and linters
+            will add it automatically
+          </p>
+        </section>
+
+        <!-- Image Tag Attributes -->
+        <section>
+          <h3><code>&lt;img/&gt;</code> Tag Attributes</h3>
+          <p class="fs-32 width-600 mb-32">
+            The image tag has two default attributes: <code>src</code> and
+            <code>alt</code>
+          </p>
+          <ul>
+            <li><code>src</code>: the location and file name of the image</li>
+            <li><code>alt</code>: a brief description of the image content</li>
+          </ul>
+          <pre><code class="html" style="min-width: 44em;">&lt;img src="images/gdi-logo.png" alt="GDI Logo"/&gt;</code></pre>
+        </section>
+
+        <!-- Alt Attribute -->
+        <section>
+          <h3><code>alt</code> Attribute</h3>
+          <p class="width-800 fs-28 mb-32">
+            The <code>alt</code> attribute is not required for browsers to
+            render an image, but it is considered good practice (and
+            accessibility friendly) to always include it for use cases where
+            viewing an image might not be possible:
+          </p>
+          <ul class="fs-28">
+            <li>Screen readers for visually impaired users</li>
+            <li>A broken image link or mis-spelled file name</li>
+            <li>Low bandwidth internet use</li>
+          </ul>
+        </section>
+
+        <!-- Conventions for Working with Images -->
+        <section>
+          <h4>Good Practices When Working with Images</h4>
+          <ul class="fs-28">
+            <li class="mb-16">
+              Save images locally; linking to external sources is not always
+              reliable
+            </li>
+            <li class="mb-16">
+              Properly credit the original image source or owner
+            </li>
+            <li>
+              Work with larger images
+              <ul>
+                <li>Compress them to reduce file size</li>
+                <li>Adjust/resize image dimensions with CSS</li>
+              </ul>
+            </li>
+          </ul>
+          <p class="fs-20 mt-16">
+            Image compression site:
+            <a
+              href="https://tinypng.com/"
+              target="_blank"
+              >tinypng.com</a
+            >
+          </p>
+        </section>
+
+        <!-- Let's Develop It -->
+        <section>
+          <h3>Let's Develop It!</h3>
+          <p class="fs-32">Add an image to your project page:</p>
+
+          <ul class="fs-28">
+            <li>
+              Using the image's
+              <em
+                ><a
+                  href="https://raw.githubusercontent.com/tinuola/gdi_public/main/project-assets/fe-mentor/recipe-page_omelette.jpeg"
+                  target="_blank"
+                  >external URL</a
+                ></em
+              >
+              and the image tag, add the image as the first element inside the
+              body tag
+            </li>
+          </ul>
+        </section>
+
+        <!-- Self Closing Elements -->
+        <section>
+          <h3>Self-Closing Tags</h3>
+          <p class="width-750">
+            In addition to the <code>Image</code> element, there are other
+            commonly used elements that have self-closing tags:
+          </p>
+          <ul class="fs-28 mt-16">
+            <li>Line Break: <code>&lt;br/&gt;</code></li>
+            <li>Horizontal Rule: <code>&lt;hr/&gt;</code></li>
+          </ul>
+        </section>
+
+        <!-- Line Break -->
+        <section>
+          <h3>Line Breaks</h3>
+          <p class="width-750">
+            The <code>&lt;br&gt;</code> tag adds a line return or new line to
+            text
+          </p>
+          <pre><code class="html">&lt;p&gt;Imagine there&apos;s no Heaven&lt;br&gt;It's easy
+if you try &lt;br&gt;No hell below us &lt;br&gt;Above 
+us only sky&lt;/p&gt;
+  </code></pre>
+
+          <p
+            class="fs-24 width-600"
+            style="text-align: left"
+          >
+            Imagine there's no Heaven<br />It's easy if you try<br />No hell
+            below us <br />Above us only sky
+          </p>
+        </section>
+
+        <!-- <br> or CSS -->
+        <section>
+          <h3>Adding Space with Line Breaks</h3>
+          <p class="width-750 fs-28 mb-32">
+            In general, using line breaks is not a reliable or recommended way
+            to add space or gaps between lines of text
+          </p>
+          <p class="width-750 fs-28">
+            We'll learn how to use CSS (<code class="highlight--yellow"
+              >margin</code
+            >
+            property) instead
+          </p>
+        </section>
+
+        <!-- Horizontal Rule -->
+        <section>
+          <h3>Horizontal Rule</h3>
+          <p class="fs-28">
+            The <code>Horizontal Rule</code> element adds a single horizontal
+            rule
+          </p>
+          <pre><code class="html">&lt;hr/&gt;</code></pre>
+          <br />
+          <hr class="width-750" />
+        </section>
+
+        <!-- Let's Develop It -->
+        <section>
+          <h3>Let's Develop It!</h3>
+          <p class="width-800">
+            Add horizontal rules to visually create sections on the page
+          </p>
+        </section>
+
+        <!-- Home Practice -->
+        <section>
+          <h3>Home Practice</h3>
+          <ul>
+            <li>
+              Update how the project is using the image:
+              <ul>
+                <li>
+                  Create an <code>images</code> folder in your project directory
+                </li>
+                <li>
+                  Download and then add the
+                  <a
+                    href="https://raw.githubusercontent.com/tinuola/gdi_public/main/project-assets/fe-mentor/recipe-page_omelette.jpeg"
+                    target="_blank"
+                    >omelette image to the folder</a
+                  >
+                </li>
+                <li>
+                  Using the image's location or file path (<em
+                    >from inside the project directory</em
+                  >), add the image as the first element inside the body tag--in
+                  the <code>index.html</code> file
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Next Class</h3>
+          <ul>
+            <li>Semantic HTML</li>
+            <li>Organizing HTML</li>
+            <li>CSS Basics</li>
+          </ul>
+        </section>
+        <!-- End of lesson slides -->
+
+        <!-- Class Feedback Survey, if using -->
+        <!-- <section>
+          <h3>Class Feedback</h3>
+          <p><a href="" target="_blank"></a></p>
+        </section> -->
+
+        <!-- Q&A -->
+        <section>
+          <h2>Q&A</h2>
+        </section>
+
+        <!-- Thank You -->
+        <section>
+          <img
+            src="../shared-assets/imgs/gdi-logos/gdi-circle-logo_peach.png"
+            alt="GDI Logo"
+            width="300px"
+            class="noborder"
+          />
+          <br />
+          <h2>Thank You!</h2>
+        </section>
+      </div>
+      <!-- End of Slides container -->
+      <!---->
+      <!---->
+      <!-- Update Footer with Course Name -->
+      <footer>
+        <div class="copyright">
+          <img
+            src="../shared-assets/imgs/gdi-logos/gdi-logo_peach.png"
+            alt="GDI Logo"
+            width="40px"
+            class="noborder"
+          />
+          <p>Web Design Essentials - Class 1</p>
+          <a
+            rel="license"
+            href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"
+            ><img
+              alt="Creative Commons License"
+              style="border-width: 0"
+              src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png"
+          /></a>
+        </div>
+      </footer>
+    </div>
+    <!-- End of Reveal wrapper -->
+    <!---->
+    <!---->
+    <!-- RevealJS Scripts & Config - Do Not Edit or Delete -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.15.5/js/jsplumb.min.js"></script>
+    <script src="../shared-assets/js/revealConfig.js"></script>
+  </body>
+</html>
