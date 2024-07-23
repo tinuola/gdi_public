@@ -77,7 +77,7 @@
           <h3>AGENDA</h3>
           <ul>
             <li>Semantic HTML</li>
-            <li>Intro to Accessibility</li>
+            <li>Validating HTML Semantics</li>
             <li>Organizing HTML</li>
             <li>Intro to CSS</li>
             <li>Q&A</li>
@@ -110,7 +110,7 @@
 
         <!-- Common Elements -->
         <section>
-          <h4>Other Common HTML Elements</h4>
+          <h4>Additional Common HTML Elements</h4>
           <p class="fs-28 mb-16">
             <code>table, form, button,</code>
           </p>
@@ -363,8 +363,8 @@
           <h3>*A Quick Intro to Accessibility</h3>
           <h5 class="width-600">
             <em
-              >*(Accessibility is an important and exhaustive topic; this series
-              can only touch the basic beginnings of it.)</em
+              >*(Accessibility is an important and broad topic; this series can
+              only touch the basic beginnings of it.)</em
             >
           </h5>
         </section>
@@ -379,7 +379,7 @@
           </p>
 
           <p class="fs-28 width-750 mt-16">
-            Accessibility is often shortened to
+            Accessibility is often shortened to its internationalized name:
             <span class="highlight--yellow">A11Y</span>
           </p>
 
@@ -400,7 +400,7 @@
           <ul class="fs-24">
             <li>Semantically coded HTML</li>
             <li>
-              Sufficients
+              Sufficient
               <a
                 href="https://webaim.org/resources/contrastchecker/"
                 target="_blank"
@@ -434,12 +434,7 @@
         <section>
           <h4>Developing an Accessibility Mindset</h4>
           <ul class="fs-24 width-750">
-            <li>
-              Cultivate an A11Y-first development practice
-              <ul>
-                <li>Think accessibility before aesthetics</li>
-              </ul>
-            </li>
+            <li>Cultivate an A11Y-first design or development practice</li>
             <li>
               Run sites/projects through A11Y plugins, such as:
               <ul>
@@ -532,8 +527,8 @@
               for your specfic browser
             </li>
             <li class="mb-16">
-              Open/View your project's <code>index.html</code> in a new browser
-              tab
+              Open/View your project's <code>index.html</code> page in a new
+              browser tab
             </li>
             <li class="mb-16">
               While in the new tab, click on the Wave plugin icon in browser's
@@ -549,7 +544,12 @@
           <h4>Emphasis vs Presentation</h4>
           <p>Need to call out important text?</p>
           <p>Use semantic HTML elements:</p>
-          <p><code>heading tags (h1, h2, etc), strong, em</code></p>
+          <p>
+            <code
+              >heading tags (h1, h2, etc), <span class="gdi-pink">strong</span>,
+              <span class="gdi-pink">em</span></code
+            >
+          </p>
         </section>
 
         <!-- em Tag -->
@@ -566,7 +566,7 @@
         <section>
           <h4>Semantic HTML: Important Text</h4>
           <p class="fs-28 width-750">
-            To indicate that a piece of text is imporant, wrap it in a pair of
+            To indicate that a piece of text is imporant, wrap it in
             <code>strong</code> tags
           </p>
           <pre><code class="html"><p><strong>Do not</strong> make me repeat myself!</p></code></pre>
@@ -581,7 +581,8 @@
             <code>LOOK</code> important
           </p>
           <p class="width-750 mt-16 highlight--pink">
-            Use semantic tags; then apply CSS for visual styling
+            Use semantic tags; then apply CSS for visual styling, as desired or
+            needed
           </p>
         </section>
 
@@ -757,10 +758,11 @@
               <code>&lt;/body&gt;</code> tag
             </li>
           </ol>
-          <p class="mt-32 fs-28">
+          <p class="mt-32 fs-28 width-750">
             We're creating a
             <span class="highlight--yellow">container</span> around the entire
-            content
+            content; the reason why will become visible/apparent as the project
+            progresses
           </p>
         </section>
 
@@ -920,7 +922,9 @@
             <li>Inline CSS</li>
             <li>Embedded or Internal CSS</li>
             <li>External CSS Stylesheet</li>
-            <li>JavaScript</li>
+            <li class="highlight--pink">
+              JavaScript <em class="fs-20">(Out of scope for this series)</em>
+            </li>
           </ul>
         </section>
 
@@ -1136,9 +1140,25 @@ p {
           <h4>Class Selector</h4>
           <ul class="fs-24 width-750">
             <li class="mb-16">
-              Class selectors are declared in markup, that is, they assigned to
-              HTML elements in the HTML file
+              Class selectors are declared in markup, that is, they are assigned
+              to HTML elements in the HTML file
+              <ul>
+                <li>
+                  Note: In markup, the
+                  <code class="highlight--yellow">.</code> is not used; it is
+                  only used in the <code>.css</code> file
+                </li>
+              </ul>
             </li>
+          </ul>
+
+          <pre><code class="html">&lt;p class="product-text"&gt;This is some product text.&lt;/p&gt;
+</code></pre>
+        </section>
+
+        <section>
+          <h4>Class Selector</h4>
+          <ul class="fs-24 width-750">
             <li class="mb-16">
               When we want multiple elements to share a style, we give them the
               same class name
@@ -1147,34 +1167,17 @@ p {
               The style rule for the class selector is then declared in CSS
             </li>
           </ul>
-
           <pre><code class="html">&lt;p class="product-text"&gt;This is some product text.&lt;/p&gt;
 
-&lt;p&gt;This is another paragraph of text.&lt;/p&gt;
+&lt;p class="product-text"&gt;This is another paragraph of product text.&lt;/p&gt;
 
 &lt;h4 class="product-text"&gt;This is headline text.&lt;/h4&gt;
 </code></pre>
-        </section>
-
-        <section>
-          <h4>Class Selector</h4>
-          <p class="fs-28 width-750">
-            The CSS rule below selects all elements with the
-            <code>class</code> of
-            <code class="highlight--yellow">product-text</code> in the markup
-            and applies the color purple
-          </p>
           <pre><code class="css">.product-text {
 
   color: purple;
 
 }</code></pre>
-          <pre><code class="html">&lt;p class="product-text"&gt;This is some product text.&lt;/p&gt;
-
-&lt;p&gt;This is another paragraph of text.&lt;/p&gt;
-
-&lt;h4 class="product-text"&gt;This is headline text.&lt;/h4&gt;
-</code></pre>
         </section>
 
         <!-- Let's Develop It -->
@@ -1184,7 +1187,7 @@ p {
           <ul class="fs-24 width-750">
             <li class="mb-16">
               Let's give all the <code>h2</code> headings the same class name:
-              <span class="highlight--yellow">section-heading</span>
+              <code class="highlight--yellow">recipe-heading</code>
             </li>
             <li class="mb-16">
               Add the class name to the <code>h2</code> tags in the markup file;
@@ -1192,7 +1195,7 @@ p {
             </li>
             <li class="mb-16">
               In <code>style.css</code>, replace the <code>h2</code> selector
-              with <code class="highlight--yellow">.section-heading</code>
+              with <code class="highlight--yellow">.recipe-heading</code>
             </li>
             <li class="mb-16">Run your code to make sure the update works</li>
           </ul>
@@ -1216,14 +1219,19 @@ p {
 
         <section>
           <h4>ID Selector</h4>
+          <p class="fs-28 width-750 mb-32">
+            Similar to the class selector, the ID selector is declared in markup
+            and also without its <code class="highlight--yellow">#</code> symbol
+          </p>
           <p class="fs-28 width-750">
-            Unlike the class selector, the ID selector is associated with
-            <code class="highlight--yellow">only one</code> target element on
-            the HTML page
+            But unlike the class selector, the ID selector can only be
+            associated with
+            <code class="highlight--yellow">one</code> target element on the
+            HTML page
           </p>
           <pre><code class="html">&lt;h2 id="product-name"&gt;First Product Title&lt;/h2&gt;
 
-&lt;h2 id="needs-a-new-id"&gt;Second Product Title&lt;/h2&gt;
+&lt;h3 id="needs-a-new-id"&gt;Second Product Title&lt;/h2&gt;
 </code></pre>
           <p class="highlight--pink inline-block mt-16">
             IDs cannot be shared among elements
@@ -1250,9 +1258,11 @@ p {
         <section>
           <h4>Applying Multiple Class Names</h4>
           <p class="fs-28 width-750">
-            Elements can have more than one <code>class</code> name or selector
-            applied to them
+            Elements can have more than one class name or selector applied to
+            them
           </p>
+          <pre><code class="html">&lt;p class="product-text product-bground"&gt;Some product detail.&lt;/p&gt;
+</code></pre>
           <pre><code class="css">.product-text {
   color: purple;
 }
@@ -1260,8 +1270,6 @@ p {
 .product-container {
   background-color: yellow;
 }
-</code></pre>
-          <pre><code class="html">&lt;p class="product-text product-bground"&gt;Some product detail.&lt;/p&gt;
 </code></pre>
         </section>
 
@@ -1511,10 +1519,14 @@ p {
         <section>
           <h4>CSS Features that Our Project Needs</h4>
           <ul class="fs-28 width-750">
-            <li>Colors (text and backgrounds)</li>
-            <li>Typography: font sizing and weights</li>
-            <li>Using Custom fonts</li>
-            <li>Sized container / "contained" elements</li>
+            <li class="highlight--yellow">Colors (text and backgrounds)</li>
+            <li class="highlight--yellow">
+              Typography: font sizing and weights
+            </li>
+            <li class="highlight--yellow">Using custom fonts</li>
+            <li class="highlight--yellow">
+              Sized container / "contained" elements
+            </li>
             <li>Centered layout</li>
             <li>Spacing between and around sections</li>
             <li>Responsiveness: Media Queries</li>
@@ -1683,8 +1695,9 @@ p {
             Most CSS sizing units are
             <code class="highlight--yellow">relative</code> values, meaning
             their dimension/behavior is relative to/based off
-            <em>something else</em>, such as a parent element, the default
-            root/html element, viewport height or width, etc
+            <em>something else</em>, such as the size value of a parent element,
+            the default value of the root <code>html</code> element, the
+            viewport height or width, etc.
           </p>
         </section>
 
@@ -1697,7 +1710,7 @@ p {
           </p>
 
           <p class="fs-24 width-750">
-            Other elements can set their font sizes
+            Other elements can set their font sizes (and other properties!)
             <code class="highlight--yellow">relative</code> to the
             <code>root</code> element
           </p>
@@ -1708,13 +1721,20 @@ p {
 
 p {
   font-size: 1rem;
-}</code></pre>
+}
+
+div {
+  width: 10rem;
+}
+</code></pre>
           <p class="fs-24 width-600">
             In the snippet above, the font-size of the <code>p</code> selector
             is <code>1rem</code> or
-            <code class="highlight--yellow"
-              >100% of the value of the root html selector</code
-            >, meaning it is also <code>16px</code>
+            <code class="highlight--yellow">100% of the value</code> of the root
+            html selector, meaning it is also <code>16px</code>; the
+            <code>div</code> has a width that's the
+            <code>10 times the value</code> of the root, and therefore is
+            <code>160px</code> wide
           </p>
         </section>
 
@@ -1733,7 +1753,7 @@ p {
   font-size: 1rem;
 }
 
-img {
+div {
   width: 10rem;
 }
 </code></pre>
@@ -1742,7 +1762,7 @@ img {
             <code>20px</code>
           </p>
           <p class="fs-24 width-750">
-            The width of the <code>img</code> selector will be
+            The width of the <code>div</code> selector will be
             <code>200px</code>
           </p>
         </section>
@@ -1751,8 +1771,8 @@ img {
         <section>
           <h4>Let's Develop It!</h4>
           <p class="fs-24 width-750 mb-32">
-            Refer the style guide and the spec, use the <code>px</code> unit to
-            set (desktop) sizing values for the following:
+            Refer to the style guide and the spec, use the <code>px</code> unit
+            to set (desktop) sizing values for the following:
           </p>
           <ol class="fs-24 width-750">
             <li>
