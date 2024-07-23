@@ -77,7 +77,7 @@
           <h3>AGENDA</h3>
           <ul>
             <li>Intro: Websites & Web Design</li>
-            <li>Code Environment Setup: REPL</li>
+            <li>Tools and Environments</li>
             <li>
               HTML: Commonly Used Elements
               <ul>
@@ -754,7 +754,7 @@
           <ul class="fs-28">
             <li>
               Add the title of our project (<code class="highlight--yellow"
-                >Omelete Recipe Page</code
+                >Omelette Recipe Page</code
               >) between the <code>&lt;title&gt;</code> tags nested in the
               <code>&lt;head&gt;</code> tag
             </li>
@@ -1486,28 +1486,43 @@ us only sky&lt;/p&gt;
         <!-- Home Practice -->
         <section>
           <h3>Home Practice 1</h3>
-          <ul class="fs-28">
+          <ul class="fs-24 width-750">
+            <li class="mb-16">
+              In the project's current state, it is using the
+              <code>omelette</code> image from an
+              <span class="highlight--yellow">external url</span>--an absolute
+              path (<a href="#/77">See topic slide</a>)
+            </li>
+            <li class="mb-16">
+              We want to update this; to use an image saved inside the project's
+              directory--a relative path
+            </li>
+
             <li>
-              Update how the project is using its main image:
-              <ul>
+              Steps:
+              <ol>
                 <li>
                   Create an <code>images</code> folder in your project directory
                 </li>
                 <li>
-                  Download and then add the
+                  Download/Save the
                   <a
                     href="https://raw.githubusercontent.com/tinuola/gdi_public/main/project-assets/fe-mentor/recipe-page_omelette.jpeg"
                     target="_blank"
-                    >omelette image to the folder</a
-                  >
+                    >omelette image </a
+                  >to the <code>images</code> folder
                 </li>
                 <li>
-                  Using the image's location or file path (<em
-                    >from inside the project directory</em
-                  >), add the image as the first element inside the body tag--in
-                  the <code>index.html</code> file
+                  In the <code>&lt;img&gt;</code> tag you created
+                  <code>index.html</code>, change the <code>src</code> attribute
+                  value from the external url to the internal url/relative path:
+                  <ul>
+                    <li class="highlight--yellow">
+                      "images/recipe-page_omelette.jpeg"
+                    </li>
+                  </ul>
                 </li>
-              </ul>
+              </ol>
             </li>
           </ul>
         </section>
@@ -1515,7 +1530,7 @@ us only sky&lt;/p&gt;
         <section>
           <h3>Home Practice 2</h3>
           <ul class="fs-28 width-750">
-            <li>
+            <li class="mb-16">
               Research the <code>Table element</code>:
               <ul>
                 <li>
@@ -1527,14 +1542,14 @@ us only sky&lt;/p&gt;
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="mb-16">
               Create the table for the <code>Nutrition</code> section
               <ul>
                 <li>
                   <a
                     href="https://raw.githubusercontent.com/tinuola/gdi_public/main/project-assets/fe-mentor/recipe-page_vDESK.png"
                     target="_blank"
-                    >Project Image</a
+                    >Project Design</a
                   >
                 </li>
                 <li>
@@ -1545,6 +1560,10 @@ us only sky&lt;/p&gt;
                   >
                 </li>
               </ul>
+            </li>
+            <li>
+              Focus only on the HTML; no styles needed for the table's
+              appearance
             </li>
           </ul>
         </section>
