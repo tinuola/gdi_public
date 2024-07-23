@@ -1,0 +1,2089 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <!-- Update with GDI Course Name / Description -->
+    <meta
+      name="description"
+      content="GDI Web Design Essentials 1 - 4-Class Series"
+    />
+    <meta
+      name="author"
+      content="Girl Develop It"
+    />
+    <meta
+      name="apple-mobile-web-app-capable"
+      content="yes"
+    />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <!-- Update with GDI Course Name -->
+    <title>GDI: Web Design Essentials 1 - Class 2</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../shared-assets/imgs/favicon.ico"
+    />
+    <!-- RevealJS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reset.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/theme/simple.css"
+      id="theme"
+    />
+    <!-- GDI Custom Theme -->
+    <link
+      rel="stylesheet"
+      href="../shared-assets/css/gdi-theme.css"
+    />
+    <!-- Theme used for syntax highlighted code -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/monokai.min.css"
+    />
+    <!-- Course Custom Styles if Applicable-->
+    <link
+      rel="stylesheet"
+      href="./css/style.css"
+    />
+  </head>
+  <body>
+    <div class="reveal">
+      <!-- Start of Slides container -->
+      <!-- Any section element in this container is displayed as a single slide -->
+      <!-- Comment out rather than delete slide instructions -->
+      <div class="slides">
+        <!-- Course and Class Titles -->
+        <section>
+          <h2>Web Design Essentials 1</h2>
+          <h3>Class 2</h3>
+        </section>
+
+        <!-- Class Agenda -->
+        <section>
+          <h3>AGENDA</h3>
+          <ul>
+            <li>Semantic HTML</li>
+            <li>Intro to Accessibility</li>
+            <li>Organizing HTML</li>
+            <li>Intro to CSS</li>
+            <li>Q&A</li>
+          </ul>
+        </section>
+
+        <!-- Stretch Break: Add Times -->
+        <section>
+          <h3>Session - Stretch Break</h3>
+          <h4>5-Minute Break Every Hour</h4>
+        </section>
+
+        <!-- Title Slide: Semantic HTML -->
+        <section>
+          <h3>Semantic HTML</h3>
+        </section>
+
+        <!-- HTML Elements -->
+        <section>
+          <h4>HTML Elements</h4>
+          <p class="fs-28">There are over 100 HTML elements</p>
+          <p class="fs-20">
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
+              target="_blank"
+              >List of HTML Elements (MDN)</a
+            >
+          </p>
+        </section>
+
+        <!-- Common Elements -->
+        <section>
+          <h4>Other Common HTML Elements</h4>
+          <p class="fs-28 mb-16">
+            <code>table, form, button,</code>
+          </p>
+          <p class="fs-28 mb-16">
+            <code>header, footer, nav,</code>
+          </p>
+          <p class="fs-28 mb-16">
+            <code>section, main, article,</code>
+          </p>
+          <p class="fs-28 mb-16">
+            <code>video, figure, embed,</code>
+          </p>
+          <p class="fs-28 mb-16">
+            <code><span class="gdi-pink">div, span,</span> ... </code>
+          </p>
+        </section>
+
+        <!-- What is Semantic HTML  -->
+        <section>
+          <h4>What is Semantic HTML?</h4>
+          <p class="fs-28 width-750 mb-32">
+            An HTML element whose name/tag describes the type of content it
+            holds:
+          </p>
+          <p class="fs-28 mb-16">
+            <code>headings, paragraph, list,</code>
+          </p>
+          <p class="fs-28 mb-16">
+            <code>table, form, button,</code>
+          </p>
+          <p class="fs-28 mb-16">
+            <code>header, footer, nav,</code>
+          </p>
+          <p class="fs-28 mb-16">
+            <code>section, main, article,</code>
+          </p>
+          <p class="fs-28 mb-16">
+            <code>video, figure, image, etc</code>
+          </p>
+        </section>
+
+        <!-- Non Semantic HTML -->
+        <section>
+          <h4>Non-Semantic HTML</h4>
+          <p class="fs-28 width-750 mb-16">
+            HTML elements that do not describe content or have any meaning:
+          </p>
+          <p class="fs-28">
+            <code><span class="gdi-pink">div, span</span></code>
+          </p>
+        </section>
+
+        <!-- Example code of Semantic and Non-Semantic code -->
+        <section>
+          <h4>Semantic vs. Non-Semantic HTML</h4>
+          <pre><code class="html">&lt;div&gt;Watch Season 1&lt;/div&gt;</code></pre>
+          <pre><code class="html">&lt;button&gt;Watch Season 1&lt;/button&gt;</code></pre>
+        </section>
+
+        <!-- Non Semantic Tags: Div, Span -->
+        <section>
+          <h4>Non-Semantic HTML Tags</h4>
+          <p class="fs-28 mb-32">Two common non-semantic HTML tags:</p>
+          <ul class="fs-28 width-800">
+            <li class="mb-16">
+              <code>&lt;div&gt;</code>: Used as a generic container for grouping
+              content
+            </li>
+            <li>
+              <code>&lt;span&gt;</code>: Used as a generic wrapper to style
+              inline content
+            </li>
+          </ul>
+        </section>
+
+        <!-- Using Divs -->
+        <section>
+          <h4>Using a <code>&lt;div&gt;</code> Tag</h4>
+          <p class="fs-28">Grouping content that belongs together</p>
+          <pre><code class="html">&lt;div&gt;
+  &lt;h2&gt;Season 1&lt;/h2&gt;
+
+  &lt;h3&gt;Episode 5&lt;/h3&gt;
+
+  &lt;p&gt;While on a mission, Lorca is captured by the Klingons 
+  and unexpectedly finds himself in the company of prisoner of war 
+  Starfleet Lieutenant Ash Tyler and notorious criminal Harry Mudd.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+          <p class="fs-20">
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div"
+              target="_blank"
+              ><code>div</code>: The Content Division element (MDN)</a
+            >
+          </p>
+        </section>
+
+        <!-- Using Spans -->
+        <section>
+          <h4>Using <code>&lt;span&gt;</code> Tag</h4>
+          <pre><code class="html">&lt;p&gt;Watch Season 1 and stay tuned for &lt;span&gt;Season 2&lt;/span&gt;&lt;/p&gt;</code></pre>
+          <p class="fs-20">
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span"
+              target="_blank"
+              ><code>span</code>: The Content Span element (MDN)</a
+            >
+          </p>
+        </section>
+
+        <!-- Using Divs and Spans -->
+        <section>
+          <h4>Using <code>divs</code> and <code>spans</code></h4>
+          <p class="width-750">
+            <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> tags have no
+            visible visual effect on content or page layout until CSS is applied
+            to them
+          </p>
+        </section>
+
+        <!--Why use semantic HTML? -->
+        <section>
+          <h4>Why Use Semantic HTML?</h4>
+          <ul class="fs-28">
+            <li>Makes our code accessible</li>
+            <li>Improves SEO ranking</li>
+            <li>Easier to read and maintain</li>
+          </ul>
+          <p class="fs-28 highlight--yellow mt-32 inline-block">
+            Make writing semantic HTML your default practice
+          </p>
+        </section>
+
+        <!-- Example screenshot of Semantic and Non-Semantic structure -->
+        <section>
+          <h4>Semantic vs. Non-Semantic Code</h4>
+          <img
+            src="./imgs/semantic-html.jpeg"
+            width="650px"
+            alt="Semantic versus non-semantic hierarchy"
+          />
+          <p class="fs-20">
+            Image source:
+            <a
+              href="https://seekbrevity.com/semantic-markup-important-web-design/"
+              target="_blank"
+              >SeekBrevit.com</a
+            >
+          </p>
+        </section>
+
+        <!-- Say no to Divs? -->
+        <section>
+          <h4>Sooo, say no to <code>divs</code>?</h4>
+          <ul class="fs-28">
+            <li class="mb-16">
+              There are still appropriate use cases for
+              <code>divs</code>
+              <ul>
+                <li>Ex: Grouping items for a card component</li>
+                <li>
+                  Ex: A <code>div</code> can live inside a semantic parent
+                  element such as a <code>section</code> and be used to
+                  organize/group other nested elements
+                </li>
+              </ul>
+            </li>
+            <li>
+              When necessary, a <code>div</code> can be made semantic by adding
+              accessibility attributes such as <code>role</code> or
+              <code>aria</code> properties
+            </li>
+          </ul>
+        </section>
+
+        <!-- Let's Develop It -->
+        <section>
+          <h4>Let's Develop It!</h4>
+          <p class="fs-28">
+            Add semantic structure to the
+            <a
+              href="https://raw.githubusercontent.com/tinuola/gdi_public/main/project-assets/fe-mentor/recipe-page_vDESK.png"
+              target="_blank"
+              >Recipe Page project</a
+            >
+          </p>
+          <ol class="fs-24 width-750">
+            <li class="mb-16">
+              Wrap or nest the image, the page headline and summary text in a
+              single
+              <code>&lt;header&gt;</code> tag
+            </li>
+
+            <li class="mb-16">
+              Wrap the preparation steps in a
+              <code>&lt;section&gt;</code> tag
+            </li>
+
+            <li class="mb-16">
+              Add an
+              <code>&lt;hr&gt;</code> tag below the <code>Nutrition</code> table
+              or content
+            </li>
+
+            <li class="mb-16">
+              Organize the remaining headings and their related content into
+              their own <code>&lt;section&gt;</code> tags
+            </li>
+            <li class="mb-16">
+              In the <code>Instructions</code> list, wrap the bolded portions of
+              text in <code>&lt;span&gt;</code> tags
+            </li>
+            <li>
+              Add a <code>&lt;footer&gt;</code> tag before the closing
+              <code>&lt;body&gt;</code> tag
+              <ul>
+                <li>
+                  Use a nested <code>&lt;p&gt;</code> to add attribution text to
+                  the footer such as:
+                </li>
+                <li>
+                  <code class="highlight--yellow"
+                    >Coded by *add your name*</code
+                  >
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Validating Structure -->
+        <section>
+          <h4>Validating Semantic Structure</h4>
+          <ul class="fs-24">
+            <li class="mb-16">
+              Using semantic HTML tags does not automatically mean our code is
+              well-structured
+            </li>
+            <li class="mb-16">
+              Learning to properly structure HTML code takes practice
+            </li>
+            <li class="mb-16">
+              Validation and accessibility tools can check our code structure
+            </li>
+          </ul>
+        </section>
+
+        <!-- Title Slide: Accessibility-->
+        <section>
+          <h3>*A Quick Intro to Accessibility</h3>
+          <h5 class="width-600">
+            <em
+              >*(Accessibility is an important and exhaustive topic; this series
+              can only touch the basic beginnings of it.)</em
+            >
+          </h5>
+        </section>
+
+        <!-- Web Accessibility -->
+        <section>
+          <h4>Web Accessibility</h4>
+          <p class="fs-28 width-750">
+            Web accessibility is the practice of ensuring our site is usable and
+            navigable, regardless of who is using our sites, where and how they
+            are using our sites
+          </p>
+
+          <p class="fs-28 width-750 mt-16">
+            Accessibility is often shortened to
+            <span class="highlight--yellow">A11Y</span>
+          </p>
+
+          <p class="fs-24 mt-32">
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility"
+              target="_blank"
+              >What is Accessibility? (MDN)</a
+            >
+          </p>
+        </section>
+
+        <!-- Basic Examples -->
+        <section>
+          <h4 class="width-750 mb-32">
+            Example Basic Qualities of an Accessible Site
+          </h4>
+          <ul class="fs-24">
+            <li>Semantically coded HTML</li>
+            <li>
+              Sufficients
+              <a
+                href="https://webaim.org/resources/contrastchecker/"
+                target="_blank"
+                >color contrast</a
+              >
+              between background and text
+            </li>
+            <li>Using legible font styles and sizes</li>
+            <li>Proper use of <code>alt</code> attributes for images</li>
+            <li>Mindful use of animation, or options to diable it</li>
+          </ul>
+        </section>
+
+        <!-- Accessibility as a Mindset -->
+        <section>
+          <h4>Accessibility as a Mindset</h4>
+          <ul class="fs-28">
+            <li>Accessibility is a wide and growing topic</li>
+            <li>Accessibility is no longer optional</li>
+            <li>
+              <span class="highlight--yellow"
+                >Accessibility is a collective responsibility</span
+              >: Designers, developers, product managers, business owners and
+              organizations are all included in the process of creating an
+              accessible digital product and user experience
+            </li>
+          </ul>
+        </section>
+
+        <!-- Accessibilty for developers -->
+        <section>
+          <h4>Developing an Accessibility Mindset</h4>
+          <ul class="fs-24 width-750">
+            <li>
+              Cultivate an A11Y-first development practice
+              <ul>
+                <li>Think accessibility before aesthetics</li>
+              </ul>
+            </li>
+            <li>
+              Run sites/projects through A11Y plugins, such as:
+              <ul>
+                <li>
+                  <a
+                    href="https://wave.webaim.org/extension/"
+                    target="_blank"
+                    >WAVE - Web Accessibility Evaluation Tool</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://siteimprove.com/en-us/core-platform/integrations/browser-extensions/"
+                    target="_blank"
+                    >SiteImprove Accessibility Checker</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.deque.com/axe/devtools/"
+                    target="_blank"
+                    >axe DevTools</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://validator.w3.org/"
+                    target="_blank"
+                    >W3C Markup Validation Service</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              Educate yourself about accessibility
+              <ul>
+                <li>Read articles and tutorials</li>
+                <li>Invest in A11Y courses/training</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Resources -->
+        <section>
+          <h4>A Few Good A11Y Resources</h4>
+          <ul class="fs-28">
+            <li>
+              <a
+                href="https://a11y-101.com/"
+                target="_blank"
+                >ALLY-101</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility"
+                target="_blank"
+                >Accessibility Overview (MDN)</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.w3.org/WAI/fundamentals/"
+                target="_blank"
+                >Web Accessibility Initiative</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.deque.com/training/"
+                target="_blank"
+                >Deque Courses</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <!-- Let's Develop It -->
+        <section>
+          <h4>Let's Develop It!</h4>
+          <ul class="fs-24 width-600">
+            <li class="mb-16">
+              Download the
+              <a
+                href="https://wave.webaim.org/extension/"
+                target="_blank"
+                >WAVE Browser Extension Plugin</a
+              >
+              for your specfic browser
+            </li>
+            <li class="mb-16">
+              Open/View your project's <code>index.html</code> in a new browser
+              tab
+            </li>
+            <li class="mb-16">
+              While in the new tab, click on the Wave plugin icon in browser's
+              toolbar
+            </li>
+            <li class="mb-16">Review the accessibility report for your page</li>
+            <li>Are there any errors or warnings to fix?</li>
+          </ul>
+        </section>
+
+        <!-- Emphasis vs Presentation -->
+        <section>
+          <h4>Emphasis vs Presentation</h4>
+          <p>Need to call out important text?</p>
+          <p>Use semantic HTML elements:</p>
+          <p><code>heading tags (h1, h2, etc), strong, em</code></p>
+        </section>
+
+        <!-- em Tag -->
+        <section>
+          <h4>Semantic HTML: Emphasized Text</h4>
+          <p class="fs-28">
+            To add emphasis to text, use the <code>em</code> tag
+          </p>
+          <pre><code class="html"><p><em>"Bonjour"</em>she said.</p></code></pre>
+          <p class="mt-32"><em>"Bonjour"</em>, she said.</p>
+        </section>
+
+        <!-- strong Tag -->
+        <section>
+          <h4>Semantic HTML: Important Text</h4>
+          <p class="fs-28 width-750">
+            To indicate that a piece of text is imporant, wrap it in a pair of
+            <code>strong</code> tags
+          </p>
+          <pre><code class="html"><p><strong>Do not</strong> make me repeat myself!</p></code></pre>
+          <p class="mt-32"><code>Do not</code> make me repeat myself!</p>
+        </section>
+
+        <!-- Caveat: Emphasis vs Presentation -->
+        <section>
+          <h4>Emphasis vs Presentation</h4>
+          <p class="mt-32 width-750 highlight--pink">
+            Avoid relying on CSS alone to make content
+            <code>LOOK</code> important
+          </p>
+          <p class="width-750 mt-16 highlight--pink">
+            Use semantic tags; then apply CSS for visual styling
+          </p>
+        </section>
+
+        <!-- Title Slide: Layouts -->
+        <section>
+          <h3>Building Layouts</h3>
+          <h3>Organizing HTML</h3>
+        </section>
+
+        <!-- Blueprints -->
+        <section>
+          <h4>Creating Structure</h4>
+          <p class="fs-28 width-750">
+            Most things that are built or manufactured (cars, homes, airplanes,
+            etc.) start with a blueprint
+          </p>
+          <img
+            src="./imgs/blueprint1.jpeg"
+            alt="Collection of blueprint"
+            width="500px"
+          />
+        </section>
+
+        <!-- Wireframes -->
+        <section>
+          <h4>Creating Structure</h4>
+          <p class="fs-32 width-750">
+            Major websites and web applications are built off of blueprints or
+            <code class="highlight--yellow">"wireframes"</code> -- preliminary
+            sketches and outlines
+          </p>
+        </section>
+
+        <!-- Wireframes -->
+        <section>
+          <h4>Wireframes</h4>
+          <p class="fs-28 width-750 mb-16">
+            "A wireframe is a visual representation of what users will see and
+            interact with when they land on a website... The purpose of a
+            wireframe is to finalize a user-experience (UX) concept before
+            actually coding a website or app."
+          </p>
+          <p class="fs-20">
+            <a
+              href="https://www.coursera.org/articles/wireframe"
+              target="_blank"
+              >What is a Wireframe? (Coursera)</a
+            >
+          </p>
+        </section>
+
+        <!-- Low fidelity wireframes -->
+        <section>
+          <h4>Types of Wireframes</h4>
+          <p class="fs-32">Low Fidelity Wireframes</p>
+          <img
+            src="./imgs/low-fidelity-wireframes.jpeg"
+            alt=""
+            width="600px"
+          />
+        </section>
+
+        <!-- Medium fidelity wireframes -->
+        <section>
+          <h4>Types of Wireframes</h4>
+          <p class="fs-32">Medium/Mid Fidelity Wireframes</p>
+          <img
+            src="./imgs/medium-fidelity-wireframe.png"
+            alt=""
+          />
+        </section>
+
+        <!-- High fidelity wireframs -->
+        <section>
+          <h4>Types of Wireframes</h4>
+          <p class="fs-32">High Fidelity Wireframes</p>
+          <img
+            src="./imgs/high-fidelity-wireframes.png"
+            alt=""
+          />
+        </section>
+
+        <!-- Wireframes & Code -->
+        <section>
+          <h4>Wireframes & Code</h4>
+          <p class="fs-28 width-750">
+            While wireframes roughly outline or vividly show what a site should
+            look like, they also can influence/guide
+            <code class="highlight--yellow"
+              >how to structure or plan a site's code</code
+            >
+          </p>
+        </section>
+
+        <!-- Pseudo-coding -->
+        <section>
+          <h4>Pseudo-coding</h4>
+          <p class="fs-28 width-750">
+            Manually planning, outlining or documenting the structure, behavior
+            or logic of code
+          </p>
+        </section>
+
+        <!-- Pseudo-coding example -->
+        <section>
+          <h4>Web Page Pseudo-coding</h4>
+          <img
+            src="./imgs/pseudo-coding-html-1.png"
+            alt=""
+          />
+          <p class="fs-20">
+            <a
+              href="./imgs/pseudo-coding-html-1.png"
+              target="_blank"
+              >View full-sized image</a
+            >
+          </p>
+        </section>
+
+        <!-- Pseudo-coding example -->
+        <section>
+          <h4>Web Page Pseudo-coding</h4>
+          <img
+            src="./imgs/pseudo-coding-html-2.jpeg"
+            alt=""
+          />
+          <p class="fs-20">
+            <a
+              href="./imgs/pseudo-coding-html-2.jpeg"
+              target="_blank"
+              >View full-sized image</a
+            >
+          </p>
+        </section>
+
+        <!-- Plan before you code -->
+        <section>
+          <h4>Plan Before You Code</h4>
+          <p class="fs-32">Get into the practice of planning your projects</p>
+          <ul class="fs-28">
+            <li>Rough sketches, if starting with your own design</li>
+            <li>Pseudo-coding, if working with prepared design</li>
+          </ul>
+        </section>
+
+        <!-- Let's Develop It -->
+        <section>
+          <h4>Let's Develop It!</h4>
+          <p class="fs-28 width-600">
+            How would you pseudo-code the markup of this component?
+          </p>
+          <img
+            src="./imgs/frontend-mentor-design-sample.jpg"
+            alt=""
+            width="500px"
+          />
+        </section>
+
+        <!-- Let's Develop It -->
+        <section>
+          <h4>Let's Develop It!</h4>
+          <p class="fs-28">In the Recipe Page <code>index.html</code> file:</p>
+          <ol class="fs-28">
+            <li class="mb-16">
+              Add an opening
+              <code>&lt;div&gt;</code> tag immediately
+              <span class="highlight--yellow">after</span> the opening
+              <code>&lt;body&gt;</code> tag
+            </li>
+            <li>
+              Add a closing <code>&lt;/div&gt;</code> tag immediately
+              <span class="highlight--yellow">before</span> the closing
+              <code>&lt;/body&gt;</code> tag
+            </li>
+          </ol>
+          <p class="mt-32 fs-28">
+            We're creating a
+            <span class="highlight--yellow">container</span> around the entire
+            content
+          </p>
+        </section>
+
+        <!-- Title Slide: CSS -->
+        <section>
+          <h3>CSS</h3>
+          <h3>Cascading Style Sheets</h3>
+        </section>
+
+        <!-- What is CSS? -->
+        <section>
+          <h4>What is CSS?</h4>
+          <ul class="fs-28 width-750">
+            <li class="mb-16">
+              CSS is a "style sheet language" that lets us apply design and
+              layout to an HTML page
+            </li>
+            <li>
+              "Cascading" means that the order in which CSS rules are applied to
+              an element matters
+            </li>
+          </ul>
+        </section>
+
+        <!-- HTML Visual Metaphor -->
+        <section>
+          <h4>HTML</h4>
+          <img
+            src="./imgs/plywood-home.jpg"
+            alt="Plywood home"
+          />
+          <p class="fs-18">
+            <a
+              href="https://www.aboutmechanics.com/what-is-osb-plywood.htm"
+              target="_blank"
+              >Image credit: About Mechanics</a
+            >
+          </p>
+        </section>
+
+        <!-- CSS Visual Metaphor -->
+        <section>
+          <h4>CSS</h4>
+          <img
+            src="./imgs/completed-house.jpg"
+            alt="Completed house"
+          />
+          <p class="fs-18">
+            <a
+              href="http://photogallery.americashomeplace.com/americas-home-place-savannah-ga/Ford-12210009/finished-house"
+              target="_blank"
+              >Image credit: America's Home Place</a
+            >
+          </p>
+        </section>
+
+        <!-- CSS Zen Garden -->
+        <section>
+          <h4>The Power of CSS</h4>
+          <p>
+            <a
+              href="https://www.csszengarden.com/"
+              target="_blank"
+              >CSS Zen Garden</a
+            >
+          </p>
+          <p>One HTML File</p>
+          <p>221 CSS Interpretations--and counting!</p>
+          <span class="fs-28"
+            ><a
+              href="https://www.csszengarden.com/219/"
+              target="_blank"
+              >#219</a
+            ></span
+          >
+          <span class="fs-28"
+            ><a
+              href="https://www.csszengarden.com/129/"
+              target="_blank"
+              >#129</a
+            ></span
+          >
+          <span class="fs-28"
+            ><a
+              href="https://www.csszengarden.com/198/"
+              target="_blank"
+              >#198</a
+            ></span
+          >
+          <span class="fs-28"
+            ><a
+              href="https://www.csszengarden.com/124/"
+              target="_blank"
+              >#124</a
+            ></span
+          >
+          <span class="fs-28"
+            ><a
+              href="https://www.csszengarden.com/221/"
+              target="_blank"
+              >#221</a
+            ></span
+          >
+          <span class="fs-28"
+            ><a
+              href="https://www.csszengarden.com/111/"
+              target="_blank"
+              >#111</a
+            ></span
+          >
+          <span class="fs-28"
+            ><a
+              href="https://www.csszengarden.com/201/"
+              target="_blank"
+              >#201</a
+            ></span
+          >
+        </section>
+
+        <!-- Anatomy of CSS -->
+        <section>
+          <h4>Anatomy of CSS</h4>
+          <p class="fs-28 width-750">
+            CSS syntax or rule consists of a
+            <span class="highlight--yellow">selector</span> and at least one or
+            more
+            <span class="highlight--yellow">property-value</span> declarations:
+          </p>
+          <pre><code class="css">selector {
+  property: value;
+}</code></pre>
+          <p>For example:</p>
+          <pre><code class="css">p {
+  color: yellow;
+  background-color: black;
+}</code></pre>
+        </section>
+
+        <!-- CSS and HTML -->
+        <section>
+          <h4>CSS & HTML</h4>
+          <p class="fs-28 width-750 mb-16">
+            Some HTML elements have default style, but CSS allows for added
+            customization
+          </p>
+
+          <p class="fs-28 width-750">
+            Without CSS, an HTML page is merely a page with raw, unformatted
+            text, images and links
+          </p>
+        </section>
+
+        <!-- Connecting HTML to CSS-->
+        <section>
+          <h4>Applying CSS to HTML</h4>
+          <ul>
+            <li>Inline CSS</li>
+            <li>Embedded or Internal CSS</li>
+            <li>External CSS Stylesheet</li>
+            <li>JavaScript</li>
+          </ul>
+        </section>
+
+        <!-- Inline CSS -->
+        <section>
+          <h4>Inline CSS</h4>
+          <pre><code class = "css">&lt;p style="color:red;"&gt;Some text.&lt;/p&gt;</code></pre>
+          <ul class="fs-28">
+            <li>Uses the <code>style</code> attribute</li>
+            <li>Only applies to one element at a time</li>
+            <li>Not recommended; use in very rare cases</li>
+          </ul>
+        </section>
+
+        <!-- Let's Develop It - Inline CSS-->
+        <section>
+          <h4>Let's Develop It!</h4>
+          <ul class="fs-28">
+            <li>
+              Using the <code>style</code> attribute, apply the color
+              <span class="highlight--yellow">magenta</span> to the
+              <code>Ingredients</code> heading tag
+            </li>
+          </ul>
+
+          <pre><code class = "css">&lt;p style="color:magenta;"&gt;Some text.&lt;/p&gt;</code></pre>
+        </section>
+
+        <!-- Internal or Embedded CSS -->
+        <section>
+          <h4>Embedded or Internal CSS</h4>
+          <pre><code class = "html">&lt;head&gt;
+  ...
+
+  &lt;style&gt;
+
+  p {
+
+    color: red;
+
+  }
+  &lt;/style&gt;
+
+&lt;/head&gt;</code></pre>
+          <ul class="fs-24 mt-16 width-750">
+            <li>Uses <code>&lt;style&gt;&lt;/style&gt;</code> tag</li>
+            <li>
+              The <code>style</code> tag lives inside
+              <code>&lt;head&gt;</code> element
+            </li>
+            <li>
+              Internal CSS only applies to the HTML page where the
+              <code>style</code> tag lives
+            </li>
+          </ul>
+        </section>
+
+        <!-- Let's Develop It - Internal or Embedded CSS-->
+        <section>
+          <h4>Let's Develop It</h4>
+          <ul class="fs-24 width-600">
+            <li class="mb-16">
+              Add opening and closing
+              <code>&lt;style&gt; &lt;/style&gt;</code> tags right before the
+              closing <code>&lt;/head&gt;</code> tag
+            </li>
+            <li>
+              Add a declaration/rule, applying the color (property)
+              <span class="highlight--yellow">aquamarine</span> (value) to all
+              <code>h2</code> tags
+            </li>
+          </ul>
+
+          <pre><code class = "html">&lt;head&gt;
+  ...
+  &lt;style&gt;
+
+    h2 {
+      property: value;
+    }
+  
+    &lt;/style&gt;
+&lt;/head&gt;</code></pre>
+        </section>
+
+        <!-- External Stylesheet-->
+        <section>
+          <h4>External CSS</h4>
+          <pre><code class = "html">&lt;head&gt;
+  ...
+  
+  &lt;link rel="stylesheet" href="style.css"&gt;
+  
+&lt;/head&gt;</code></pre>
+          <ul class="fs-28">
+            <li>CSS lives in a separate file or files</li>
+            <li>Can be referenced from multiple pages</li>
+            <li>Easier to maintain styling for larger projects</li>
+          </ul>
+        </section>
+
+        <!-- Let's Develop It - External Stylesheet -->
+        <section>
+          <h4>Let's Develop It!</h4>
+          <h5>If using VS Code:</h5>
+          <ul class="fs-28">
+            <li>
+              Create a <code>style.css</code> file in the project directory
+            </li>
+          </ul>
+
+          <h5 class="mt-32">In VS Code or REPL:</h5>
+          <ol class="fs-24">
+            <li>
+              Copy the CSS declaration inside the
+              <code>&lt;style&gt;</code> tags, and paste the code into the
+              <code>style.css</code> file;
+              <span class="highlight--pink">do not copy the tags</span>
+            </li>
+            <li>
+              Delete the <code>style</code> block inside the
+              <code>index.html</code> file
+            </li>
+            <li>
+              Delete the inline <code>style</code> on the
+              <code>Ingredient</code> subheading
+            </li>
+            <li>Run your code to make sure the update works</li>
+          </ol>
+        </section>
+
+        <!-- Commenting in CSS -->
+        <section>
+          <h4>Comments in CSS</h4>
+          <p class="fs-28">Commenting our code also works in CSS</p>
+          <pre><code class="css">/* Sample comment */
+
+p {
+
+  color: purple;
+
+}</code></pre>
+        </section>
+
+        <!-- Let's Develop It -->
+
+        <!-- CSS Selector Intro -->
+        <section>
+          <h4>CSS Selector</h4>
+          <p class="fs-28 width-750">
+            The selector is used to select or find which elements on the HTML
+            page will be given the styles inside the curly braces.
+          </p>
+          <pre><code class="css">selector {
+
+  property: value;
+
+}</code></pre>
+
+          <pre><code class="css">p {
+
+  color: yellow;
+
+  background-color: black;
+
+}</code></pre>
+        </section>
+
+        <!-- 3 Common Selectors -->
+        <section>
+          <h4>Three Common CSS Selectors</h4>
+          <ul>
+            <li>Element or Type selector</li>
+            <li>Class selector</li>
+            <li>ID selector</li>
+          </ul>
+        </section>
+
+        <!-- Element Selector -->
+        <section>
+          <h4>Element or Type Selector</h4>
+          <ul class="fs-28">
+            <li>Selects all elements of the same type</li>
+            <li>
+              The CSS rule below targets all <code>p</code> tags or paragraph
+              elements
+            </li>
+          </ul>
+          <pre><code class="css">p {
+
+  color: yellow;
+
+  background-color: black;
+
+}</code></pre>
+        </section>
+
+        <!-- Class Selector -->
+        <section>
+          <h4>Class Selector</h4>
+          <p class="fs-28 width-750">
+            <code>Class</code> selectors are prefixed with a
+            <code>"."</code> dot, then followed by the class name
+          </p>
+          <pre><code class="css">.product-text {
+
+  color: purple;
+
+}</code></pre>
+        </section>
+
+        <section>
+          <h4>Class Selector</h4>
+          <ul class="fs-24 width-750">
+            <li class="mb-16">
+              Class selectors are declared in markup, that is, they assigned to
+              HTML elements in the HTML file
+            </li>
+            <li class="mb-16">
+              When we want multiple elements to share a style, we give them the
+              same class name
+            </li>
+            <li>
+              The style rule for the class selector is then declared in CSS
+            </li>
+          </ul>
+
+          <pre><code class="html">&lt;p class="product-text"&gt;This is some product text.&lt;/p&gt;
+
+&lt;p&gt;This is another paragraph of text.&lt;/p&gt;
+
+&lt;h4 class="product-text"&gt;This is headline text.&lt;/h4&gt;
+</code></pre>
+        </section>
+
+        <section>
+          <h4>Class Selector</h4>
+          <p class="fs-28 width-750">
+            The CSS rule below selects all elements with the
+            <code>class</code> of
+            <code class="highlight--yellow">product-text</code> in the markup
+            and applies the color purple
+          </p>
+          <pre><code class="css">.product-text {
+
+  color: purple;
+
+}</code></pre>
+          <pre><code class="html">&lt;p class="product-text"&gt;This is some product text.&lt;/p&gt;
+
+&lt;p&gt;This is another paragraph of text.&lt;/p&gt;
+
+&lt;h4 class="product-text"&gt;This is headline text.&lt;/h4&gt;
+</code></pre>
+        </section>
+
+        <!-- Let's Develop It -->
+        <section>
+          <h4>Let's Develop It!</h4>
+          <p class="fs-28">There are multiple headings in our project</p>
+          <ul class="fs-24 width-750">
+            <li class="mb-16">
+              Let's give all the <code>h2</code> headings the same class name:
+              <span class="highlight--yellow">section-heading</span>
+            </li>
+            <li class="mb-16">
+              Add the class name to the <code>h2</code> tags in the markup file;
+              see example below
+            </li>
+            <li class="mb-16">
+              In <code>style.css</code>, replace the <code>h2</code> selector
+              with <code class="highlight--yellow">.section-heading</code>
+            </li>
+            <li class="mb-16">Run your code to make sure the update works</li>
+          </ul>
+          <pre><code class="html">&lt;p class="product-text"&gt;This is some product text.&lt;/p&gt;
+</code></pre>
+        </section>
+
+        <!-- ID Selector -->
+        <section>
+          <h4>ID Selector</h4>
+          <p class="fs-28 width-750">
+            <code>ID</code> selectors are prefixed with a
+            <code>"#"</code> symbol, then followed by a name
+          </p>
+          <pre><code class="css">#product-name {
+
+  background: tomato;
+
+}</code></pre>
+        </section>
+
+        <section>
+          <h4>ID Selector</h4>
+          <p class="fs-28 width-750">
+            Unlike the class selector, the ID selector is associated with
+            <code class="highlight--yellow">only one</code> target element on
+            the HTML page
+          </p>
+          <pre><code class="html">&lt;h2 id="product-name"&gt;First Product Title&lt;/h2&gt;
+
+&lt;h2 id="needs-a-new-id"&gt;Second Product Title&lt;/h2&gt;
+</code></pre>
+          <p class="highlight--pink inline-block mt-16">
+            IDs cannot be shared among elements
+          </p>
+        </section>
+
+        <!-- Let's Develop It -->
+        <section>
+          <h4>Let's Develop It</h4>
+          <ul class="fs-28">
+            <li class="mb-16">
+              Give the page <code>h1</code> an ID name:
+              <code class="highlight--yellow">"page-title"</code>
+            </li>
+            <li>
+              In your <code>style.css</code>, create a CSS rule that adds a
+              <code class="highlight--yellow">color</code> (property) of
+              <code class="highlight--yellow">tomato</code> (value) to the ID
+            </li>
+          </ul>
+        </section>
+
+        <!-- Multiple selectors -->
+        <section>
+          <h4>Applying Multiple Class Names</h4>
+          <p class="fs-28 width-750">
+            Elements can have more than one <code>class</code> name or selector
+            applied to them
+          </p>
+          <pre><code class="css">.product-text {
+  color: purple;
+}
+
+.product-container {
+  background-color: yellow;
+}
+</code></pre>
+          <pre><code class="html">&lt;p class="product-text product-bground"&gt;Some product detail.&lt;/p&gt;
+</code></pre>
+        </section>
+
+        <!-- Combining selectors -->
+        <section>
+          <h4>Mixing Selectors</h4>
+          <p
+            class="fs-28"
+            style="max-width: 700px; margin: 0 auto"
+          >
+            An element can have both a class name (or multiple class names) and
+            an ID
+          </p>
+          <pre><code class="html">&lt;h2 class="product-text" id="product-name"&gt;First Product Title&lt;/h2&gt;
+</code></pre>
+        </section>
+
+        <!-- Working with Class & ID selectors -->
+        <section>
+          <h4>Working with Class & ID Selectors</h4>
+          <h5>A Few Good Practices</h5>
+          <ul class="fs-28">
+            <li>Give selectors meaningful names</li>
+            <li>Use single word or hyphenated naming</li>
+            <li>Use class selectors more than IDs</li>
+            <li>
+              Use ID selectors for:
+              <ul>
+                <li>Internal bookmarking</li>
+                <li>Elements to be targeted by JavaScript</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Title Slide: Semantic vs Non Semantic CSS -->
+        <section>
+          <h3>Semantic vs Non-Semantic CSS</h3>
+          <h4>Naming in CSS</h4>
+        </section>
+
+        <!-- Semantic CSS -->
+        <section>
+          <h4>Semantic CSS</h4>
+          <p class="fs-28">Semantic CSS naming conveys meaning.</p>
+          <pre><code class="html">&lt;h2 class="product-heading"&gt;My First Start Up App&lt;/h2&gt;
+</code></pre>
+        </section>
+
+        <!-- Non-Semantic CSS -->
+        <section>
+          <h4>Non-Semantic CSS</h4>
+          <p class="fs-24 width-750">
+            Non-semantic CSS tends not to convey meaning; it usually conveys
+            what an element might look like
+          </p>
+          <pre><code class="html">&lt;h2 class="blue-text"&gt;My First Start Up App&lt;/h2&gt;</code></pre>
+        </section>
+
+        <!-- Semantic CSS -->
+        <section>
+          <h4>Non-Semantic CSS</h4>
+          <p class="fs-24 width-750">
+            Non-semantic CSS naming is common in CSS frameworks such as
+            Bootstrap, Tailwind, etc.
+          </p>
+          <pre><code class="html">&lt;div class="row mb-10 h-4"&gt;My First Start Up App&lt;/div&gt;
+  </code></pre>
+        </section>
+
+        <!-- Which to Choose? -->
+        <section>
+          <h4>Semantic or Non-Semantic CSS?</h4>
+          <ul class="fs-28">
+            <li>Good practice: Use semantic naming</li>
+            <li>
+              Understand the use cases for non-semantic CSS
+              <ul>
+                <li>Working with CSS frameworks</li>
+                <li>Creating your own CSS utilities</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Title Slide: CSS Properties -->
+        <section>
+          <h3>CSS Properties</h3>
+        </section>
+
+        <!-- CSS Properties -->
+        <section>
+          <h3>CSS Properties</h3>
+          <p class="fs-28 width-750">
+            With CSS properties, we can apply color, change text appearance, add
+            fonts, work with images, create unique layouts, apply animation, and
+            more
+          </p>
+
+          <p class="mt-32 fs-24">
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference"
+              target="_blank"
+              >All CSS properties (MDN)</a
+            >
+          </p>
+        </section>
+
+        <!-- So many selectors, so little time? -->
+        <section>
+          <h4>CSS Properties</h4>
+          <ul class="28">
+            <li class="mb-16">How many? 200? 300? 500?</li>
+            <li class="mb-16">
+              You're not expected to know them all
+              <ul>
+                <li>Focus on the commonly used properties</li>
+                <li class="highlight--yellow">
+                  Focus on what's needed for a project
+                </li>
+              </ul>
+            </li>
+            <li class="mb-16">Be comfortable looking things up</li>
+          </ul>
+        </section>
+
+        <section>
+          <h4>Deciding on CSS Properties</h4>
+          <p class="fs-28 width-750">
+            Most--if not all web projects, will need to apply color, typography,
+            sizing, spacing, and create a layout
+          </p>
+          <p class="fs-28 width-750 mt-32">
+            <span class="highlight--yellow"
+              >Style guides, design systems, component libraries, design
+              specs</span
+            >
+            are some of the resources web designers and developers rely on to
+            determine what CSS properties and values a project will need
+          </p>
+        </section>
+
+        <!-- Style Guides and Design Specs-->
+        <section>
+          <h4>Style Guides & Design Specs</h4>
+          <p class="fs-24 width-750 mb-32">
+            A style guide is a visual reference of brand or project elements
+            such as: color palettes, font families/groupings, logos and icons,
+            buttons, and more
+          </p>
+          <p class="fs-24 width-750 mb-32">
+            Design specs or mocks tend to be more specific about dimensions and
+            behavior of a project's elements
+          </p>
+
+          <p class="fs-24 mt-32">
+            <a
+              href="https://www.mockplus.com/blog/post/ui-style-guide"
+              target="_blank"
+              >UI Style Guide Examples (MockPlus)</a
+            ><br />
+          </p>
+        </section>
+
+        <!-- Example style guide -->
+        <section>
+          <h4>Style Guide Example</h4>
+          <img
+            src="./imgs/styleguide.jpeg"
+            alt="baker amy style guide"
+          />
+          <p class="fs-20">
+            <a
+              href="https://piktochart.com/wp-content/uploads/2022/01/BrandIdentity_example.jpeg"
+              target="_blank"
+              >Image credit: PiktoChart</a
+            >
+          </p>
+        </section>
+
+        <!-- Example design specs -->
+        <section>
+          <h4>Design Spec Example</h4>
+          <img
+            src="./imgs/design-spec.jpg"
+            alt="sample design spec"
+          />
+          <p class="fs-20">
+            <a
+              href="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/29dee59277715.560cb9919811e.jpg"
+              target="_blank"
+              >Image Credit: Behance</a
+            >
+          </p>
+        </section>
+
+        <!-- Design Systems -->
+        <section>
+          <h4>Design Systems & Component Libraries</h4>
+          <p class="fs-24 width-750 mb-32">
+            A design system is a set of standards to manage web project design.
+            Large organizations often use design systems to main consistency and
+            efficiency across their digital products; A design system can
+            include a component library (reusable components & templates),
+            design principles, and usage guidelines
+          </p>
+
+          <p class="fs-24 mt-32">
+            <a
+              href="http://styleguides.io/"
+              target="_blank"
+              >Website Style Guide Resources (StyleGuide.io)</a
+            ><br />
+            <a
+              href="https://www.figma.com/blog/design-systems-101-what-is-a-design-system/"
+              target="_blank"
+              >What is a Design System (Figma)</a
+            >
+          </p>
+        </section>
+
+        <!-- Let's Develop It -->
+        <section>
+          <h4>Let's Develop It</h4>
+          <p class="fs-28">
+            Our project includes a style guide and basic specs
+          </p>
+          <ul class="fs-28">
+            <li>
+              <a
+                href="https://raw.githubusercontent.com/tinuola/gdi_public/main/project-assets/fe-mentor/recipe-page_style.png"
+                target="_blank"
+                >Recipe Page Style Guide</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://raw.githubusercontent.com/tinuola/gdi_public/main/project-assets/fe-mentor/recipe-page_style.txt"
+                target="_blank"
+                >Additional Specs</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <!-- Project CSS Planning -->
+        <section>
+          <h4>CSS Features that Our Project Needs</h4>
+          <ul class="fs-28 width-750">
+            <li>Colors (text and backgrounds)</li>
+            <li>Typography: font sizing and weights</li>
+            <li>Using Custom fonts</li>
+            <li>Sized container / "contained" elements</li>
+            <li>Centered layout</li>
+            <li>Spacing between and around sections</li>
+            <li>Responsiveness: Media Queries</li>
+          </ul>
+
+          <p class="fs-24 mt-32">
+            <a
+              href="https://raw.githubusercontent.com/tinuola/gdi_public/main/project-assets/fe-mentor/recipe-page_vDESK.png"
+              target="_blank"
+              >Design Mock</a
+            >
+          </p>
+        </section>
+
+        <!-- Title Slide: Colors -->
+        <section>
+          <h3>Colors</h3>
+        </section>
+
+        <!-- CSS Colors -->
+        <section>
+          <h4>CSS Color Values</h4>
+          <p>Browsers can accept colors in different ways:</p>
+          <table style="margin: 0 auto">
+            <tr>
+              <td><strong>Color name: </strong></td>
+              <td><code>red</code></td>
+            </tr>
+            <tr>
+              <td><strong>Hexadecimal value: </strong></td>
+              <td><code>#FF0000</code></td>
+            </tr>
+            <tr>
+              <td><strong>RGB value: </strong></td>
+              <td><code>rgb(255, 0, 0)</code></td>
+            </tr>
+            <tr>
+              <td><strong>HSL value</strong></td>
+              <td><code>hsl(0, 100%, 50%)</code></td>
+            </tr>
+          </table>
+
+          <p class="fs-24 mt-32">
+            <a
+              href="http://www.colors.commutercreative.com/grid/"
+              target="_blank"
+              >CSS Color Names</a
+            >
+          </p>
+          <p class="fs-24">
+            <a
+              href="http://www.w3schools.com/colors/colors_picker.asp"
+              target="_blank"
+              >W3Schools Color Picker</a
+            >
+          </p>
+          <p class="fs-24">
+            Color palette generators:<br />
+            <a
+              href="https://coolors.co/"
+              target="_blank"
+              >Coolors</a
+            >,
+            <a
+              href="https://colors.muz.li/"
+              target="_blank"
+              >Muzli Colors</a
+            >,
+            <a
+              href="https://color.adobe.com/create/color-wheel"
+              target="_blank"
+              >Adobe Color Wheel</a
+            >
+          </p>
+        </section>
+
+        <!-- Let's Develop It -->
+        <section>
+          <h4>Let's Develop It!</h4>
+          <p class="fs-24 width-750 mb-16">
+            Using the project's
+            <a
+              href="https://raw.githubusercontent.com/tinuola/gdi_public/main/project-assets/fe-mentor/recipe-page_style.png"
+              target="_blank"
+              >style guide</a
+            >
+            and
+            <a
+              href="https://raw.githubusercontent.com/tinuola/gdi_public/main/project-assets/fe-mentor/recipe-page_style.txt"
+              target="_blank"
+              >spec file</a
+            >
+            as references, inside of <code>style.css</code>:
+          </p>
+          <ol class="fs-20">
+            <li class="mb-16">
+              Create the rule to apply
+              <code class="highlight--yellow">background-color</code> (property)
+              to the <code>body</code> selector; get the color value from the
+              style guide
+            </li>
+            <li class="mb-16">
+              Inside the markup file, add the class name:
+              <code class="highlight--yellow">container</code>, to the
+              <code>div</code> tag we nested inside the
+              <code>body</code> earlier
+            </li>
+            <li class="mb-16">
+              In the style file, create a rule to apply a
+              <code class="highlight--yellow">background-color</code> of
+              <code class="highlight--yellow">white</code> to the
+              <code>container</code> selector
+            </li>
+            <li class="mb-16">
+              Add a class name of your choice to the <code>section</code> tag
+              that's wrapped around the <code>Preparation</code> content
+            </li>
+            <li class="mb-16">
+              Apply the appropriate background color to the selector you've
+              created for the
+              <code>Preparation</code> section
+            </li>
+            <li>
+              Update the text colors for the subheadings and
+              <code>Preparation</code> heading text
+            </li>
+          </ol>
+        </section>
+
+        <!-- Title Slide: Sizing -->
+        <section>
+          <h3>Sizing Units</h3>
+        </section>
+
+        <!-- Size Units -->
+        <section>
+          <h4>Size Units</h4>
+          <ul class="fs-28">
+            <li>Pixels: px</li>
+            <li>Root element font-size: rem</li>
+            <li>Element font-size: em</li>
+            <li>Percentage: %</li>
+            <li>Viewport height: vh</li>
+            <li>Viewport width: vw</li>
+          </ul>
+
+          <p class="fs-20 mt-32">
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size"
+              target="_blank"
+              >CSS length data types (MDN)</a
+            >
+          </p>
+        </section>
+
+        <!-- Absolute vs Relative -->
+        <section>
+          <h4>Absolute vs Relative Sizing</h4>
+          <p class="fs-24 width-750 mb-32">
+            Any value set using <code>px</code> (pixels) is an
+            <code class="highlight--yellow">absolute</code> value, meaning the
+            dimension is fixed or static
+          </p>
+
+          <p class="fs-24 width-750">
+            Most CSS sizing units are
+            <code class="highlight--yellow">relative</code> values, meaning
+            their dimension/behavior is relative to/based off
+            <em>something else</em>, such as a parent element, the default
+            root/html element, viewport height or width, etc
+          </p>
+        </section>
+
+        <!-- Sizing with rem -->
+        <section>
+          <h4>Relative Sizing with the <code>rem</code> Root Element</h4>
+          <p class="fs-24 width-750 mb-32">
+            The default <code class="highlight--yellow">font-size</code> value
+            of the root <code>html</code> element is <code>16px</code>
+          </p>
+
+          <p class="fs-24 width-750">
+            Other elements can set their font sizes
+            <code class="highlight--yellow">relative</code> to the
+            <code>root</code> element
+          </p>
+
+          <pre><code class="css">html {
+  font-size: 16px;
+}
+
+p {
+  font-size: 1rem;
+}</code></pre>
+          <p class="fs-24 width-600">
+            In the snippet above, the font-size of the <code>p</code> selector
+            is <code>1rem</code> or
+            <code class="highlight--yellow"
+              >100% of the value of the root html selector</code
+            >, meaning it is also <code>16px</code>
+          </p>
+        </section>
+
+        <section>
+          <h4><code>rem</code> Sizing</h4>
+          <p class="fs-24 width-750 mb-32">
+            When the default value of the root <code>html</code> element is
+            changed, any other element dependent on its value will also be
+            affected
+          </p>
+          <pre><code class="css">html {
+  font-size: 20px;
+}
+
+p {
+  font-size: 1rem;
+}
+
+img {
+  width: 10rem;
+}
+</code></pre>
+          <p class="fs-24 width-750">
+            The font-size of the <code>p</code> selector will now be
+            <code>20px</code>
+          </p>
+          <p class="fs-24 width-750">
+            The width of the <code>img</code> selector will be
+            <code>200px</code>
+          </p>
+        </section>
+
+        <!-- Let's Develop It -->
+        <section>
+          <h4>Let's Develop It!</h4>
+          <p class="fs-24 width-750 mb-32">
+            Refer the style guide and the spec, use the <code>px</code> unit to
+            set (desktop) sizing values for the following:
+          </p>
+          <ol class="fs-24 width-750">
+            <li>
+              <code>container</code> selector's width
+              <ul>
+                <li>
+                  Use the <code class="highlight--yellow">width</code> property
+                </li>
+              </ul>
+            </li>
+            <li>the <code>h1</code></li>
+            <li>the subheadings</li>
+            <li>
+              Use the <code>h3</code> font-size value in the spec file to set
+              the <code>Preparation</code> title size
+            </li>
+          </ol>
+        </section>
+
+        <!-- Title Slide: Fonts -->
+        <section>
+          <h3>Fonts</h3>
+        </section>
+
+        <!-- Web Safe Fonts -->
+        <section>
+          <h4>Web Safe Fonts</h4>
+          <ul class="fs-24 width-600">
+            <li class="mb-16">
+              Web Safe Fonts are font families that all browsers can display by
+              default
+            </li>
+            <li class="mb-16">
+              We don't have to load font files or link to external font
+              libraries to use them
+            </li>
+            <li>But they are limited in number, and basic</li>
+          </ul>
+          <pre><code class = "css">p {
+  font-family: "Times New Roman"; /* Specific font name */
+}
+
+h2 {
+  font-family: serif; /* Generic name */
+}
+
+h3 {
+  font-family: "Arial", sans-serif; /* Comma-separated list */
+}</code></pre>
+
+          <p class="fs-24">
+            <a
+              href="https://www.w3schools.com/cssref/css_websafe_fonts.asp"
+              target="_blank"
+              >Web Safe Fonts (W3 School)</a
+            >
+          </p>
+        </section>
+
+        <!-- Custom Fonts -->
+        <section>
+          <h4>Custom Fonts</h4>
+          <img
+            src="./imgs/custom-fonts.png"
+            alt="custom fonts"
+          />
+          <p class="fs-20">
+            Image Credit:
+            <a
+              href="https://onewayscreenprinting.com/wp-content/uploads/custom_art_fonts.png"
+              target="_blank"
+              rel="noopener noreferrer"
+              >OneWayScreen Printing</a
+            >
+          </p>
+        </section>
+
+        <section>
+          <h4>Custom Fonts</h4>
+          <p class="fs-24 width-600 mb-32">Custom fonts add visual interest</p>
+          <p class="fs-24 width-600 mb-32">
+            They can establish brand recognition
+          </p>
+          <p class="fs-24 width-600 mb-32">
+            Depending on how they are designed or used, they can elevate (or
+            hurt!) the aesthetics of a site
+          </p>
+        </section>
+
+        <section>
+          <h4>Using Custom Fonts</h4>
+          <p class="fs-24 width-750">
+            To apply custom fonts, we either add font files directly into our
+            project directory, or we can link to external font libraries (free
+            or premium) such as
+            <a
+              href="https://fonts.google.com/"
+              target="_blank"
+              >Google Fonts</a
+            >,
+            <a
+              href="https://fonts.adobe.com/"
+              target="_blank"
+              >Adobe Fonts</a
+            >,
+            <a
+              href="https://www.myfonts.com/"
+              target="_blank"
+              >myFonts</a
+            >, etc.
+          </p>
+        </section>
+
+        <!-- Linking to an external font -->
+        <section>
+          <h4>Linking to External Fonts</h4>
+          <ul class="fs-24 width-750">
+            <li class="mb-16">
+              We use the <code>link</code> tag to connect to external font urls
+            </li>
+            <li class="mb-16">
+              The link is added to the <code>head</code> tag, and ideally should
+              be placed before a site or project's default stylesheet
+            </li>
+          </ul>
+          <pre><code class="html">&lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+    &lt;head&gt;
+    ...
+      <!-- Add external fonts links above project's CSS stylesheet -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+      
+      <!-- Project CSS stylesheet -->
+      &lt;link href="style.css" rel="stylesheet" type="text/css" /&gt;
+      &lt;title&gt;Title of the page &lt;/title&gt
+    &lt;/head&gt;
+    ...
+    ...
+  &lt;/html&gt;
+</code></pre>
+          <p class="fs-20">
+            Example of connecting to the Google Font:
+            <a
+              href="https://fonts.google.com/?query=montserrat"
+              target="_blank"
+              >Montserrat</a
+            >
+          </p>
+        </section>
+
+        <!-- Using an external font in CSS -->
+        <section>
+          <h4>Using External Fonts in CSS</h4>
+          <p class="fs-24 width-600">
+            Using the CSS
+            <code class="highlight--yellow">font-family</code> property, the
+            font style is applied to selectors
+          </p>
+          <pre><code class = "css">body {
+  font-family: 'Montserrat', sans-serif;
+}</code></pre>
+
+          <pre><code class = "css">h3 {
+  font-family: 'Montserrat', sans-serif;
+}</code></pre>
+
+          <pre><code class = "css">.product-heading {
+  font-family: 'Montserrat', sans-serif;
+}</code></pre>
+        </section>
+
+        <!-- Google Fonts Demo -->
+        <section>
+          <h4>Google Fonts Demo</h4>
+          <h5>
+            <a
+              href="https://fonts.google.com/"
+              target="_blank"
+              >fonts.google.com</a
+            >
+          </h5>
+        </section>
+
+        <!-- Let's Develop It -->
+        <section>
+          <h4>Let's Develop It!</h4>
+          <p class="fs-24 width-600 mb-16">
+            Our project uses two custom Google Fonts: <code>Outfit</code> and
+            <code>Young Serif</code>
+          </p>
+          <ul class="fs-24 width-750">
+            <li class="mb-16">
+              In the Google Fonts demo, we added the embed code for
+              <code>Outfit</code> to our <code>head</code> tag;
+              <span class="highlight--yellow"
+                >repeat the process for <code>Young Serif</code></span
+              >
+              <ul>
+                <li>
+                  Note: Remember that we are able to select multiple Google font
+                  familes in a single embed snippet
+                </li>
+              </ul>
+            </li>
+            <li>
+              Apply the <code>Young Serif</code>
+              <code class="highlight--yellow">font-family</code> to the heading
+              selectors
+            </li>
+          </ul>
+        </section>
+
+        <!-- Home Practice -->
+        <section>
+          <h4>Home Practice</h4>
+          <ul class="fs-24">
+            <li class="mb-16">
+              Download and install the
+              <a
+                href="https://wave.webaim.org/extension/"
+                target="_blank"
+                >WAVE browser plugin</a
+              >, if you haven't already
+            </li>
+            <li class="mb-16">
+              Complete any basic styling still pending from the in-class
+              practice
+            </li>
+            <li class="mb-16">
+              In the <code>Nutrition</code> section, refactor the
+              <code>table</code> content to use a new HTML element: the
+              <code class="highlight--yellow">Description List element</code>
+              <ul>
+                <li>
+                  <a
+                    href="http://"
+                    target="_blank"
+                  >
+                    <code>&lt;dl&gt;</code>The Description List element (MDN)</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              Optional: Create pseudo-code/basic markup for the
+              <a
+                href="https://raw.githubusercontent.com/tinuola/gdi_public/main/project-assets/fe-mentor/product-preview-card_vDESK.png"
+                target="_blank"
+                >Product Preview Component</a
+              >
+              project
+            </li>
+          </ul>
+        </section>
+
+        <!-- Next Class -->
+        <section>
+          <h4>Next Class</h4>
+          <ul class="fs-28">
+            <li>
+              CSS Layouts: The Box Model
+              <ul>
+                <li>Padding, Border & Margin</li>
+                <li>Block and Inline Elements</li>
+                <li>Box-Sizing</li>
+              </ul>
+            </li>
+            <li>CSS Background Images:</li>
+            <li>Responsive Design: Media Queries</li>
+          </ul>
+        </section>
+        <!-- End of lesson slides -->
+
+        <!-- Class Feedback Survey, if using -->
+        <!-- <section>
+          <h3>Class Feedback</h3>
+          <p><a href="" target="_blank"></a></p>
+        </section> -->
+
+        <!-- Q&A -->
+        <section>
+          <h3>Q&A</h3>
+        </section>
+
+        <!-- Thank You -->
+        <section>
+          <img
+            src="../shared-assets/imgs/gdi-logos/gdi-circle-logo_peach.png"
+            alt="GDI Logo"
+            width="300px"
+            class="noborder"
+          />
+          <br />
+          <h3>Thank You!</h3>
+        </section>
+      </div>
+      <!-- End of Slides container -->
+      <!---->
+      <!---->
+      <!-- Update Footer with Course Name -->
+      <footer>
+        <div class="copyright">
+          <img
+            src="../shared-assets/imgs/gdi-logos/gdi-logo_peach.png"
+            alt="GDI Logo"
+            width="40px"
+            class="noborder"
+          />
+          <p>Web Design Essentials - Class 2</p>
+          <a
+            rel="license"
+            href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"
+            ><img
+              alt="Creative Commons License"
+              style="border-width: 0"
+              src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png"
+          /></a>
+        </div>
+      </footer>
+    </div>
+    <!-- End of Reveal wrapper -->
+    <!---->
+    <!---->
+    <!-- RevealJS Scripts & Config - Do Not Edit or Delete -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.15.5/js/jsplumb.min.js"></script>
+    <script src="../shared-assets/js/revealConfig.js"></script>
+  </body>
+</html>
