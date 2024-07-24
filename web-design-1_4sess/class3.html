@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <!-- Update with GDI Course Name / Description -->
+    <meta
+      name="description"
+      content="GDI Web Design Essentials 1 - 4-Class Series"
+    />
+    <meta
+      name="author"
+      content="Girl Develop It"
+    />
+    <meta
+      name="apple-mobile-web-app-capable"
+      content="yes"
+    />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <!-- Update with GDI Course Name -->
+    <title>GDI: Web Design Essentials 1 - Class 3</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../shared-assets/imgs/favicon.ico"
+    />
+    <!-- RevealJS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reset.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/theme/simple.css"
+      id="theme"
+    />
+    <!-- GDI Custom Theme -->
+    <link
+      rel="stylesheet"
+      href="../shared-assets/css/gdi-theme.css"
+    />
+    <!-- Theme used for syntax highlighted code -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/monokai.min.css"
+    />
+    <!-- Course Custom Styles if Applicable-->
+    <link
+      rel="stylesheet"
+      href="./css/style.css"
+    />
+  </head>
+  <body>
+    <div class="reveal">
+      <!-- Start of Slides container -->
+      <!-- Any section element in this container is displayed as a single slide -->
+      <!-- Comment out rather than delete slide instructions -->
+      <div class="slides">
+        <!-- Course and Class Titles -->
+        <section>
+          <h2>Web Design Essentials 1</h2>
+          <h3>Class 3</h3>
+        </section>
+
+        <!-- Class Agenda -->
+        <section>
+          <h3>AGENDA</h3>
+          <ul>
+            <li>
+              CSS Layout: The Box Model
+              <ul>
+                <li>Padding, Border & Margin</li>
+                <li>Block and Inline Elements</li>
+                <li>Box-Sizing</li>
+              </ul>
+            </li>
+            <li>Browser Inspect Tool</li>
+            <li>
+              CSS Images:
+              <ul>
+                <li>Inline Images</li>
+                <li>Background Images</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Stretch Break: Add Times -->
+        <section>
+          <h3>Session - Stretch Break</h3>
+          <h4>5-Minute Break Every Hour</h4>
+        </section>
+
+        <!-- Title Slide: CSS Box Model -->
+        <section>
+          <h3>CSS Box Model</h3>
+        </section>
+
+        <!-- Box Model image -->
+        <section>
+          <h3>Boxes Everywhere!</h3>
+          <p
+            class="gdi-p"
+            style="max-width: 700px; margin: 0 auto"
+          >
+            Every HTML element on a page is wrapped in a box.
+          </p>
+          <img
+            src="./imgs/box-model.png"
+            width="500px"
+            alt="the CSS box model"
+          />
+          <p>
+            <small
+              >Image source:
+              <a
+                href="https://complete-concrete-concise.com/tutorials/webdev/front-end-basics/html-flow-and-the-css-box-model-the-display-property/"
+                target="_blank"
+                >complete-concrete-concise.com</a
+              ></small
+            >
+          </p>
+        </section>
+
+        <!-- Box Model Properties -->
+        <section>
+          <h3>Box Model Properties</h3>
+          <ul>
+            <li style="margin-bottom: 1rem">
+              <code>Content</code>: Text, image, form, etc.
+            </li>
+            <li style="margin-bottom: 1rem">
+              <code>Padding:</code>The space around the content, or the distance
+              between the content and its borders
+            </li>
+            <li style="margin-bottom: 1rem">
+              <code>Border:</code>The wrapper around the content and its padding
+            </li>
+            <li>
+              <code>Margin:</code> The distance between an element and its
+              neighbors
+            </li>
+          </ul>
+        </section>
+
+        <!-- Box Model diagram -->
+        <section>
+          <h3>Box Model</h3>
+          <img
+            src="./imgs/box-model2.png"
+            alt=""
+          />
+          <p>
+            <small
+              >Image source:
+              <a
+                href="http://thenewcode.com/49/The-CSS-Box-Model"
+                target="_blank"
+                >thenewcode.com</a
+              ></small
+            >
+          </p>
+        </section>
+
+        <!-- Box Model in Dev Tools demo -->
+        <section>
+          <h3>Box Model in Developer Tools</h3>
+          <img
+            src="./imgs/box-model-in-dev-tools.png"
+            alt=""
+          />
+        </section>
+
+        <section>
+          <h3>Box Model in Developer Tools</h3>
+          <h4>Demo</h4>
+        </section>
+
+        <!-- Padding -->
+        <section>
+          <h3><code>Padding</code> Property</h3>
+          <p
+            class="gdi-p"
+            style="max-width: 800px; margin: 0 auto 24px auto"
+          >
+            The <code>padding</code> property controls the amount of clear space
+            around an element
+          </p>
+          <p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding"
+              target="_blank"
+              >CSS Padding Property (MDN)</a
+            >
+          </p>
+        </section>
+
+        <section>
+          <h3><code>Padding</code> Property Syntax</h3>
+          <pre><code class="html">&lt;p class="box"&gt;Hello World&lt;/p&gt;
+
+&lt;p class="box"&gt;Goodbye World&lt;/p&gt;
+</code></pre>
+
+          <pre><code class="css">.box {
+
+  background-color: yellowgreen; /* For visual demo */
+
+  padding: 10px;
+
+}</code></pre>
+        </section>
+
+        <section>
+          <h3><code>Padding</code> Property Syntax</h3>
+          <pre><code class="css">.box {
+
+  padding-top: 10px;
+
+  padding-right: 5px;
+
+  padding-bottom: 10px;
+
+  padding-left: 5px;
+}</code></pre>
+        </section>
+
+        <section>
+          <h5><code>Padding</code> Property Shorthand Syntax</h5>
+          <pre><code class="css">.box {
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+</code></pre>
+          <p>Is the same as:</p>
+          <pre><code class="css">.box {
+ padding: 10px 5px 10px 5px; /* top, right, bottom, left */
+}
+</code></pre>
+          <pre><code class="css">.box {
+ padding: 10px 5px;  /* top & bottom; left & right */
+}</code></pre>
+          <p>When all sides have the same value:</p>
+          <pre><code class="css">.box {
+ padding: 10px; 
+}</code></pre>
+        </section>
+
+        <!-- Let's Develop It! -->
+        <section>
+          <h4>Let's Develop It!</h4>
+          <p class="fs-24">Let's apply padding to parts of our project</p>
+          <ol class="fs-24 width-750">
+            <li class="mb-16">
+              Apply <code>padding</code> of <code>40px</code> or
+              <code>2.5rem</code> to the <code>container</code> selector
+            </li>
+            <li>
+              Apply <code>padding</code> of <code>24px</code> or
+              <code>1.5rem</code> to the <code>callout-container</code> selector
+            </li>
+          </ol>
+        </section>
+
+        <!-- Margin -->
+        <section>
+          <h3><code>Margin</code> Property</h3>
+          <p
+            class="gdi-p"
+            style="max-width: 800px; margin: 0 auto 24px auto"
+          >
+            The <code>margin</code> property controls the distance between
+            elements on all four sides; it creates space between elements
+          </p>
+          <p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin"
+              target="_blank"
+              >CSS Margin Property (MDN)</a
+            >
+          </p>
+        </section>
+
+        <!-- Syntax -->
+        <section>
+          <h3><code>Margin</code> Syntax Property</h3>
+          <pre><code class="css">.box {
+
+  background-color: yellowgreen;
+
+  padding: 10px;
+
+  margin: 16px;
+
+}</code></pre>
+        </section>
+
+        <section>
+          <h3><code>Margin</code> Property Syntax</h3>
+          <pre><code class="css">.box {
+
+  margin-top: 10px;
+
+  margin-right: 5px;
+
+  margin-bottom: 10px;
+
+  margin-left: 5px;
+}</code></pre>
+        </section>
+
+        <!-- Shorthand Syntax -->
+        <section>
+          <h5><code>Margin</code> Property Shorthand Syntax</h5>
+          <pre><code class="css">.box {
+  margin-top: 10px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+</code></pre>
+          <p>Is the same as:</p>
+          <pre><code class="css">.box {
+ margin: 10px 5px 10px 5px; /* top, right, bottom, left */
+}
+</code></pre>
+          <pre><code class="css">.box {
+ margin: 10px 5px;  /* top & bottom; left & right */
+}</code></pre>
+          <p>When all sides have the same value:</p>
+          <pre><code class="css">.box {
+ margin: 10px; 
+}</code></pre>
+        </section>
+
+        <!-- Let's Develop It! -->
+        <section>
+          <h4>Let's Develop It!</h4>
+          <p class="fs-24">Let's apply margin to parts of our project</p>
+          <ol class="fs-24 width-750">
+            <li class="mb-16">
+              Apply a <code>margin-bottom</code> of <code>12px</code> or
+              <code>0.75rem</code> to all list item elements
+              <ul>
+                <li>Hint: Use the <code>li</code> element selector type</li>
+              </ul>
+            </li>
+            <li class="mb-16">
+              Apply a <code>margin-top</code> of <code>32px</code> or
+              <code>2rem</code> to the <code>hr</code> selector and to the
+              <code>callout-container</code> selector
+            </li>
+          </ol>
+        </section>
+
+        <!-- Border -->
+        <section>
+          <h3><code>Border</code> Property</h3>
+          <p
+            class="gdi-p"
+            style="max-width: 800px; margin: 0 auto 24px auto"
+          >
+            The <code>border</code> property demarcates the area or creates a
+            visible boundary around a content and its padding (inner space)
+          </p>
+          <p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/border"
+              target="_blank"
+              >CSS Border Property (MDN)</a
+            >
+          </p>
+        </section>
+
+        <section>
+          <h3><code>Border</code> Property Syntax</h3>
+          <pre><code class="html">&lt;p class="box"&gt;Hello World&lt;/p&gt;
+
+&lt;p class="box"&gt;Goodbye World&lt;/p&gt;
+</code></pre>
+          <pre><code class="css">.box {
+  
+  background-color: yellowgreen;
+  
+  padding: 10px;
+
+  margin: 16px;
+  
+  border: 3px solid black; 
+}
+</code></pre>
+        </section>
+
+        <!-- Border shorthand -->
+        <section>
+          <h4><code>Border</code> Property Syntax</h4>
+          <p class="fs-24 width-750">
+            The <code>border</code> property is a shorthand for: the width,
+            style, and color of a border; these properties can be declared
+            individually
+          </p>
+          <pre><code class="css">.box {
+  border: 3px solid black; 
+}</code></pre>
+          <p>... is the same as:</p>
+          <pre><code class="css">.box {
+
+  border-width: 3px;
+
+  border-style: solid;
+
+  border-color: black;  
+
+}</code></pre>
+        </section>
+
+        <!-- Let's Develop It! -->
+        <section>
+          <h4>Let's Develop It!</h4>
+          <ol class="fs-24">
+            <li class="mb-16">
+              In your markup file, add a class name of
+              <code>recipe-section</code> to the rest of the
+              <code>section</code> tags that have no class name
+            </li>
+            <li class="mb-16">Delete all the <code>hr</code> tags</li>
+            <li class="mb-16">
+              In your stylesheet, add the <code>recipe-section</code> selector
+              and give it
+              <code class="highlight--yellow">border-bottom</code> property of
+              <code class="highlight--yellow">1px solid #5f564D</code> selector
+            </li>
+            <li>
+              Add an additional rule to the
+              <code>recipe-section</code> selector, giving it a
+              <code>padding-bottom</code> of <code>28px</code>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Display Flow -->
+        <section>
+          <h3>Display Flow</h3>
+          <p
+            class="gdi-p"
+            style="max-width: 800px; margin: 0 auto 24px auto"
+          >
+            Every element has a default flow--the way that it renders on the
+            page before any CSS styling is applied. It is either:
+          </p>
+          <ul>
+            <li>Stacking on top of another element</li>
+            <li>Side by side with another element</li>
+          </ul>
+        </section>
+
+        <!-- Block and Inline Elements -->
+        <section>
+          <h3>Block and Inline Elements</h3>
+          <ul>
+            <li style="margin-bottom: 1rem">
+              Elements that stack are: <code>Block</code> elements
+            </li>
+            <li>
+              Elements that are side-by-side on the same line are
+              <code>Inline</code> elements
+            </li>
+          </ul>
+          <p style="font-size: 32px">
+            This is also referred to as an element's
+            <code>display</code> property.
+          </p>
+        </section>
+
+        <!-- Behavior -->
+        <section>
+          <h3>Block vs Inline Behavior</h3>
+          <ul>
+            <li style="margin-bottom: 1rem">
+              Block elements start a new line or live on their own line; they
+              take up the full width of their line or their parent container
+            </li>
+            <li>
+              Inline elements don't start a new line and take up only as much
+              space as their content needs
+            </li>
+          </ul>
+        </section>
+
+        <!-- Example Block Elements -->
+        <section>
+          <h3>Block Elements</h3>
+          <p
+            class="gdi-p"
+            style="max-width: 700px; margin: 0 auto"
+          >
+            Block-level elements include:
+          </p>
+          <ul>
+            <li>Headings (h1, h2, etc)</li>
+            <li>Paragraphs</li>
+            <li>Divs</li>
+            <li>Lists</li>
+          </ul>
+          <p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements"
+              target="_blank"
+              >Block Level Elements (MDN)</a
+            >
+          </p>
+        </section>
+
+        <!-- Example Inline Elements -->
+        <section>
+          <h3>Inline Elements</h3>
+          <p
+            class="gdi-p"
+            style="max-width: 700px; margin: 0 auto"
+          >
+            Inline-level elements include:
+          </p>
+          <ul>
+            <li>Anchor "a" tags</li>
+            <li>Images</li>
+            <li>Spans</li>
+          </ul>
+          <p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements"
+              target="_blank"
+              >Inline Level Elements (MDN)</a
+            >
+          </p>
+        </section>
+
+        <!-- CSS Display property -->
+        <section>
+          <h3>The CSS "Display" Property</h3>
+          <ul>
+            <li style="margin-bottom: 1rem">
+              CSS can be used to change an element's default flow or display
+              property
+            </li>
+            <li>
+              A block element can be changed to an inline element and vice versa
+            </li>
+          </ul>
+        </section>
+
+        <!-- Display property code example -->
+        <section>
+          <h3>The CSS "Display" Property</h3>
+          <pre><code class="css">/* This paragraph element will now be an inline element */
+
+p {
+
+display: inline;
+
+}
+
+/* This span element will now be a block element */
+
+span {
+
+  display: block;
+
+}</code></pre>
+        </section>
+
+        <!-- Let's Develop It! -->
+        <section>
+          <h4>Let's Develop It!</h4>
+          <!-- <p class="width-750 mb-16">
+            Our project content has a few span-like elements; let's address
+            them:
+          </p> -->
+          <ol class="fs-24">
+            <li class="mb-16">
+              The <code>Preparation Time</code> and
+              <code>Instructions</code> list items have inline text that are
+              bolded
+            </li>
+            <li class="mb-16">
+              In your markup, Wrap <code>span</code> tags around each phrase
+              that is bolded
+            </li>
+            <li class="mb-16">
+              In your stylesheet, apply a <code>font-weight</code> property of
+              <code>600</code> to target every <code>span</code> selector
+            </li>
+            <li class="mb-16">
+              In your markup, wrap <code>div</code> tags around each
+              <code>dt-dd</code> tag pair
+            </li>
+            <li class="mb-16">
+              Give the <code>div</code> a class name of <code>table-row</code>
+            </li>
+            <li class="mb-16">
+              In your stylesheet, apply a <code>display</code> property of
+              <code>inline-block</code> to target every <code>dt</code> and
+              <code>dd</code> selector
+            </li>
+          </ol>
+        </section>
+
+        <!-- <section>
+          <h3>Layout Practice</h3>
+          <p
+            class="gdi-p"
+            style="max-width: 700px; margin: 0 auto 0 auto"
+          >
+            How would you create the markup for a profile card element and
+            section?
+          </p>
+          <img
+            src="./imgs/layout-exe-star-trek-cast-section.png"
+            alt=""
+          />
+        </section>
+
+        <section>
+          <h3>Layout Practice</h3>
+          <img
+            src="./imgs/layout-exercise-star-trek-card.png"
+            height="250px"
+            alt=""
+          />
+          <pre><code class="html">&lt;div class="cast-section"&gt;
+  &lt;div class="profile-card"&gt;
+    &lt;img src="image-url.jpg" alt="" /&gt;
+    &lt;h3&gt;Name&lt;/h3&gt;
+    &lt;p&gt;as&lt;/p&gt;
+    &lt;h3&gt;Character&lt;/h3&gt;
+  &lt;/div&gt; -->
+
+        <!-- Create copies of the "profile-card" element -->
+
+        <!-- &lt;/div&gt;</code></pre>
+        </section>
+
+        <section>
+          <h3>Let's Develop It!</h3>
+          <p
+            class="gdi-p"
+            style="max-width: 700px; margin: 0 auto 24px auto"
+          >
+            Your fan page should have cast section with profile cards for some
+            of the main cast:
+          </p>
+          <ul>
+            <li>Using the last exercise as reference, create a profile card</li>
+            <li>Create copies of the card element for other cast members</li>
+          </ul>
+        </section> -->
+
+        <!-- Layout Pitfalls  -->
+        <section>
+          <h3>Layout Gotchas</h3>
+          <p
+            class="gdi-p"
+            style="max-width: 800px; margin: 0 auto 24px auto"
+          >
+            Some default properties of CSS can lead to unexpected layout
+            behavior. Three common culprits:
+          </p>
+          <ol>
+            <li>The <code>box-sizing</code> property</li>
+            <li>Browser defaults</li>
+            <li>Margin collapsing</li>
+          </ol>
+        </section>
+
+        <!-- Box Sizing -->
+        <section>
+          <h3><code>box-sizing</code> Property</h3>
+          <p
+            class="gdi-p"
+            style="max-width: 700px; margin: 0 auto"
+          >
+            The CSS <code>box-sizing</code> property determines how we calculate
+            the total width and height of an element. It has two values:
+          </p>
+          <pre><code class="css">/* content-box is the default box-sizing 
+   value of all elements */
+box-sizing: content-box;
+
+/* border-box will be your layout's best friend! */
+box-sizing: border-box;
+</code></pre>
+        </section>
+
+        <section>
+          <h3><code>box-sizing</code> Demo</h3>
+        </section>
+
+        <!-- Layout Tip -->
+        <section>
+          <h3>Layout Tip</h3>
+          <p
+            class="gdi-p"
+            style="max-width: 800px; margin: 0 auto"
+          >
+            Set the <code>box-sizing</code> property of all elements in your
+            project to <code>border-box</code>
+          </p>
+          <pre><code class="css">/* This declaration will target every element in the project */
+
+* {
+  box-sizing: border-box;
+}
+</code></pre>
+        </section>
+
+        <section>
+          <h3>Browser Defaults</h3>
+          <ul>
+            <li style="margin-bottom: 1rem">
+              Most HTML elements have one or more default browser values, that
+              is, they have some basic CSS that influences their appearance on a
+              page
+            </li>
+            <li>
+              Some of these defaults can throw off our page layout (ex.
+              <code>box-sizing</code>); others may not be needed or wanted
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Browser Defaults</h3>
+          <p
+            class="gdi-p"
+            style="max-width: 800px; margin: 0 auto 24px auto"
+          >
+            Examples of browser defaults:
+          </p>
+          <ul>
+            <li>
+              A <code>p</code> tag has a margin-top and margin-bottom of 1em
+            </li>
+            <li>
+              A <code>ul-li</code> tag has a dark, circular marker or
+              bulletpoint
+            </li>
+            <li>
+              An <code>a</code> tag is underlined and has colors for different
+              states
+            </li>
+            <li>An <code>h1</code> tag has a font-size of 32px</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Resetting CSS</h3>
+          <ul>
+            <li style="margin-bottom: 1rem">
+              "CSS Reset" is one way to globally remove some of these defaults
+              in our project
+            </li>
+            <li>
+              With a "CSS Reset", we are writing new CSS values to overwrite the
+              browser defaults
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>CSS Resets</h3>
+          <p
+            class="gdi-p"
+            style="max-width: 800px; margin: 0 auto"
+          >
+            You can create your own reset rules or use any number of well-known
+            reset stylesheets such as:
+          </p>
+          <ul>
+            <li>
+              <a
+                href="https://piccalil.li/blog/a-modern-css-reset/"
+                target="_blank"
+                >Andy Bell's CSS Reset</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://perishablepress.com/a-killer-collection-of-global-css-reset-styles/"
+                target="_blank"
+                >Collection of CSS Resets</a
+              >
+              (Article)
+            </li>
+            <li>
+              <a
+                href="https://necolas.github.io/normalize.css/"
+                target="_blank"
+                >Normalize.css</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>CSS Reset Demo</h3>
+        </section>
+
+        <section>
+          <h3>Two Ways to Reset</h3>
+          <ol>
+            <li style="margin-bottom: 1rem">
+              Add a separate reset.css stylesheet to your project with the
+              <code>link</code> tag in the <code>head</code> section of your
+              HTML page
+              <ul>
+                <li>
+                  Make sure the link comes before the project's stylesheet link
+                </li>
+              </ul>
+            </li>
+            <li>
+              Include the new CSS rules at the top of your project's stylesheet
+            </li>
+          </ol>
+        </section>
+
+        <section>
+          <h4>Let's Develop It!</h4>
+          <ol>
+            <li>Create a new stylesheet called <code>reset.css</code></li>
+            <li>
+              Copy and paste the code from this
+              <code><a href="">css-reset-sample</a></code> file
+            </li>
+          </ol>
+        </section>
+
+        <section>
+          <h3>Margin Collapsing</h3>
+          <p
+            class="gdi-p"
+            style="max-width: 800px; margin: 0 auto"
+          >
+            Margin collapse occurs when the top and bottom margins of two
+            stacked elements combine into a single margin; the element with the
+            larger margin takes precedence
+          </p>
+          <p>
+            <a
+              href="https://www.w3schools.com/css/css_margin_collapse.asp"
+              target="_blank"
+              >Margin Collapse (w3schools)</a
+            >
+          </p>
+        </section>
+
+        <section>
+          <h3>Margin Collapse Demo</h3>
+        </section>
+
+        <section>
+          <h3>Layout Tip</h3>
+          <p
+            class="gdi-p"
+            style="max-width: 800px; margin: 0 auto"
+          >
+            When creating vertical space between two elements, apply
+            <code>margin-top</code> or <code>margin-bottom</code> declaration to
+            only one of the elements
+          </p>
+        </section>
+
+        <!-- Images -->
+        <section>
+          <h3>Images</h3>
+        </section>
+
+        <!-- <section>
+          <h3>Image Types</h3>
+          <p
+            class="gdi-p"
+            style="max-width: 800px; margin: 0 auto 24px auto"
+          >
+            Common image types used in web development:
+          </p>
+          <ul>
+            <li><code>.jpeg</code> - Good for still images</li>
+            <li><code>.png</code> - Great when transparency is needed</li>
+            <li>
+              <code>.svg</code> - Great for icons, retaining image integrity
+            </li>
+            <li>
+              <code>.WebP</code> - * A new image format, reduced file size
+            </li>
+          </ul>
+          <p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types"
+              target="_blank"
+              >Image Types (MDN)</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://kinsta.com/blog/image-file-types/"
+              target="_blank"
+              >15 Best Image File Types</a
+            >
+          </p>
+        </section> -->
+
+        <!-- Inline Images -->
+        <section>
+          <h3>Inline Images</h3>
+          <ul>
+            <li>
+              Inline images are part of the content (i.e., the HTML markup)
+            </li>
+            <li>They are added with the <code>img</code> tag</li>
+          </ul>
+          <pre><code class="html">
+<img src="cute-kitten.jpeg" alt="image description">
+</code></pre>
+        </section>
+
+        <!-- Background Images -->
+        <section>
+          <h3>Background Images</h3>
+          <ul>
+            <li>Background images are part of the CSS</li>
+            <li>
+              They are added with the CSS <code>background-image</code> property
+            </li>
+          </ul>
+          <pre><code class="css">
+div {
+  background-image: url('wallpaper.png');
+}
+</code></pre>
+        </section>
+
+        <!-- CSS for Background Images -->
+        <section>
+          <h3>Background Image Properties</h3>
+          <p
+            class="gdi-p"
+            style="max-width: 700px; margin: 0 auto"
+          >
+            Background images can be controlled using additional CSS properties
+            such as:
+          </p>
+          <pre><code class="css">div {
+  background-image: url('wallpaper.png');
+  background-repeat: no-repeat;
+  background-size: cover; /* cover, contain, or absolute size */
+  background-position: center center;
+  width: 400px;
+  height: 400px;
+}
+</code></pre>
+        </section>
+
+        <!-- CSS for inline images -->
+        <section>
+          <h3>Styling CSS Images</h3>
+          <p
+            class="gdi-p"
+            style="max-width: 700px; margin: 0 auto"
+          >
+            Both inline and background images can be styled using CSS properties
+            such as:
+          </p>
+          <ul>
+            <li>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/width"
+                target="_blank"
+                >width</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/height"
+                target="_blank"
+                >height</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/border"
+                target="_blank"
+                >border</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/opacity"
+                target="_blank"
+                >opacity</a
+              >
+            </li>
+          </ul>
+          <!-- <p
+            class="gdi-p"
+            style="max-width: 700px; margin: 24px auto 0 auto"
+          >
+            Other properties to explore with images: <code>filter</code>,
+            <code>object-fit</code>, <code>linear-gradient</code>, and
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Images"
+              target="_blank"
+              >more!</a
+            >
+          </p> -->
+        </section>
+
+        <!-- Difference between inlne and background -->
+        <section>
+          <h3>Use an Inline or Background Image?</h3>
+          <ul>
+            <li style="margin-bottom: 1rem">
+              Inline images are semantic--they are relevant to the page's
+              content and are better for accessibility
+            </li>
+            <li>
+              Background images are primarily decorative, that is, they don't
+              add meaning to the content
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Tip: Responsive Inline Images</h3>
+          <p
+            class="gdi-p"
+            style="max-width: 700px; margin: 0 auto"
+          >
+            The following CSS declaration is often globally applied to the
+            <code>img</code> tag to make inline images easier to work with:
+          </p>
+          <pre><code class="css">img {
+  max-width: 100%;
+  display: block;
+}
+</code></pre>
+        </section>
+
+        <section>
+          <h3>Let's Develop It!</h3>
+          <ul>
+            <li>Include the responsive image code snippet in your CSS</li>
+            <li>Add a background image to a portion of your page</li>
+          </ul>
+
+          <pre><code class="css">div {
+  background-image: url('wallpaper.png');
+  background-repeat: no-repeat;
+  background-size: cover; /* cover, contain, or absolute size */
+  background-position: center center;
+  height: 400px;
+}</code></pre>
+        </section>
+
+        <!-- Home Practice -->
+
+        <section>
+          <h4>Home Practice</h4>
+          <ul class="fs-24">
+            <!-- <li class="mb-16">
+              Download and install the
+              <a
+                href="https://wave.webaim.org/extension/"
+                target="_blank"
+                >WAVE browser plugin</a
+              >, if you haven't already
+            </li> -->
+            <li class="mb-16">
+              Complete any styling still pending from the in-class practice OR
+              be experimental and add more styling!
+            </li>
+
+            <li>
+              Create pseudo-code/basic markup for the
+              <a
+                href="https://raw.githubusercontent.com/tinuola/gdi_public/main/project-assets/fe-mentor/product-preview-card_vDESK.png"
+                target="_blank"
+                >Product Preview Component</a
+              >
+              project
+            </li>
+          </ul>
+        </section>
+
+        <!-- <section>
+          <h3>Home Practice</h3>
+          <p
+            class="gdi-p"
+            style="max-width: 700px; margin: 0 auto"
+          ></p>
+          <ol>
+            <li>
+              Build out the rest of your fan page:
+              <ul>
+                <li>Resize images where appropriate</li>
+              </ul>
+            </li>
+            <li>Organize your markup into groups of "nested boxes"</li>
+            <li>Select 2 or 3 fonts to use; apply them with CSS</li>
+            <li>Apply CSS properties you've learned today; look up others</li>
+            <li>Add a CSS reset stylesheet</li>
+            <li>Feel free to reference the Bridgerton REPLs</li>
+            <li>Ask for support or feedback in Slack 🙂</li>
+          </ol>
+        </section> -->
+
+        <section>
+          <h3>Next Class</h3>
+          <ul>
+            <li>Responsive Web Design</li>
+            <li>Project Wrap-up</li>
+          </ul>
+        </section>
+
+        <!-- End of lesson slides -->
+
+        <!-- Class Feedback Survey, if using -->
+        <!-- <section>
+          <h3>Class Feedback</h3>
+          <p><a href="" target="_blank"></a></p>
+        </section> -->
+
+        <!-- Q&A -->
+        <section>
+          <h2>Q&A</h2>
+        </section>
+
+        <!-- Thank You -->
+        <section>
+          <img
+            src="../shared-assets/imgs/gdi-logos/gdi-circle-logo_peach.png"
+            alt="GDI Logo"
+            width="300px"
+            class="noborder"
+          />
+          <br />
+          <h2>Thank You!</h2>
+        </section>
+      </div>
+      <!-- End of Slides container -->
+      <!---->
+      <!---->
+      <!-- Update Footer with Course Name -->
+      <footer>
+        <div class="copyright">
+          <img
+            src="../shared-assets/imgs/gdi-logos/gdi-logo_peach.png"
+            alt="GDI Logo"
+            width="40px"
+            class="noborder"
+          />
+          <p>Web Design Essentials - Class 3</p>
+          <a
+            rel="license"
+            href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"
+            ><img
+              alt="Creative Commons License"
+              style="border-width: 0"
+              src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png"
+          /></a>
+        </div>
+      </footer>
+    </div>
+    <!-- End of Reveal wrapper -->
+    <!---->
+    <!---->
+    <!-- RevealJS Scripts & Config - Do Not Edit or Delete -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.15.5/js/jsplumb.min.js"></script>
+    <script src="../shared-assets/js/revealConfig.js"></script>
+  </body>
+</html>
