@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <!-- Update with GDI Course Name / Description -->
+    <meta
+      name="description"
+      content="GDI Web Design Essentials 1 - 4-Class Series"
+    />
+    <meta
+      name="author"
+      content="Girl Develop It"
+    />
+    <meta
+      name="apple-mobile-web-app-capable"
+      content="yes"
+    />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <!-- Update with GDI Course Name -->
+    <title>GDI: Web Design Essentials 1 - Class 4</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../shared-assets/imgs/favicon.ico"
+    />
+    <!-- RevealJS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reset.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/theme/simple.css"
+      id="theme"
+    />
+    <!-- GDI Custom Theme -->
+    <link
+      rel="stylesheet"
+      href="../shared-assets/css/gdi-theme.css"
+    />
+    <!-- Theme used for syntax highlighted code -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/monokai.min.css"
+    />
+    <!-- Course Custom Styles if Applicable-->
+    <link
+      rel="stylesheet"
+      href="./css/style.css"
+    />
+  </head>
+  <body>
+    <div class="reveal">
+      <!-- Start of Slides container -->
+      <!-- Any section element in this container is displayed as a single slide -->
+      <!-- Comment out rather than delete slide instructions -->
+      <div class="slides">
+        <!-- Course and Class Titles -->
+        <section>
+          <h2>Web Design Essentials 1</h2>
+          <h3>Class 4</h3>
+        </section>
+
+        <!-- Class Agenda -->
+        <section>
+          <h3>AGENDA</h3>
+          <ul>
+            <li>
+              Responsive Web Design
+              <ul>
+                <li>Media Queries</li>
+              </ul>
+            </li>
+            <li>Project Wrapup</li>
+          </ul>
+        </section>
+
+        <!-- Stretch Break: Add Times -->
+        <section>
+          <h3>Session - Stretch Break</h3>
+          <h4>5-Minute Break Every Hour</h4>
+        </section>
+
+        <!-- Title Slide: Responsive Web Design -->
+
+        <section>
+          <h4>Responsive Web Design</h4>
+          <p
+            class="gdi-p"
+            style="max-width: 800px; margin: 0 auto"
+          >
+            A design and development approach to creating web pages, web content
+            and web applications that respond or adapt to different devices and
+            screen sizes
+          </p>
+        </section>
+
+        <section>
+          <h4>Responsive Web Design</h4>
+          <img
+            src="./imgs/responsive-web-design-devices.png"
+            width="600px"
+            alt="Boston Globe website on different devices"
+          /><br />
+          <small
+            ><a
+              href="https://brolik.com/blog/responsive-web-design-examples-with-css-tips-and-tricks/"
+              target="_blank"
+              >Image Source</a
+            ></small
+          >
+        </section>
+
+        <section>
+          <h4>Responsiveness in Web Browsers</h4>
+          <p
+            class="gdi-p"
+            style="max-width: 675px; margin: 0 auto 24px auto"
+          >
+            We can check the responsiveness of our web pages in at least three
+            ways:
+          </p>
+          <ul>
+            <li>Manually resizing our browser windows</li>
+            <li>Physically verifying responsiveness on actual devices</li>
+            <li>
+              Using the <code>responsive viewport mode</code> in our browsers'
+              Developer Tools panel
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h4>Responsive Viewport Mode</h4>
+          <p
+            class="gdi-p"
+            style="max-width: 675px; margin: 0 auto"
+          >
+            Toggle the device icon in the browser's
+            <code>inspector</code> window
+          </p>
+          <img
+            src="./imgs/rwd-chrome-device-mode.png"
+            alt="Chrome Responsive Device toolbar toggle"
+            width="700px"
+          /><br />
+          <small
+            >*Open the inspector with the keyboard shortcut:<br />
+            <code>cmd opt c</code> (Mac) or <code>ctrl opt c</code> (PC)</small
+          ><br />
+          <small
+            ><a
+              href="https://developer.chrome.com/blog/device-mode-v2/"
+              target="_blank"
+              >Image Source</a
+            ></small
+          >
+        </section>
+
+        <section>
+          <h4>Responsive Viewport Mode</h4>
+          <p
+            class="gdi-p"
+            style="max-width: 675px; margin: 0 auto"
+          >
+            Select any device options or create your own breakpoints!
+          </p>
+          <img
+            src="./imgs/rwd-chrome-responsive-devices.png"
+            alt="Chrome Responsive Device options"
+          /><br />
+          <small
+            ><a
+              href="https://developer.chrome.com/blog/device-mode-v2/"
+              target="_blank"
+              >Image Source</a
+            ></small
+          >
+        </section>
+
+        <section>
+          <h4>Responsive Design Design <br />with CSS</h4>
+          <p
+            class="gdi-p"
+            style="max-width: 675px; margin: 0 auto 24px auto"
+          >
+            We can make our pages responsive using three tools in CSS:
+          </p>
+          <ul>
+            <li>Media Queries</li>
+            <li>**CSS Flexbox</li>
+            <li>**CSS Grid</li>
+          </ul>
+          <br />
+          <small style="font-style: italic; margin-top: 24px"
+            >**CSS Flexbox and CSS Grid are topics in Web Essentials 2 and
+            beyond</small
+          >
+        </section>
+
+        <section>
+          <h4>Media Queries</h4>
+          <ul>
+            <li>
+              Media queries tell the browser at what <code>breakpoint</code> or
+              screen size at which to apply a specific style
+            </li>
+            <li>Media queries are applied in the CSS</li>
+          </ul>
+          <pre><code class="css">@media screen and (min-width: 600px){
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}</code></pre>
+          <p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries"
+              target="_blank"
+              >A Beginner's Guide to Media Queries</a
+            >
+          </p>
+        </section>
+
+        <section>
+          <h4>Basic Media Query Syntax</h4>
+          <p
+            class="fs-28"
+            style="max-width: 675px; margin: 0 auto"
+          >
+            A media query contains:
+          </p>
+          <ul class="fs-28 width-750">
+            <li>The <code>@media</code> keyword</li>
+            <li>
+              Optionally, a <code>media type</code> followed by
+              <code>'and'</code>
+            </li>
+            <li>The condition under which to apply the media query</li>
+            <li>The selector(s) to target and the CSS rule to run</li>
+          </ul>
+          <pre><code class="css">@media screen and (min-width: 600px){
+
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}</code></pre>
+        </section>
+
+        <!-- <section></section> -->
+
+        <!-- <section>
+          <h4>Let's Develop It</h4>
+          <p class="gdi-p">Media Query Practice</p>
+          <ul class=""
+            <li>
+              
+            </li>
+            <li>
+              Apply a media query to change an aspect of the element at one or
+              two device breakpoints (ex.: font size)
+            </li>
+            <li>
+              For a layout section, you might change the margin, padding and/or
+              width
+            </li>
+            <li>Verify the responsiveness manually or in Developer Tools</li>
+          </ul>
+        </section> -->
+
+        <section>
+          <h4>Let's Develop It!</h4>
+          <p class="fs-28 width-750">
+            Let's work on the responsiveness and the remaining styling elements
+            of our project page!
+          </p>
+        </section>
+
+        <section>
+          <h3>Next Steps</h3>
+        </section>
+
+        <section>
+          <h4>Project Next Steps & Beyond!</h4>
+          <ul>
+            <li>Experiment with adding more styling to your project page</li>
+            <li>Get feedback, extra support on Slack</li>
+            <li>Publish your page to Github pages</li>
+            <li>
+              Get more project practice on
+              <a
+                href="https://www.frontendmentor.io/"
+                target="_blank"
+                >Frontend Mentor</a
+              >
+            </li>
+            <li>
+              Take more classes! 😀
+              <ul>
+                <li>
+                  GDI, Codecademy, Udemy, Free Code Camp,<br />
+                  Udacity, Skillshare, etc.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h4>Cultivating a Web<br />Development Practice</h4>
+          <ul>
+            <li>
+              Progressive, deliberative practice--Start small
+              <ul>
+                <li>How can I use what I currently know?</li>
+                <li>
+                  What do I want to do and what is my (current) knowledge gap?
+                </li>
+                <li>Where can I find answers?</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h4>Cultivating a Web<br />Development Practice</h4>
+          <ul>
+            <li>
+              Create checklists!
+              <ul>
+                <li>Accessibility basics</li>
+                <li>Project setup</li>
+                <li>Visual Design principles</li>
+              </ul>
+            </li>
+            <li>Curate your frequently-used code snippets</li>
+          </ul>
+        </section>
+
+        <section>
+          <h4>Cultivating a Web<br />Development Practice</h4>
+          <ul>
+            <li>
+              80-20 Rule:
+              <ul>
+                <li>Spend time pre-planning a project</li>
+                <li>Organize your markup/code (indentations, etc)</li>
+              </ul>
+            </li>
+            <li>
+              Read documentation
+              <ul>
+                <li>"Real" developers look things up!</li>
+              </ul>
+            </li>
+            <li>Review other developers' code</li>
+            <li>Be comfortable asking questions</li>
+            <li>Use Dev Tools--a lot!</li>
+          </ul>
+        </section>
+
+        <section>
+          <h4>Cultivating a Web<br />Development Practice</h4>
+          <img
+            src="./imgs/learning-to-code.jpeg"
+            width="600px"
+            alt="Graph of coding learning curve"
+          />
+          <p style="font-size: 14px">
+            Source:
+            <a
+              href="https://www.thinkful.com/blog/why-learning-to-code-is-so-damn-hard/"
+              target="_blank"
+              >Why Learning to Code is So Damn Hard</a
+            >
+            (Thinkful.com)
+          </p>
+        </section>
+
+        <section>
+          <h4>Cultivating a Web<br />Development Practice</h4>
+          <ul>
+            <li>
+              Be prepared for the "dips"
+              <ul>
+                <li>It's okay not knowing everything</li>
+              </ul>
+            </li>
+            <li>Take breaks!</li>
+            <li>Welcome "happy coincidences"</li>
+            <li>Acknowledge your growth!</li>
+          </ul>
+        </section>
+
+        <!-- Resources -->
+        <section>
+          <h4>Resources</h4>
+          <ul>
+            <li>Frontend Mentor</li>
+            <li>MDN - Mozilla Developer Network</li>
+            <li>W3Schools</li>
+            <li>CSS-Tricks</li>
+            <li>Free Code Camp</li>
+            <li>And more!</li>
+          </ul>
+          <p>
+            See
+            <a
+              href="https://docs.google.com/document/d/10Oq1GFWRp_79o6v8d0U7xF7Lk6R_0BYys5fqDEOwqao/edit?usp=sharing"
+              target="_blank"
+              >Resources List</a
+            >
+          </p>
+        </section>
+
+        <!-- End of lesson slides -->
+
+        <!-- Course Feedback Survey, if using -->
+        <!-- <section>
+          <h4>Course Feedback</h4>
+          <p>
+            <a
+              href=""
+              target="_blank"
+            ></a>
+          </p>
+        </section> -->
+
+        <!-- Q&A -->
+        <section>
+          <h2>Q&A</h2>
+        </section>
+
+        <!-- Thank You -->
+        <section>
+          <img
+            src="../shared-assets/imgs/gdi-logos/GDI-Logo_Peach.png"
+            alt="GDI Logo"
+            width="300px"
+            class="noborder"
+          />
+          <br />
+          <h2>Thank You!</h2>
+        </section>
+      </div>
+      <!-- End of Slides container -->
+      <!---->
+      <!---->
+      <!-- Update Footer with Course Name -->
+      <footer>
+        <div class="copyright">
+          <img
+            src="../shared-assets/imgs/gdi-logos/gdi-logo_peach.png"
+            alt="GDI Logo"
+            width="40px"
+            class="noborder"
+          />
+          <p>Web Design Essentials - Class 4</p>
+          <a
+            rel="license"
+            href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"
+            ><img
+              alt="Creative Commons License"
+              style="border-width: 0"
+              src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png"
+          /></a>
+        </div>
+      </footer>
+    </div>
+    <!-- End of Reveal wrapper -->
+    <!---->
+    <!---->
+    <!-- RevealJS Scripts & Config - Do Not Edit or Delete -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.15.5/js/jsplumb.min.js"></script>
+    <script src="../shared-assets/js/revealConfig.js"></script>
+  </body>
+</html>

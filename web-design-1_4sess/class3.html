@@ -79,18 +79,15 @@
             <li>
               CSS Layout: The Box Model
               <ul>
-                <li>Padding, Border & Margin</li>
+                <li>Padding, Margin & Border Properties</li>
                 <li>Block and Inline Elements</li>
                 <li>Box-Sizing</li>
               </ul>
             </li>
             <li>Browser Inspect Tool</li>
             <li>
-              CSS Images:
-              <ul>
-                <li>Inline Images</li>
-                <li>Background Images</li>
-              </ul>
+              CSS
+              <code class="highlight--yellow">background-image</code> property
             </li>
           </ul>
         </section>
@@ -349,20 +346,15 @@
         <section>
           <h4>Let's Develop It!</h4>
           <p class="fs-24">Let's apply margin to parts of our project</p>
-          <ol class="fs-24 width-750">
-            <li class="mb-16">
+          <ul class="fs-24 width-750">
+            <li>
               Apply a <code>margin-bottom</code> of <code>12px</code> or
               <code>0.75rem</code> to all list item elements
               <ul>
                 <li>Hint: Use the <code>li</code> element selector type</li>
               </ul>
             </li>
-            <li class="mb-16">
-              Apply a <code>margin-top</code> of <code>32px</code> or
-              <code>2rem</code> to the <code>hr</code> selector and to the
-              <code>callout-container</code> selector
-            </li>
-          </ol>
+          </ul>
         </section>
 
         <!-- Border -->
@@ -412,7 +404,9 @@
             individually
           </p>
           <pre><code class="css">.box {
+
   border: 3px solid black; 
+
 }</code></pre>
           <p>... is the same as:</p>
           <pre><code class="css">.box {
@@ -445,9 +439,14 @@
             <li>
               Add an additional rule to the
               <code>recipe-section</code> selector, giving it a
-              <code>padding-bottom</code> of <code>28px</code>
+              <code>padding-bottom</code> of <code>24px</code>
             </li>
           </ol>
+        </section>
+
+        <!-- Title Slide: Display Flow -->
+        <section>
+          <h3>Display Flow</h3>
         </section>
 
         <!-- Display Flow -->
@@ -469,26 +468,27 @@
         <!-- Block and Inline Elements -->
         <section>
           <h3>Block and Inline Elements</h3>
-          <ul>
-            <li style="margin-bottom: 1rem">
-              Elements that stack are: <code>Block</code> elements
+          <ul class="fs-28">
+            <li class="mb-16">
+              Elements that stack are on top of other elements are known as
+              <code class="highlight--yellow">Block</code> level elements
             </li>
-            <li>
+            <li class="mb-16">
               Elements that are side-by-side on the same line are
-              <code>Inline</code> elements
+              <code class="highlight--yellow">Inline</code> elements
             </li>
           </ul>
-          <p style="font-size: 32px">
+          <!-- <p class="fs-28">
             This is also referred to as an element's
             <code>display</code> property.
-          </p>
+          </p> -->
         </section>
 
         <!-- Behavior -->
         <section>
           <h3>Block vs Inline Behavior</h3>
-          <ul>
-            <li style="margin-bottom: 1rem">
+          <ul class="fs-28">
+            <li class="mb-16">
               Block elements start a new line or live on their own line; they
               take up the full width of their line or their parent container
             </li>
@@ -502,19 +502,14 @@
         <!-- Example Block Elements -->
         <section>
           <h3>Block Elements</h3>
-          <p
-            class="gdi-p"
-            style="max-width: 700px; margin: 0 auto"
-          >
-            Block-level elements include:
-          </p>
-          <ul>
+          <p class="fs-28">Block-level elements include:</p>
+          <ul class="fs-28">
             <li>Headings (h1, h2, etc)</li>
             <li>Paragraphs</li>
             <li>Divs</li>
             <li>Lists</li>
           </ul>
-          <p>
+          <p class="fs-24 mt-32">
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements"
               target="_blank"
@@ -526,18 +521,13 @@
         <!-- Example Inline Elements -->
         <section>
           <h3>Inline Elements</h3>
-          <p
-            class="gdi-p"
-            style="max-width: 700px; margin: 0 auto"
-          >
-            Inline-level elements include:
-          </p>
-          <ul>
+          <p class="fs-28">Inline-level elements include:</p>
+          <ul class="fs-28">
             <li>Anchor "a" tags</li>
             <li>Images</li>
             <li>Spans</li>
           </ul>
-          <p>
+          <p class="fs-24 mt-16">
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements"
               target="_blank"
@@ -546,11 +536,16 @@
           </p>
         </section>
 
+        <!-- Title Slide: Display Property -->
+        <section>
+          <h3><code>display</code> Property</h3>
+        </section>
+
         <!-- CSS Display property -->
         <section>
-          <h3>The CSS "Display" Property</h3>
-          <ul>
-            <li style="margin-bottom: 1rem">
+          <h3>The CSS <code>display</code> Property</h3>
+          <ul class="fs-28 width-750">
+            <li class="mb-16">
               CSS can be used to change an element's default flow or display
               property
             </li>
@@ -562,7 +557,7 @@
 
         <!-- Display property code example -->
         <section>
-          <h3>The CSS "Display" Property</h3>
+          <h4>The CSS "Display" Property</h4>
           <pre><code class="css">/* This paragraph element will now be an inline element */
 
 p {
@@ -583,10 +578,6 @@ span {
         <!-- Let's Develop It! -->
         <section>
           <h4>Let's Develop It!</h4>
-          <!-- <p class="width-750 mb-16">
-            Our project content has a few span-like elements; let's address
-            them:
-          </p> -->
           <ol class="fs-24">
             <li class="mb-16">
               The <code>Preparation Time</code> and
@@ -594,7 +585,7 @@ span {
               bolded
             </li>
             <li class="mb-16">
-              In your markup, Wrap <code>span</code> tags around each phrase
+              In your markup, wrap <code>span</code> tags around each phrase
               that is bolded
             </li>
             <li class="mb-16">
@@ -606,7 +597,8 @@ span {
               <code>dt-dd</code> tag pair
             </li>
             <li class="mb-16">
-              Give the <code>div</code> a class name of <code>table-row</code>
+              Give the <code>div</code> tags a class name of
+              <code>data-row</code>
             </li>
             <li class="mb-16">
               In your stylesheet, apply a <code>display</code> property of
@@ -616,67 +608,15 @@ span {
           </ol>
         </section>
 
-        <!-- <section>
-          <h3>Layout Practice</h3>
-          <p
-            class="gdi-p"
-            style="max-width: 700px; margin: 0 auto 0 auto"
-          >
-            How would you create the markup for a profile card element and
-            section?
-          </p>
-          <img
-            src="./imgs/layout-exe-star-trek-cast-section.png"
-            alt=""
-          />
-        </section>
-
-        <section>
-          <h3>Layout Practice</h3>
-          <img
-            src="./imgs/layout-exercise-star-trek-card.png"
-            height="250px"
-            alt=""
-          />
-          <pre><code class="html">&lt;div class="cast-section"&gt;
-  &lt;div class="profile-card"&gt;
-    &lt;img src="image-url.jpg" alt="" /&gt;
-    &lt;h3&gt;Name&lt;/h3&gt;
-    &lt;p&gt;as&lt;/p&gt;
-    &lt;h3&gt;Character&lt;/h3&gt;
-  &lt;/div&gt; -->
-
-        <!-- Create copies of the "profile-card" element -->
-
-        <!-- &lt;/div&gt;</code></pre>
-        </section>
-
-        <section>
-          <h3>Let's Develop It!</h3>
-          <p
-            class="gdi-p"
-            style="max-width: 700px; margin: 0 auto 24px auto"
-          >
-            Your fan page should have cast section with profile cards for some
-            of the main cast:
-          </p>
-          <ul>
-            <li>Using the last exercise as reference, create a profile card</li>
-            <li>Create copies of the card element for other cast members</li>
-          </ul>
-        </section> -->
-
         <!-- Layout Pitfalls  -->
         <section>
-          <h3>Layout Gotchas</h3>
-          <p
-            class="gdi-p"
-            style="max-width: 800px; margin: 0 auto 24px auto"
-          >
+          <h4>Layout Gotchas</h4>
+          <p class="fs-28 width-750 mb-32">
             Some default properties of CSS can lead to unexpected layout
-            behavior. Three common culprits:
+            behavior
           </p>
-          <ol>
+          <p class="fs-28 width-750 mb-16">Three common culprits are:</p>
+          <ol class="fs-28">
             <li>The <code>box-sizing</code> property</li>
             <li>Browser defaults</li>
             <li>Margin collapsing</li>
@@ -685,88 +625,92 @@ span {
 
         <!-- Box Sizing -->
         <section>
-          <h3><code>box-sizing</code> Property</h3>
-          <p
-            class="gdi-p"
-            style="max-width: 700px; margin: 0 auto"
-          >
+          <h4><code>box-sizing</code> Property</h4>
+          <p class="fs-28 width-750 mb-16">
             The CSS <code>box-sizing</code> property determines how we calculate
-            the total width and height of an element. It has two values:
+            the total width and height of an element
           </p>
-          <pre><code class="css">/* content-box is the default box-sizing 
-   value of all elements */
+          <p class="fs-28">It has two values:</p>
+          <ol class="fs-24">
+            <li><code>content-box</code></li>
+            <li>border-box</li>
+          </ol>
+          <pre><code class="css">/* Default value of all elements */
+
 box-sizing: content-box;
 
-/* border-box will be your layout's best friend! */
+/* border-box: your layout's best friend! */
+
 box-sizing: border-box;
 </code></pre>
         </section>
 
+        <!-- Box-sizing demo -->
         <section>
           <h3><code>box-sizing</code> Demo</h3>
         </section>
 
-        <!-- Layout Tip -->
+        <!-- Let's Develop It! -->
         <section>
-          <h3>Layout Tip</h3>
-          <p
-            class="gdi-p"
-            style="max-width: 800px; margin: 0 auto"
-          >
-            Set the <code>box-sizing</code> property of all elements in your
-            project to <code>border-box</code>
+          <h4>Let's Develop It!</h4>
+          <p class="fs-28 width-750">
+            Copy the code below to set the <code>box-sizing</code> property of
+            all elements in your project to <code>border-box</code>
           </p>
           <pre><code class="css">/* This declaration will target every element in the project */
 
 * {
+
   box-sizing: border-box;
+
 }
 </code></pre>
         </section>
 
+        <!-- Browser Defaults -->
         <section>
-          <h3>Browser Defaults</h3>
-          <ul>
-            <li style="margin-bottom: 1rem">
+          <h4>Browser Defaults</h4>
+          <ul class="fs-24 width-750">
+            <li class="mb-16">
               Most HTML elements have one or more default browser values, that
               is, they have some basic CSS that influences their appearance on a
               page
             </li>
-            <li>
-              Some of these defaults can throw off our page layout (ex.
-              <code>box-sizing</code>); others may not be needed or wanted
+            <li class="mb-16">
+              Some of these defaults can throw off our page layout (example:
+              <code>box-sizing</code>)
             </li>
+            <li>Others may not be needed or wanted</li>
           </ul>
         </section>
 
+        <!-- Browser Default examples -->
         <section>
-          <h3>Browser Defaults</h3>
-          <p
-            class="gdi-p"
-            style="max-width: 800px; margin: 0 auto 24px auto"
-          >
-            Examples of browser defaults:
-          </p>
-          <ul>
-            <li>
+          <h4>Browser Defaults</h4>
+          <p class="fs-28">Examples of browser defaults</p>
+          <ul class="fs-28">
+            <li class="mb-16">
               A <code>p</code> tag has a margin-top and margin-bottom of 1em
             </li>
-            <li>
-              A <code>ul-li</code> tag has a dark, circular marker or
+            <li class="mb-16">
+              A <code>ul-li</code> tag pair has a dark, circular marker or
               bulletpoint
             </li>
-            <li>
+            <li class="mb-16">
               An <code>a</code> tag is underlined and has colors for different
               states
             </li>
-            <li>An <code>h1</code> tag has a font-size of 32px</li>
+            <li class="mb-16">
+              An <code>h1</code> tag has a font-size of 32px
+            </li>
           </ul>
         </section>
 
+        <!-- CSS Reset -->
         <section>
           <h3>Resetting CSS</h3>
-          <ul>
-            <li style="margin-bottom: 1rem">
+          <ul class="fs-28">
+            <li class="mb-16">
               "CSS Reset" is one way to globally remove some of these defaults
               in our project
             </li>
@@ -779,14 +723,11 @@ box-sizing: border-box;
 
         <section>
           <h3>CSS Resets</h3>
-          <p
-            class="gdi-p"
-            style="max-width: 800px; margin: 0 auto"
-          >
+          <p class="fs-28 width-750 mb-16">
             You can create your own reset rules or use any number of well-known
             reset stylesheets such as:
           </p>
-          <ul>
+          <ul class="fs-28">
             <li>
               <a
                 href="https://piccalil.li/blog/a-modern-css-reset/"
@@ -817,9 +758,9 @@ box-sizing: border-box;
         </section>
 
         <section>
-          <h3>Two Ways to Reset</h3>
-          <ol>
-            <li style="margin-bottom: 1rem">
+          <h4>Two Ways to Reset</h4>
+          <ul class="fs-28">
+            <li class="mb-16">
               Add a separate reset.css stylesheet to your project with the
               <code>link</code> tag in the <code>head</code> section of your
               HTML page
@@ -830,20 +771,36 @@ box-sizing: border-box;
               </ul>
             </li>
             <li>
-              Include the new CSS rules at the top of your project's stylesheet
+              Or include the CSS overwrites or reset properties and values at
+              the top of your project's stylesheet
             </li>
-          </ol>
+          </ul>
         </section>
 
+        <!-- Let's Develop It! -->
         <section>
           <h4>Let's Develop It!</h4>
-          <ol>
-            <li>Create a new stylesheet called <code>reset.css</code></li>
-            <li>
-              Copy and paste the code from this
-              <code><a href="">css-reset-sample</a></code> file
+          <p class="fs-28 width-600 mb-16">
+            Explore how adding a very basic reset adjusts our project's layout!
+          </p>
+          <ul class="fs-28">
+            <li class="mb-16">
+              Copy the code from this
+              <code
+                ><a
+                  href="https://raw.githubusercontent.com/tinuola/gdi_public/main/project-assets/css-reset-sample.txt"
+                  target="_blank"
+                  >css-reset-sample</a
+                ></code
+              >
+              file
             </li>
-          </ol>
+            <li class="mb-16">
+              Paste the copied code to the top of your project's stylesheet, and
+              save
+            </li>
+            <li>How does this affect the layout?</li>
+          </ul>
         </section>
 
         <section>
@@ -883,42 +840,8 @@ box-sizing: border-box;
 
         <!-- Images -->
         <section>
-          <h3>Images</h3>
+          <h3>CSS <code>background-image</code></h3>
         </section>
-
-        <!-- <section>
-          <h3>Image Types</h3>
-          <p
-            class="gdi-p"
-            style="max-width: 800px; margin: 0 auto 24px auto"
-          >
-            Common image types used in web development:
-          </p>
-          <ul>
-            <li><code>.jpeg</code> - Good for still images</li>
-            <li><code>.png</code> - Great when transparency is needed</li>
-            <li>
-              <code>.svg</code> - Great for icons, retaining image integrity
-            </li>
-            <li>
-              <code>.WebP</code> - * A new image format, reduced file size
-            </li>
-          </ul>
-          <p>
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types"
-              target="_blank"
-              >Image Types (MDN)</a
-            >
-          </p>
-          <p>
-            <a
-              href="https://kinsta.com/blog/image-file-types/"
-              target="_blank"
-              >15 Best Image File Types</a
-            >
-          </p>
-        </section> -->
 
         <!-- Inline Images -->
         <section>
@@ -943,9 +866,10 @@ box-sizing: border-box;
               They are added with the CSS <code>background-image</code> property
             </li>
           </ul>
-          <pre><code class="css">
-div {
+          <pre><code class="css">div {
+
   background-image: url('wallpaper.png');
+
 }
 </code></pre>
         </section>
@@ -961,12 +885,19 @@ div {
             such as:
           </p>
           <pre><code class="css">div {
+
   background-image: url('wallpaper.png');
+
   background-repeat: no-repeat;
+
   background-size: cover; /* cover, contain, or absolute size */
+
   background-position: center center;
+
   width: 400px;
+
   height: 400px;
+  
 }
 </code></pre>
         </section>
@@ -1041,7 +972,7 @@ div {
         </section>
 
         <section>
-          <h3>Tip: Responsive Inline Images</h3>
+          <h3>Responsive Inline Images</h3>
           <p
             class="gdi-p"
             style="max-width: 700px; margin: 0 auto"
@@ -1050,14 +981,53 @@ div {
             <code>img</code> tag to make inline images easier to work with:
           </p>
           <pre><code class="css">img {
+
   max-width: 100%;
+
   display: block;
+
 }
 </code></pre>
         </section>
 
+        <!-- Let's Develop It! -->
         <section>
-          <h3>Let's Develop It!</h3>
+          <h4>Let's Develop It!</h4>
+          <ul class="fs-28">
+            <li>Add the responsive image code snippet to your stylesheet</li>
+            <!-- <li>Add a background image to a portion of your page</li> -->
+          </ul>
+
+          <pre><code class="css">img {
+
+  max-width: 100%;
+
+  display: block;
+
+}
+</code></pre>
+        </section>
+
+        <!-- Let's Develop It! -->
+        <section>
+          <h4>Let's Develop It!</h4>
+          <p class="28">Using the <code>background-image</code> property</p>
+          <ul class="fs-28">
+            <li>Add a background image to a portion of your page</li>
+          </ul>
+
+          <pre><code class="css">img {
+
+  max-width: 100%;
+
+  display: block;
+
+}
+</code></pre>
+        </section>
+
+        <!-- <section>
+          <h4>Let's Develop It!</h4>
           <ul>
             <li>Include the responsive image code snippet in your CSS</li>
             <li>Add a background image to a portion of your page</li>
@@ -1070,7 +1040,7 @@ div {
   background-position: center center;
   height: 400px;
 }</code></pre>
-        </section>
+        </section> -->
 
         <!-- Home Practice -->
 
@@ -1090,7 +1060,7 @@ div {
               be experimental and add more styling!
             </li>
 
-            <li>
+            <!-- <li>
               Create pseudo-code/basic markup for the
               <a
                 href="https://raw.githubusercontent.com/tinuola/gdi_public/main/project-assets/fe-mentor/product-preview-card_vDESK.png"
@@ -1098,7 +1068,7 @@ div {
                 >Product Preview Component</a
               >
               project
-            </li>
+            </li> -->
           </ul>
         </section>
 
