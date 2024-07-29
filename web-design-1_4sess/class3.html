@@ -75,18 +75,20 @@
         <!-- Class Agenda -->
         <section>
           <h3>AGENDA</h3>
-          <ul>
+          <ul class="fs-28">
             <li>
               CSS Layout: The Box Model
               <ul>
                 <li>Padding, Margin & Border Properties</li>
-                <li>Block and Inline Elements</li>
-                <li>Box-Sizing</li>
+                <li>Display Flow: Block and Inline Elements</li>
               </ul>
             </li>
-            <li>Browser Inspect Tool</li>
+
+            <li>Layout Tips: Box-Sizing & Margin Collapse</li>
+            <li>Default Styles & CSS Resets</li>
+            <li>Using the Browser Inspect Tool</li>
             <li>
-              CSS
+              Images in CSS:
               <code class="highlight--yellow">background-image</code> property
             </li>
           </ul>
@@ -103,44 +105,35 @@
           <h3>CSS Box Model</h3>
         </section>
 
-        <!-- Box Model image -->
+        <!-- Box Model -->
         <section>
-          <h3>Boxes Everywhere!</h3>
-          <p
-            class="gdi-p"
-            style="max-width: 700px; margin: 0 auto"
-          >
-            Every HTML element on a page is wrapped in a box.
-          </p>
+          <h4>Boxes Everywhere!</h4>
+          <p>Every HTML element on a page is wrapped in a box.</p>
           <img
             src="./imgs/box-model.png"
             width="500px"
             alt="the CSS box model"
           />
-          <p>
-            <small
-              >Image source:
-              <a
-                href="https://complete-concrete-concise.com/tutorials/webdev/front-end-basics/html-flow-and-the-css-box-model-the-display-property/"
-                target="_blank"
-                >complete-concrete-concise.com</a
-              ></small
+          <p class="fs-20">
+            Image source:
+            <a
+              href="https://complete-concrete-concise.com/tutorials/webdev/front-end-basics/html-flow-and-the-css-box-model-the-display-property/"
+              target="_blank"
+              >complete-concrete-concise.com</a
             >
           </p>
         </section>
 
         <!-- Box Model Properties -->
         <section>
-          <h3>Box Model Properties</h3>
-          <ul>
-            <li style="margin-bottom: 1rem">
-              <code>Content</code>: Text, image, form, etc.
-            </li>
-            <li style="margin-bottom: 1rem">
+          <h4>Box Model Properties</h4>
+          <ul class="fs-28 width-750">
+            <li class="mb-16"><code>Content</code>: Text, image, form, etc.</li>
+            <li class="mb-16">
               <code>Padding:</code>The space around the content, or the distance
               between the content and its borders
             </li>
-            <li style="margin-bottom: 1rem">
+            <li class="mb-16">
               <code>Border:</code>The wrapper around the content and its padding
             </li>
             <li>
@@ -150,50 +143,48 @@
           </ul>
         </section>
 
-        <!-- Box Model diagram -->
+        <!-- Diagram: Box Model -->
         <section>
-          <h3>Box Model</h3>
+          <h4>Box Model</h4>
           <img
             src="./imgs/box-model2.png"
             alt=""
+            width="600px"
           />
-          <p>
-            <small
-              >Image source:
-              <a
-                href="http://thenewcode.com/49/The-CSS-Box-Model"
-                target="_blank"
-                >thenewcode.com</a
-              ></small
+          <p class="fs-20">
+            Image source:
+            <a
+              href="http://thenewcode.com/49/The-CSS-Box-Model"
+              target="_blank"
+              >thenewcode.com</a
             >
           </p>
         </section>
 
-        <!-- Box Model in Dev Tools demo -->
+        <!-- Diagram: Box Model in Dev Tools-->
         <section>
-          <h3>Box Model in Developer Tools</h3>
+          <h4>Box Model in Developer Tools</h4>
           <img
             src="./imgs/box-model-in-dev-tools.png"
             alt=""
+            width="600px"
           />
         </section>
 
+        <!-- Box Model Dev Tools Demo -->
         <section>
-          <h3>Box Model in Developer Tools</h3>
-          <h4>Demo</h4>
+          <h4>Demo:</h4>
+          <h4>Box Model in Developer Tools</h4>
         </section>
 
-        <!-- Padding -->
+        <!-- Padding property-->
         <section>
-          <h3><code>Padding</code> Property</h3>
-          <p
-            class="gdi-p"
-            style="max-width: 800px; margin: 0 auto 24px auto"
-          >
+          <h4><code>padding</code> Property</h4>
+          <p class="fs-28 width-750 mb-32">
             The <code>padding</code> property controls the amount of clear space
             around an element
           </p>
-          <p>
+          <p class="fs-24">
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding"
               target="_blank"
@@ -202,8 +193,9 @@
           </p>
         </section>
 
+        <!-- Padding property syntax-->
         <section>
-          <h3><code>Padding</code> Property Syntax</h3>
+          <h4><code>padding</code> Property Syntax</h4>
           <pre><code class="html">&lt;p class="box"&gt;Hello World&lt;/p&gt;
 
 &lt;p class="box"&gt;Goodbye World&lt;/p&gt;
@@ -211,15 +203,16 @@
 
           <pre><code class="css">.box {
 
-  background-color: yellowgreen; /* For visual demo */
-
   padding: 10px;
+
+  background-color: yellowgreen; /* For visuals */
 
 }</code></pre>
         </section>
 
+        <!-- Padding property syntax-->
         <section>
-          <h3><code>Padding</code> Property Syntax</h3>
+          <h4><code>padding</code> Property Syntax</h4>
           <pre><code class="css">.box {
 
   padding-top: 10px;
@@ -229,11 +222,13 @@
   padding-bottom: 10px;
 
   padding-left: 5px;
+
 }</code></pre>
         </section>
 
+        <!-- Padding property shorthand syntax-->
         <section>
-          <h5><code>Padding</code> Property Shorthand Syntax</h5>
+          <h5><code>padding</code> Property Shorthand Syntax</h5>
           <pre><code class="css">.box {
   padding-top: 10px;
   padding-right: 5px;
@@ -271,17 +266,14 @@
           </ol>
         </section>
 
-        <!-- Margin -->
+        <!-- Margin property-->
         <section>
-          <h3><code>Margin</code> Property</h3>
-          <p
-            class="gdi-p"
-            style="max-width: 800px; margin: 0 auto 24px auto"
-          >
+          <h4><code>margin</code> Property</h4>
+          <p class="fs-28 width-750 mb-32">
             The <code>margin</code> property controls the distance between
             elements on all four sides; it creates space between elements
           </p>
-          <p>
+          <p class="fs-24">
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin"
               target="_blank"
@@ -290,22 +282,23 @@
           </p>
         </section>
 
-        <!-- Syntax -->
+        <!-- Margin property syntax -->
         <section>
-          <h3><code>Margin</code> Syntax Property</h3>
+          <h4><code>margin</code> Syntax Property</h4>
           <pre><code class="css">.box {
 
-  background-color: yellowgreen;
+  margin: 16px;
 
   padding: 10px;
 
-  margin: 16px;
+  background-color: yellowgreen;
 
 }</code></pre>
         </section>
 
+        <!-- Margin property syntax -->
         <section>
-          <h3><code>Margin</code> Property Syntax</h3>
+          <h4><code>margin</code> Property Syntax</h4>
           <pre><code class="css">.box {
 
   margin-top: 10px;
@@ -315,12 +308,13 @@
   margin-bottom: 10px;
 
   margin-left: 5px;
+
 }</code></pre>
         </section>
 
-        <!-- Shorthand Syntax -->
+        <!-- Margin property shorthand Syntax -->
         <section>
-          <h5><code>Margin</code> Property Shorthand Syntax</h5>
+          <h5><code>margin</code> Property Shorthand Syntax</h5>
           <pre><code class="css">.box {
   margin-top: 10px;
   margin-right: 5px;
@@ -347,27 +341,23 @@
           <h4>Let's Develop It!</h4>
           <p class="fs-24">Let's apply margin to parts of our project</p>
           <ul class="fs-24 width-750">
-            <li>
+            <li class="mb-16">
               Apply a <code>margin-bottom</code> of <code>12px</code> or
               <code>0.75rem</code> to all list item elements
-              <ul>
-                <li>Hint: Use the <code>li</code> element selector type</li>
-              </ul>
             </li>
+
+            <li>Hint: Use the <code>li</code> element selector type</li>
           </ul>
         </section>
 
-        <!-- Border -->
+        <!-- Border property -->
         <section>
-          <h3><code>Border</code> Property</h3>
-          <p
-            class="gdi-p"
-            style="max-width: 800px; margin: 0 auto 24px auto"
-          >
+          <h4><code>border</code> Property</h4>
+          <p class="fs-28 width-750 mb-32">
             The <code>border</code> property demarcates the area or creates a
             visible boundary around a content and its padding (inner space)
           </p>
-          <p>
+          <p class="fs-24">
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/CSS/border"
               target="_blank"
@@ -376,32 +366,33 @@
           </p>
         </section>
 
+        <!-- Border property syntax -->
         <section>
-          <h3><code>Border</code> Property Syntax</h3>
+          <h4><code>border</code> Property Syntax</h4>
           <pre><code class="html">&lt;p class="box"&gt;Hello World&lt;/p&gt;
 
 &lt;p class="box"&gt;Goodbye World&lt;/p&gt;
 </code></pre>
           <pre><code class="css">.box {
   
-  background-color: yellowgreen;
+  border: 3px solid black;
   
+  margin: 16px;
+
   padding: 10px;
 
-  margin: 16px;
+  background-color: yellowgreen;
   
-  border: 3px solid black; 
-}
-</code></pre>
+}</code></pre>
         </section>
 
-        <!-- Border shorthand -->
+        <!-- Border property verbose syntax -->
         <section>
-          <h4><code>Border</code> Property Syntax</h4>
+          <h4><code>border</code> Property Syntax</h4>
           <p class="fs-24 width-750">
-            The <code>border</code> property is a shorthand for: the width,
-            style, and color of a border; these properties can be declared
-            individually
+            The <code>border</code> property is a shorthand for: the
+            <code>width</code>, <code>style</code>, and <code>color</code> of a
+            border; these properties can be declared individually
           </p>
           <pre><code class="css">.box {
 
@@ -451,30 +442,29 @@
 
         <!-- Display Flow -->
         <section>
-          <h3>Display Flow</h3>
-          <p
-            class="gdi-p"
-            style="max-width: 800px; margin: 0 auto 24px auto"
-          >
-            Every element has a default flow--the way that it renders on the
-            page before any CSS styling is applied. It is either:
+          <h4>Display Flow</h4>
+          <p class="fs-28 width-750 mb-16">
+            Every element has a
+            <span class="highlight--yellow">default flow</span>--the way that it
+            renders on the page before any CSS styling is applied
           </p>
-          <ul>
-            <li>Stacking on top of another element</li>
-            <li>Side by side with another element</li>
+          <p class="fs-28">An element is either:</p>
+          <ul class="fs-28">
+            <li>Stacked on top of another element</li>
+            <li>Positioned side by side with another element</li>
           </ul>
         </section>
 
         <!-- Block and Inline Elements -->
         <section>
-          <h3>Block and Inline Elements</h3>
+          <h4>Block and Inline Elements</h4>
           <ul class="fs-28">
             <li class="mb-16">
               Elements that stack are on top of other elements are known as
               <code class="highlight--yellow">Block</code> level elements
             </li>
             <li class="mb-16">
-              Elements that are side-by-side on the same line are
+              Elements that are positioned side-by-side on the same line are
               <code class="highlight--yellow">Inline</code> elements
             </li>
           </ul>
@@ -484,24 +474,28 @@
           </p> -->
         </section>
 
-        <!-- Behavior -->
+        <!-- Block vs Inline Behavior -->
         <section>
-          <h3>Block vs Inline Behavior</h3>
+          <h4>Block vs Inline Behavior</h4>
           <ul class="fs-28">
             <li class="mb-16">
-              Block elements start a new line or live on their own line; they
-              take up the full width of their line or their parent container
+              Block elements
+              <span class="highlight--yellow">start a new line</span> or live on
+              their own line; they take up the full width of their line or their
+              parent container
             </li>
             <li>
-              Inline elements don't start a new line and take up only as much
-              space as their content needs
+              Inline elements don't start a new line and
+              <span class="highlight--yellow"
+                >take up only as much space as their content needs</span
+              >
             </li>
           </ul>
         </section>
 
         <!-- Example Block Elements -->
         <section>
-          <h3>Block Elements</h3>
+          <h4>Block Elements</h4>
           <p class="fs-28">Block-level elements include:</p>
           <ul class="fs-28">
             <li>Headings (h1, h2, etc)</li>
@@ -520,7 +514,7 @@
 
         <!-- Example Inline Elements -->
         <section>
-          <h3>Inline Elements</h3>
+          <h4>Inline Elements</h4>
           <p class="fs-28">Inline-level elements include:</p>
           <ul class="fs-28">
             <li>Anchor "a" tags</li>
@@ -543,7 +537,7 @@
 
         <!-- CSS Display property -->
         <section>
-          <h3>The CSS <code>display</code> Property</h3>
+          <h4>The CSS <code>display</code> Property</h4>
           <ul class="fs-28 width-750">
             <li class="mb-16">
               CSS can be used to change an element's default flow or display
@@ -555,23 +549,82 @@
           </ul>
         </section>
 
-        <!-- Display property code example -->
+        <!-- Display property syntax -->
         <section>
-          <h4>The CSS "Display" Property</h4>
-          <pre><code class="css">/* This paragraph element will now be an inline element */
-
-p {
+          <h4><code>display</code> Property Syntax</h4>
+          <p>Any paragraph element will now be an inline element</p>
+          <pre><code class="css">p {
 
 display: inline;
 
-}
-
-/* This span element will now be a block element */
-
-span {
+}</code></pre>
+          <p>Any span element will now be a block element</p>
+          <pre><code class="css">span {
 
   display: block;
 
+}</code></pre>
+        </section>
+
+        <!-- Inline Elements -->
+        <section>
+          <h4>Inline Element Caveat</h4>
+          <p class="fs-24 width-750">
+            Setting <code>margin-top</code> or <code>margin-bottom</code> to
+            inline elements (either default, or converted block elements) has no
+            layout effect
+          </p>
+          <pre><code class="html">&lt;span&gt;Hello&lt;/span&gt;
+
+&lt;p&gt;Goodbye&lt;/p&gt;
+</code></pre>
+
+          <pre><code class="css">span, p {
+  background-color: red;
+}
+
+p {
+  display: inline;
+  margin-top: 16px;
+}
+
+span {
+  margin-bottom: 16px;
+}</code></pre>
+        </section>
+
+        <!-- Inline-Block Element -->
+        <section>
+          <h4><code>display: inline-block</code></h4>
+          <p class="fs-24 width-750">
+            When we want an element to be inline
+            <code class="highlight--yellow">and</code> have block-like behavior
+            (the ability to have a <code>margin-top</code> or
+            <code>margin-bottom</code>) we can set its
+            <code>display</code> value to <code>inline-block</code>
+          </p>
+        </section>
+
+        <!-- Inline-Block Element -->
+        <section>
+          <h4><code>display: inline-block</code></h4>
+          <pre><code class="html">&lt;span&gt;Hello&lt;/span&gt;
+
+&lt;p&gt;Goodbye&lt;/p&gt;
+</code></pre>
+
+          <pre><code class="css">span, p {
+  background-color: red;
+}
+
+p {
+  display: inline-block;
+  margin-top: 16px;
+}
+
+span {
+  display: inline-block;
+  margin-bottom: 16px;
 }</code></pre>
         </section>
 
@@ -633,7 +686,7 @@ span {
           <p class="fs-28">It has two values:</p>
           <ol class="fs-24">
             <li><code>content-box</code></li>
-            <li>border-box</li>
+            <li><code>border-box</code></li>
           </ol>
           <pre><code class="css">/* Default value of all elements */
 
@@ -653,7 +706,7 @@ box-sizing: border-box;
         <!-- Let's Develop It! -->
         <section>
           <h4>Let's Develop It!</h4>
-          <p class="fs-28 width-750">
+          <p class="fs-28 width-600 mb-16">
             Copy the code below to set the <code>box-sizing</code> property of
             all elements in your project to <code>border-box</code>
           </p>
@@ -670,15 +723,15 @@ box-sizing: border-box;
         <!-- Browser Defaults -->
         <section>
           <h4>Browser Defaults</h4>
-          <ul class="fs-24 width-750">
+          <ul class="fs-28 width-750">
             <li class="mb-16">
               Most HTML elements have one or more default browser values, that
-              is, they have some basic CSS that influences their appearance on a
-              page
+              is, they have some basic CSS style that influences their
+              appearance on a page
             </li>
             <li class="mb-16">
               Some of these defaults can throw off our page layout (example:
-              <code>box-sizing</code>)
+              <code>box-sizing: context-box</code>)
             </li>
             <li>Others may not be needed or wanted</li>
           </ul>
@@ -687,10 +740,10 @@ box-sizing: border-box;
         <!-- Browser Default examples -->
         <section>
           <h4>Browser Defaults</h4>
-          <p class="fs-28">Examples of browser defaults</p>
+          <p class="fs-28">Examples of browser defaults:</p>
           <ul class="fs-28">
             <li class="mb-16">
-              A <code>p</code> tag has a margin-top and margin-bottom of 1em
+              A <code>p</code> tag has a margin-top and margin-bottom of 16px
             </li>
             <li class="mb-16">
               A <code>ul-li</code> tag pair has a dark, circular marker or
@@ -708,7 +761,7 @@ box-sizing: border-box;
 
         <!-- CSS Reset -->
         <section>
-          <h3>Resetting CSS</h3>
+          <h4>Resetting CSS</h4>
           <ul class="fs-28">
             <li class="mb-16">
               "CSS Reset" is one way to globally remove some of these defaults
@@ -721,13 +774,14 @@ box-sizing: border-box;
           </ul>
         </section>
 
+        <!-- CSS Reset stylesheets -->
         <section>
-          <h3>CSS Resets</h3>
+          <h4>CSS Resets</h4>
           <p class="fs-28 width-750 mb-16">
-            You can create your own reset rules or use any number of well-known
-            reset stylesheets such as:
+            You can create your own reset rules or use well-known reset
+            stylesheets such as:
           </p>
-          <ul class="fs-28">
+          <ul class="fs-24">
             <li>
               <a
                 href="https://piccalil.li/blog/a-modern-css-reset/"
@@ -753,26 +807,32 @@ box-sizing: border-box;
           </ul>
         </section>
 
+        <!-- CSS Reset Demo -->
         <section>
           <h3>CSS Reset Demo</h3>
         </section>
 
+        <!-- Ways to Reset -->
         <section>
-          <h4>Two Ways to Reset</h4>
+          <h4>Two Ways to Add CSS Resets</h4>
           <ul class="fs-28">
-            <li class="mb-16">
-              Add a separate reset.css stylesheet to your project with the
-              <code>link</code> tag in the <code>head</code> section of your
-              HTML page
-              <ul>
+            <li class="mb-36">
+              Create a <code>reset.css</code> stylesheet file for your project
+              <ol>
+                <li>Add your CSS overwrites to the new stylesheet</li>
+                <li>
+                  Link the stylesheet in the <code>head</code> element/section
+                  of your HTML file
+                </li>
                 <li>
                   Make sure the link comes before the project's stylesheet link
                 </li>
-              </ul>
+              </ol>
             </li>
+            <li class="highlight--yellow inline-block mb-16">OR</li>
             <li>
-              Or include the CSS overwrites or reset properties and values at
-              the top of your project's stylesheet
+              Add the CSS overwrites or reset values at the start/ top of your
+              project's stylesheet
             </li>
           </ul>
         </section>
@@ -780,15 +840,15 @@ box-sizing: border-box;
         <!-- Let's Develop It! -->
         <section>
           <h4>Let's Develop It!</h4>
-          <p class="fs-28 width-600 mb-16">
+          <p class="fs-28 width-750 mb-16">
             Explore how adding a very basic reset adjusts our project's layout!
           </p>
-          <ul class="fs-28">
+          <ol class="fs-24 width-750">
             <li class="mb-16">
               Copy the code from this
               <code
                 ><a
-                  href="https://raw.githubusercontent.com/tinuola/gdi_public/main/project-assets/css-reset-sample.txt"
+                  href="https://raw.githubusercontent.com/tinuola/gdi_public/main/resources/css-reset-sample.txt"
                   target="_blank"
                   >css-reset-sample</a
                 ></code
@@ -799,21 +859,30 @@ box-sizing: border-box;
               Paste the copied code to the top of your project's stylesheet, and
               save
             </li>
-            <li>How does this affect the layout?</li>
-          </ul>
+            <li class="mb-16">How does this affect the layout?</li>
+            <li class="mb-16">Remove the margin-and-padding reset rule</li>
+            <li>
+              If you have two box-sizing declarations (the first might be from
+              the previous exercise), keep the newer box-sizing reset rule and
+              delete the old
+            </li>
+          </ol>
         </section>
 
+        <!-- Title Slide: Margin Collapse -->
         <section>
-          <h3>Margin Collapsing</h3>
-          <p
-            class="gdi-p"
-            style="max-width: 800px; margin: 0 auto"
-          >
+          <h3>Margin Collapse</h3>
+        </section>
+
+        <!-- Margin Collapse -->
+        <section>
+          <h4>Margin Collapse</h4>
+          <p class="fs-28 mb-32 width-750">
             Margin collapse occurs when the top and bottom margins of two
             stacked elements combine into a single margin; the element with the
             larger margin takes precedence
           </p>
-          <p>
+          <p class="fs-24">
             <a
               href="https://www.w3schools.com/css/css_margin_collapse.asp"
               target="_blank"
@@ -822,35 +891,74 @@ box-sizing: border-box;
           </p>
         </section>
 
+        <!-- Margin Collapse code example-->
+        <section>
+          <h4>Margin Collapse</h4>
+          <p class="fs-28 width-750 mb-16">
+            How much space will exist between the two boxes?
+          </p>
+          <p class="fs-28 width-750 mb-32"><code>40px? 60px?</code></p>
+          <pre><code class="html">&lt;p class="box box1"&gt;Hello World&lt;/p&gt;
+
+&lt;p class="box box2"&gt;Goodbye World&lt;/p&gt;
+</code></pre>
+          <pre><code class="css">.box {
+  padding: 10px;
+  background-color: yellowgreen;
+  border: 1px solid black; 
+}
+
+.box1 {
+  margin-bottom: 20px;
+}
+
+.box2 {
+  margin-top: 40px;
+}</code></pre>
+        </section>
+
+        <!-- Margin Collapsing Demo -->
         <section>
           <h3>Margin Collapse Demo</h3>
         </section>
 
+        <!-- Margin Collapse Tip -->
         <section>
-          <h3>Layout Tip</h3>
-          <p
-            class="gdi-p"
-            style="max-width: 800px; margin: 0 auto"
-          >
-            When creating vertical space between two elements, apply
-            <code>margin-top</code> or <code>margin-bottom</code> declaration to
-            only one of the elements
+          <h4>Tip: Setting Margins</h4>
+          <p class="fs-28 width-750 mb-32">
+            When creating vertical space between two elements, apply the
+            <code>margin</code> declaration to only one element
           </p>
+          <pre><code class="html">&lt;p class="box box1"&gt;Hello World&lt;/p&gt;
+
+&lt;p class="box box2"&gt;Goodbye World&lt;/p&gt;
+</code></pre>
+          <pre><code class="css">.box {
+  padding: 10px;
+  background-color: yellowgreen;
+  border: 1px solid black; 
+}
+
+.box2 {
+  margin-top: 40px;
+}</code></pre>
         </section>
 
-        <!-- Images -->
+        <!-- Title Slide: background-image Property -->
         <section>
-          <h3>CSS <code>background-image</code></h3>
+          <h3><code>background-image</code> Property</h3>
+          <h4>Working with Images in CSS</h4>
         </section>
 
         <!-- Inline Images -->
         <section>
-          <h3>Inline Images</h3>
-          <ul>
-            <li>
-              Inline images are part of the content (i.e., the HTML markup)
+          <h4>Inline Images</h4>
+          <ul class="fs-28">
+            <li class="mb-16">
+              Inline images are part of the content (that is, they are part of
+              the HTML markup)
             </li>
-            <li>They are added with the <code>img</code> tag</li>
+            <li>They are added with the <code>&lt;img&gt;</code> tag</li>
           </ul>
           <pre><code class="html">
 <img src="cute-kitten.jpeg" alt="image description">
@@ -859,11 +967,16 @@ box-sizing: border-box;
 
         <!-- Background Images -->
         <section>
-          <h3>Background Images</h3>
-          <ul>
-            <li>Background images are part of the CSS</li>
-            <li>
+          <h4>Background Images</h4>
+          <ul class="fs-24 width-750">
+            <li class="mb-16">Background images are part of the CSS code</li>
+            <li class="mb-16">
               They are added with the CSS <code>background-image</code> property
+            </li>
+            <li>
+              The <code>background-image</code> property has a
+              <code>url()</code> value for the location of the image--either to
+              an internal path or to an external link
             </li>
           </ul>
           <pre><code class="css">div {
@@ -872,15 +985,75 @@ box-sizing: border-box;
 
 }
 </code></pre>
+          <p class="fs-24">
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-image"
+              target="_blank"
+              >background-image (MDN)</a
+            >
+          </p>
+        </section>
+
+        <!-- Difference between inlne and background -->
+        <section>
+          <h4>Use an Inline or Background Image?</h4>
+          <ul class="fs-28 width-750">
+            <li class="mb-16">
+              Inline images are
+              <span class="highlight--yellow">semantic</span>--they are relevant
+              to the page's content and are better for accessibility
+            </li>
+            <li>
+              Background images are primarily decorative and
+              <span class="highlight--yellow">non-semantic</span>, that is, they
+              don't add meaning to the content
+            </li>
+          </ul>
+        </section>
+
+        <!-- Styling CSS Images -->
+        <section>
+          <h4>Styling CSS Images</h4>
+          <p class="fs-28 width-600 mb-16">
+            Both inline and background images can be styled using CSS properties
+            such as:
+          </p>
+          <ul class="fs-28">
+            <li>Width</li>
+            <li>Height</li>
+            <li>Border</li>
+            <li>Opacity</li>
+            <li>and more!</li>
+          </ul>
+          <p class="fs-24 mt-16">
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/width"
+              target="_blank"
+              >width</a
+            >,
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/height"
+              target="_blank"
+              >height</a
+            >,
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/border"
+              target="_blank"
+              >border</a
+            >,
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/opacity"
+              target="_blank"
+              >opacity</a
+            >
+            (MDN)
+          </p>
         </section>
 
         <!-- CSS for Background Images -->
         <section>
-          <h3>Background Image Properties</h3>
-          <p
-            class="gdi-p"
-            style="max-width: 700px; margin: 0 auto"
-          >
+          <h4>Background Image Properties</h4>
+          <p class="fs-28 width-750">
             Background images can be controlled using additional CSS properties
             such as:
           </p>
@@ -890,218 +1063,107 @@ box-sizing: border-box;
 
   background-repeat: no-repeat;
 
-  background-size: cover; /* cover, contain, or absolute size */
+  background-size: cover;
 
   background-position: center center;
 
-  width: 400px;
+  width: 400px; /* Not a background style property */
 
-  height: 400px;
+  height: 400px; /* Not a background style property */
   
 }
 </code></pre>
-        </section>
-
-        <!-- CSS for inline images -->
-        <section>
-          <h3>Styling CSS Images</h3>
-          <p
-            class="gdi-p"
-            style="max-width: 700px; margin: 0 auto"
-          >
-            Both inline and background images can be styled using CSS properties
-            such as:
-          </p>
-          <ul>
-            <li>
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/CSS/width"
-                target="_blank"
-                >width</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/CSS/height"
-                target="_blank"
-                >height</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/CSS/border"
-                target="_blank"
-                >border</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/CSS/opacity"
-                target="_blank"
-                >opacity</a
-              >
-            </li>
-          </ul>
-          <!-- <p
-            class="gdi-p"
-            style="max-width: 700px; margin: 24px auto 0 auto"
-          >
-            Other properties to explore with images: <code>filter</code>,
-            <code>object-fit</code>, <code>linear-gradient</code>, and
+          <p class="24">
             <a
-              href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Images"
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/background"
               target="_blank"
-              >more!</a
+              rel="noopener noreferrer"
+              >CSS Background style properties(MDN)</a
             >
-          </p> -->
-        </section>
-
-        <!-- Difference between inlne and background -->
-        <section>
-          <h3>Use an Inline or Background Image?</h3>
-          <ul>
-            <li style="margin-bottom: 1rem">
-              Inline images are semantic--they are relevant to the page's
-              content and are better for accessibility
-            </li>
-            <li>
-              Background images are primarily decorative, that is, they don't
-              add meaning to the content
-            </li>
-          </ul>
-        </section>
-
-        <section>
-          <h3>Responsive Inline Images</h3>
-          <p
-            class="gdi-p"
-            style="max-width: 700px; margin: 0 auto"
-          >
-            The following CSS declaration is often globally applied to the
-            <code>img</code> tag to make inline images easier to work with:
           </p>
-          <pre><code class="css">img {
+        </section>
 
-  max-width: 100%;
+        <!-- Backgroudn Image Sizing -->
+        <section>
+          <h4>Background Image Sizing</h4>
+          <p class="fs-28 width-750">
+            The dimension of a background image is determined by the size or
+            amount of its content container or by specific CSS sizing properties
+            such as
+            <code>width</code>, <code>max-width</code>, <code>height</code>,
+            <code>min-height</code>, etc.
+          </p>
+        </section>
 
-  display: block;
-
-}
-</code></pre>
+        <!-- Background Image Demo -->
+        <section>
+          <h4>Background Image Demo</h4>
         </section>
 
         <!-- Let's Develop It! -->
         <section>
           <h4>Let's Develop It!</h4>
-          <ul class="fs-28">
-            <li>Add the responsive image code snippet to your stylesheet</li>
-            <!-- <li>Add a background image to a portion of your page</li> -->
-          </ul>
-
-          <pre><code class="css">img {
-
-  max-width: 100%;
-
-  display: block;
-
-}
-</code></pre>
-        </section>
-
-        <!-- Let's Develop It! -->
-        <section>
-          <h4>Let's Develop It!</h4>
-          <p class="28">Using the <code>background-image</code> property</p>
-          <ul class="fs-28">
-            <li>Add a background image to a portion of your page</li>
-          </ul>
-
-          <pre><code class="css">img {
-
-  max-width: 100%;
-
-  display: block;
-
-}
-</code></pre>
-        </section>
-
-        <!-- <section>
-          <h4>Let's Develop It!</h4>
-          <ul>
-            <li>Include the responsive image code snippet in your CSS</li>
-            <li>Add a background image to a portion of your page</li>
-          </ul>
-
-          <pre><code class="css">div {
-  background-image: url('wallpaper.png');
-  background-repeat: no-repeat;
-  background-size: cover; /* cover, contain, or absolute size */
-  background-position: center center;
-  height: 400px;
-}</code></pre>
-        </section> -->
-
-        <!-- Home Practice -->
-
-        <section>
-          <h4>Home Practice</h4>
-          <ul class="fs-24">
-            <!-- <li class="mb-16">
-              Download and install the
-              <a
-                href="https://wave.webaim.org/extension/"
-                target="_blank"
-                >WAVE browser plugin</a
-              >, if you haven't already
-            </li> -->
+          <ol class="fs-28 width-750">
             <li class="mb-16">
-              Complete any styling still pending from the in-class practice OR
-              be experimental and add more styling!
+              Let's add a transparent patterned background to the body of the
+              project page
             </li>
-
-            <!-- <li>
-              Create pseudo-code/basic markup for the
+            <li class="mb-16">
+              We'll be using this
               <a
-                href="https://raw.githubusercontent.com/tinuola/gdi_public/main/project-assets/fe-mentor/product-preview-card_vDESK.png"
+                href="https://www.transparenttextures.com/patterns/arches.png"
                 target="_blank"
-                >Product Preview Component</a
+                >arched pattern</a
               >
-              project
-            </li> -->
-          </ul>
-        </section>
-
-        <!-- <section>
-          <h3>Home Practice</h3>
-          <p
-            class="gdi-p"
-            style="max-width: 700px; margin: 0 auto"
-          ></p>
-          <ol>
+              from
+              <a
+                href="https://www.transparenttextures.com/"
+                target="_blank"
+                >transparenttextures.com</a
+              >
+            </li>
+            <li class="mb-16">
+              Save the pattern to your project's image folder
+            </li>
             <li>
-              Build out the rest of your fan page:
+              In your stylesheet, add the following CSS rule to the
+              <code>body</code> selector:
               <ul>
-                <li>Resize images where appropriate</li>
+                <li>
+                  <code class="highlight--yellow"
+                    >background-image: url('Add location of image');</code
+                  >
+                </li>
               </ul>
             </li>
-            <li>Organize your markup into groups of "nested boxes"</li>
-            <li>Select 2 or 3 fonts to use; apply them with CSS</li>
-            <li>Apply CSS properties you've learned today; look up others</li>
-            <li>Add a CSS reset stylesheet</li>
-            <li>Feel free to reference the Bridgerton REPLs</li>
-            <li>Ask for support or feedback in Slack 🙂</li>
           </ol>
-        </section> -->
+        </section>
 
+        <!-- Home Practice -->
+        <section>
+          <h4>Home Practice</h4>
+          <ul class="fs-24 width-750">
+            <li class="mb-16">
+              Complete any styling still pending from the in-class practice OR
+              experiment and add more styling!
+            </li>
+          </ul>
+        </section>
+
+        <!-- Next Class -->
         <section>
           <h3>Next Class</h3>
           <ul>
-            <li>Responsive Web Design</li>
+            <li>
+              Responsive Web Design
+              <ul>
+                <li>Responsive Images</li>
+                <li>Media Queries</li>
+              </ul>
+            </li>
             <li>Project Wrap-up</li>
           </ul>
         </section>
-
         <!-- End of lesson slides -->
 
         <!-- Class Feedback Survey, if using -->
@@ -1112,7 +1174,7 @@ box-sizing: border-box;
 
         <!-- Q&A -->
         <section>
-          <h2>Q&A</h2>
+          <h3>Q&A</h3>
         </section>
 
         <!-- Thank You -->
@@ -1123,8 +1185,7 @@ box-sizing: border-box;
             width="300px"
             class="noborder"
           />
-          <br />
-          <h2>Thank You!</h2>
+          <h3>Thank You!</h3>
         </section>
       </div>
       <!-- End of Slides container -->

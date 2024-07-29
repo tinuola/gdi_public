@@ -77,12 +77,20 @@
           <h3>AGENDA</h3>
           <ul>
             <li>
-              Responsive Web Design
+              Intro to Responsive Web Design
               <ul>
-                <li>Media Queries</li>
+                <li>Responsive Images</li>
+                <li>Working Media Queries</li>
               </ul>
             </li>
-            <li>Project Wrapup</li>
+            <li>Project Wrap-up</li>
+            <li>
+              Beyond this Series
+              <ul>
+                <li>Resources</li>
+                <li>Cultivating a Coding Practice</li>
+              </ul>
+            </li>
           </ul>
         </section>
 
@@ -93,165 +101,230 @@
         </section>
 
         <!-- Title Slide: Responsive Web Design -->
+        <section>
+          <h3>Responsive Web Design</h3>
+        </section>
 
+        <!-- Responsive Web Design -->
         <section>
           <h4>Responsive Web Design</h4>
-          <p
-            class="gdi-p"
-            style="max-width: 800px; margin: 0 auto"
-          >
+          <p class="fs-32 width-750">
             A design and development approach to creating web pages, web content
             and web applications that respond or adapt to different devices and
             screen sizes
           </p>
         </section>
 
+        <!-- Screenshot -->
         <section>
           <h4>Responsive Web Design</h4>
           <img
             src="./imgs/responsive-web-design-devices.png"
             width="600px"
             alt="Boston Globe website on different devices"
-          /><br />
-          <small
-            ><a
+          />
+          <p class="fs-20">
+            <a
               href="https://brolik.com/blog/responsive-web-design-examples-with-css-tips-and-tricks/"
               target="_blank"
-              >Image Source</a
-            ></small
-          >
+              >Image Source: Brolik.com</a
+            >
+          </p>
         </section>
 
+        <!-- Checking for Responsiveness -->
         <section>
           <h4>Responsiveness in Web Browsers</h4>
-          <p
-            class="gdi-p"
-            style="max-width: 675px; margin: 0 auto 24px auto"
-          >
-            We can check the responsiveness of our web pages in at least three
-            ways:
+          <p class="fs-28 width-750 mb-32">
+            We can check the responsiveness of our websites and applications in
+            at least three ways:
           </p>
-          <ul>
-            <li>Manually resizing our browser windows</li>
-            <li>Physically verifying responsiveness on actual devices</li>
+          <ul class="fs-28 width-750">
+            <li class="mb-16">Manually resizing our browser windows</li>
+            <li class="mb-16">
+              Physically verifying responsiveness on actual devices
+            </li>
             <li>
-              Using the <code>responsive viewport mode</code> in our browsers'
-              Developer Tools panel
+              Using the
+              <span class="highlight--yellow">Responsive Viewport Mode</span> in
+              our browsers' <code>Developer Tools (aka Dev Tools) </code>
             </li>
           </ul>
         </section>
 
+        <!-- Screenshot: Dev Tools -->
         <section>
           <h4>Responsive Viewport Mode</h4>
-          <p
-            class="gdi-p"
-            style="max-width: 675px; margin: 0 auto"
-          >
-            Toggle the device icon in the browser's
-            <code>inspector</code> window
-          </p>
+          <ul class="fs-24 width-600">
+            <li class="mb-16">
+              Open the <code>Dev Tools Inspector</code> with the keyboard
+              shortcut:
+              <ul>
+                <li>
+                  <code>cmd opt c</code> (Mac) or <code>ctrl opt c</code> (PC)
+                </li>
+              </ul>
+            </li>
+            <li>
+              Toggle the device icon in the
+              <code>inspector</code> window
+            </li>
+          </ul>
           <img
             src="./imgs/rwd-chrome-device-mode.png"
             alt="Chrome Responsive Device toolbar toggle"
-            width="700px"
-          /><br />
-          <small
-            >*Open the inspector with the keyboard shortcut:<br />
-            <code>cmd opt c</code> (Mac) or <code>ctrl opt c</code> (PC)</small
-          ><br />
-          <small
-            ><a
+            width="600px"
+          />
+          <p class="fs-20">
+            <a
               href="https://developer.chrome.com/blog/device-mode-v2/"
               target="_blank"
               >Image Source</a
-            ></small
-          >
+            >
+          </p>
         </section>
 
+        <!-- Screenshot: Dev Tools -->
         <section>
           <h4>Responsive Viewport Mode</h4>
-          <p
-            class="gdi-p"
-            style="max-width: 675px; margin: 0 auto"
-          >
+          <p class="width-750 mb-16">
             Select any device options or create your own breakpoints!
           </p>
           <img
             src="./imgs/rwd-chrome-responsive-devices.png"
             alt="Chrome Responsive Device options"
-          /><br />
-          <small
-            ><a
+          />
+          <p class="fs-20">
+            <a
               href="https://developer.chrome.com/blog/device-mode-v2/"
               target="_blank"
-              >Image Source</a
-            ></small
-          >
-        </section>
-
-        <section>
-          <h4>Responsive Design Design <br />with CSS</h4>
-          <p
-            class="gdi-p"
-            style="max-width: 675px; margin: 0 auto 24px auto"
-          >
-            We can make our pages responsive using three tools in CSS:
-          </p>
-          <ul>
-            <li>Media Queries</li>
-            <li>**CSS Flexbox</li>
-            <li>**CSS Grid</li>
-          </ul>
-          <br />
-          <small style="font-style: italic; margin-top: 24px"
-            >**CSS Flexbox and CSS Grid are topics in Web Essentials 2 and
-            beyond</small
-          >
-        </section>
-
-        <section>
-          <h4>Media Queries</h4>
-          <ul>
-            <li>
-              Media queries tell the browser at what <code>breakpoint</code> or
-              screen size at which to apply a specific style
-            </li>
-            <li>Media queries are applied in the CSS</li>
-          </ul>
-          <pre><code class="css">@media screen and (min-width: 600px){
-  h2 {
-    font-size: 30px;
-  }
-
-  p {
-    font-size: 14px;
-  }
-}</code></pre>
-          <p>
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries"
-              target="_blank"
-              >A Beginner's Guide to Media Queries</a
+              >Image Source: Chrome for Developers</a
             >
           </p>
         </section>
 
+        <!-- Elements of Responsive Web Design -->
         <section>
-          <h4>Basic Media Query Syntax</h4>
-          <p
-            class="fs-28"
-            style="max-width: 675px; margin: 0 auto"
-          >
-            A media query contains:
+          <h4>Three Elements of Responsive Web Design</h4>
+          <blockquote class="fs-28">
+            "The term responsive design, coined by Ethan Marcotte in 2010,
+            described using <code class="highlight--yellow">fluid grids</code>,
+            <code class="highlight--yellow">fluid images</code>, and
+            <code class="highlight--yellow">media queries</code> to create
+            responsive content..."
+          </blockquote>
+          <p class="fs-24">
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design"
+              target="_blank"
+              >Responsive Design (MDN)</a
+            >
           </p>
-          <ul class="fs-28 width-750">
-            <li>The <code>@media</code> keyword</li>
+          <p class="fs-24">
+            <a
+              href="https://alistapart.com/article/responsive-web-design/"
+              target="_blank"
+              >Responsive Web Design (Ethan Marcotte, A List Apart)</a
+            >
+          </p>
+        </section>
+
+        <!-- Fluid/Responsive Images -->
+        <section>
+          <h4>Fluid / Responsive Images</h4>
+          <p class="fs-24 width-750 mb-16">
+            A fluid image does not grow beyond the width of its parent
+            container, and can scale down as its parent container shrinks
+          </p>
+          <p class="fs-24 width-750">
+            The following CSS declaration is often globally applied to the
+            <code>img</code> tag to make inline images fluid:
+          </p>
+          <pre><code class="css">img {
+
+  max-width: 100%;
+
+  display: block;
+
+}
+</code></pre>
+        </section>
+
+        <!-- Nested Image -->
+        <section>
+          <h4>Responsive Image Tip</h4>
+          <p class="fs-28 width-750">
+            Always wrap an image element inside a
+            <span class="highlight--yellow">parent container</span>, typically a
+            set of <code>div</code> tags; then set a <code>width</code> on the
+            parent container
+          </p>
+          <pre><code class="html"><div>
+  <img src="cute-kitten.jpeg" alt="image description">
+</div>
+</code></pre>
+          <pre><code class="css">div {
+  width: 400px; 
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+</code></pre>
+        </section>
+
+        <!-- Let's Develop It! -->
+        <section>
+          <h4>Let's Develop It!</h4>
+          <ul class="fs-28">
             <li>
-              Optionally, a <code>media type</code> followed by
-              <code>'and'</code>
+              Add the responsive image code snippet to your main stylesheet or
+              to your <code>reset.css</code> stylesheet
             </li>
-            <li>The condition under which to apply the media query</li>
-            <li>The selector(s) to target and the CSS rule to run</li>
+          </ul>
+
+          <pre><code class="css">img {
+
+  max-width: 100%;
+
+  display: block;
+
+}
+</code></pre>
+        </section>
+
+        <!-- Title Slide: RWD with CSS -->
+        <section>
+          <h3>Responsive Web Design with CSS</h3>
+        </section>
+
+        <!-- CSS Tools for Responsiveness -->
+        <section>
+          <h4>Responsive Web Design with CSS</h4>
+          <p class="width-600 mb-16">
+            We can make our pages responsive using three features in CSS:
+          </p>
+          <ul class="fs-28">
+            <li class="highlight--yellow">Media Queries</li>
+            <li>*CSS Flexbox</li>
+            <li>*CSS Grid</li>
+          </ul>
+          <p class="fs-20 mt-16 width-600">
+            *CSS Flexbox and CSS Grid are topics in other GDI Frontend courses:
+            <em>Web Design 2</em> and <em>CSS Grid Basics</em>
+          </p>
+        </section>
+
+        <!-- Media Queries -->
+        <section>
+          <h4>Media Queries</h4>
+          <ul class="fs-28 width-750">
+            <li class="mb-16">
+              Media queries tell the browser at what <code>breakpoint</code> or
+              screen size to apply a specific rule or set of rules
+            </li>
+            <li>Media queries are applied in the CSS stylesheet</li>
           </ul>
           <pre><code class="css">@media screen and (min-width: 600px){
 
@@ -262,30 +335,401 @@
   p {
     font-size: 14px;
   }
+
+}</code></pre>
+          <p class="fs-24">
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries"
+              target="_blank"
+              >A Beginner's Guide to Media Queries (MDN)</a
+            >
+          </p>
+        </section>
+
+        <!-- Media Query Syntax -->
+        <section>
+          <h4>Basic Media Query Syntax</h4>
+          <p>A media query contains:</p>
+          <ul class="fs-24 width-750">
+            <li class="mb-16">The <code>@media</code> keyword</li>
+            <li class="mb-16">
+              Optionally, a <code>media type</code> followed by
+              <code>'and'</code>
+            </li>
+            <li class="mb-16">When to apply the media query</li>
+            <li>The selector(s) to target and the CSS rule(s) to run</li>
+          </ul>
+          <pre><code class="css">@media screen and (min-width: 600px){
+
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+}</code></pre>
+          <p class="fs-24">
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries"
+              target="_blank"
+              >Using Media Queries (MDN)</a
+            >
+          </p>
+        </section>
+
+        <!-- Media Query Syntax -->
+        <section>
+          <h4>Basic Media Query Syntax</h4>
+          <p>The media query rule below means:</p>
+          <p class="fs-24 width-600">
+            When the screen width is at <code>600px or higher</code>,
+            <code>h2</code> elements should be <code>30px</code> in size, and
+            <code>p</code> elements should be <code>14px</code>
+          </p>
+          <pre><code class="css">@media screen and (min-width: 600px){
+
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+  
 }</code></pre>
         </section>
 
-        <!-- <section></section> -->
+        <!-- Media Query Breakpoints -->
+        <section>
+          <h4>Media Query Breakpoints</h4>
+          <p class="fs-24 width-750">
+            A breakpoint is the screen size / resolution / width at which a
+            layout should change
+          </p>
+          <pre><code class="css">@media screen and (min-width: 600px){...}
 
-        <!-- <section>
-          <h4>Let's Develop It</h4>
-          <p class="gdi-p">Media Query Practice</p>
-          <ul class=""
-            <li>
-              
-            </li>
-            <li>
-              Apply a media query to change an aspect of the element at one or
-              two device breakpoints (ex.: font size)
-            </li>
-            <li>
-              For a layout section, you might change the margin, padding and/or
-              width
-            </li>
-            <li>Verify the responsiveness manually or in Developer Tools</li>
-          </ul>
-        </section> -->
 
+@media (min-width: 800px) and (max-width: 1000px) { ... }
+
+
+@media screen and (max-width: 1200px){ ... }
+
+
+@media (min-width: 30em) and (orientation: landscape) { ... }</code></pre>
+
+          <p class="fs-24 width-750 mt-32">
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media#media_features"
+              target="_blank"
+              >Non-metric conditions</a
+            >
+            such as <code class="highlight--yellow">orientation</code>,
+            <code class="highlight--yellow">hover</code>,
+            <code class="highlight--yellow">prefers-reduced-motion</code>, and
+            others, can also be used in media queries, but the most common is
+            screen size
+          </p>
+        </section>
+
+        <!-- Standard Breakpoints -->
+        <section>
+          <h4>Standard Breakpoints</h4>
+          <p class="fs-28 width-600">
+            A common way to determine or set breakpoints is by device size:
+          </p>
+          <pre><code class="css">/* Default: Extra-small devices such as small phones 
+(less than 640px) */
+
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {...}
+
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {...}
+
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {...}
+          </code></pre>
+
+          <p class="fs-24">
+            <a
+              href="https://blog.logrocket.com/css-breakpoints-responsive-design/"
+              target="_blank"
+              >CSS Breakpoints for Responsive Design (LogRocket)</a
+            >
+          </p>
+        </section>
+
+        <!-- Code demo -->
+        <section>
+          <h4>Breakpoint Demo</h4>
+          <p class="fs-24 width-750">
+            Copy and paste the code below into your markup and stylesheet
+            respectively
+          </p>
+          <pre><code class="html">&lt;div class="box"&gt;Hello World&lt;/p&gt;
+</code></pre>
+
+          <pre><code class="css">/* Default */
+.box {
+  height: 150px;
+  width: 150px;
+  border: 2px solid black;
+  background-color: tomato;
+}
+
+@media only screen and (min-width: 640px) {
+  .box {
+    background-color: goldenrod;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .box {
+    background-color: magenta;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .box {
+    background-color: mediumaquamarine;
+  }
+}</code></pre>
+        </section>
+
+        <!-- min-width vs max-width -->
+        <section>
+          <h4><code>min-width</code> vs <code>max-width</code></h4>
+          <p class="fs-28 width-750">
+            Understanding when or how to use the <code>min-width</code> and the
+            <code>max-width</code> properties in a media query can initially be
+            confusing!
+          </p>
+          <p class="fs-28 width-750 mt-32">
+            The choice of which to use may come down to preference: what you
+            prefer the
+            <span class="highlight--yellow">default approach</span> of your CSS
+            structure to be
+          </p>
+        </section>
+
+        <!-- Mobile First -->
+        <section>
+          <h4>Mobile-First: <code>min-width</code></h4>
+          <p class="fs-28 width-750">
+            If you prefer to start your CSS by writing the mobile state or
+            styles first, and then
+            <span class="highlight--yellow">size up</span> with media queries,
+            use
+            <code>min-width</code>
+          </p>
+          <pre><code class="css">/* Default - Mobile State */
+
+.box {
+  background-color: tomato;
+}
+
+@media screen and (min-width: 700px){
+  .box {
+    background-color: goldenrod;
+  }
+}
+
+@media (min-width: 1000px){
+  .box {
+    background-color: mediumaquamarine;
+  }
+}</code></pre>
+        </section>
+
+        <!-- Desktop First -->
+        <section>
+          <h4>Desktop-First: <code>max-width</code></h4>
+          <p class="fs-28 width-750">
+            If you prefer to start your CSS by writing the desktop state or
+            styles first, and then
+            <span class="highlight--yellow">size down</span> with media queries,
+            use
+            <code>max-width</code>
+          </p>
+          <pre><code class="css">/* Default - Desktop State */
+
+.box {
+  background-color: mediumaquamarine;
+}
+
+@media screen and (max-width: 999px){
+  .box {
+    background-color: goldenrod;
+  }
+}
+
+@media (max-width: 699px){
+  .box {
+    background-color: tomato;
+  }
+}</code></pre>
+        </section>
+
+        <!-- Custom Breakpoints -->
+        <section>
+          <h4>Custom Breakpoints</h4>
+          <p class="fs-28 width-750 mb-32">
+            You can and should set breakpoints according to your project's
+            design and requirements
+          </p>
+          <pre><code class="css">@media only screen and (min-width: 700px) {...}
+
+@media only screen and (max-width: 924px) {...}
+
+@media only screen and (hover) {...}
+</code></pre>
+          <p class="mt-32">
+            Your project may need only a handful of breakpoints or many!
+          </p>
+        </section>
+
+        <!-- How to organize media queries? -->
+        <section>
+          <h4>Organizing Media Queries</h4>
+          <p>Two common approaches for organizing media queries</p>
+        </section>
+
+        <!-- Organizing Media Queries by Selector -->
+        <section>
+          <h4>By Selector</h4>
+          <p class="fs-24 width-750">
+            All media queries associated with a particular selector are placed
+            immediately after the default declaration of the selector
+          </p>
+          <pre><code class="html">&lt;div class="box"&gt;Hello World&lt;/p&gt;
+</code></pre>
+
+          <pre><code class="css">/* Default */
+.box {
+  height: 150px;
+  width: 150px;
+  border: 2px solid black;
+  background-color: tomato;
+}
+
+@media only screen and (min-width: 640px) {
+  .box {
+    background-color: goldenrod;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .box {
+    background-color: magenta;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .box {
+    background-color: mediumaquamarine;
+  }
+}</code></pre>
+        </section>
+
+        <!-- Organizing Media Queries by Breakpoint -->
+        <section>
+          <h4>By Breakpoint</h4>
+          <p class="fs-24 width-600">
+            Selectors that are changing at a shared breakpoint are grouped
+            together under that breakpoint
+          </p>
+          <pre><code class="html">&lt;div class="box"&gt;Hello World&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+</code></pre>
+          <pre><code class="css">.box {
+  height: 150px;
+  width: 150px;
+  border: 2px solid black;
+  background-color: tomato;
+}
+
+p {
+  font-size: 14px;
+}
+
+/* Other default code declarations ... */
+
+/* List all media queries after default rules */
+
+@media only screen and (min-width: 768px) {
+  .box {
+    background-color: magenta;
+  }
+
+  p {
+    font-size: 30px;
+  }
+}
+</code></pre>
+        </section>
+
+        <!-- Organizing in order matters -->
+        <section>
+          <h4>Order Matters</h4>
+          <p class="fs-24 width-750 mb-16">
+            Because of CSS's cascading algorithm, order matters when listing
+            media queries
+          </p>
+
+          <p class="fs-24">
+            Media queries should be listed in breakpoint order
+          </p>
+        </section>
+
+        <!-- Code snippet of Media Queries out of order -->
+        <section>
+          <h4>Media Query Order</h4>
+          <pre><code class="html">&lt;div class="box"&gt;Hello World&lt;/p&gt;
+</code></pre>
+
+          <pre><code class="css">/* Default */
+.box {
+  height: 150px;
+  width: 150px;
+  border: 2px solid black;
+  background-color: tomato;
+}
+
+/* Out of order */
+@media only screen and (min-width: 768px) {
+  .box {
+    background-color: magenta;
+  }
+}
+
+/* Out of order */
+@media only screen and (min-width: 640px) {
+  .box {
+    background-color: goldenrod;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .box {
+    background-color: mediumaquamarine;
+  }
+}</code></pre>
+          <p class="fs-24 highlight--pink inline-block">
+            The <code>background-color: magenta</code> will not be applied
+          </p>
+        </section>
+
+        <!-- Let's Develop It! -->
         <section>
           <h4>Let's Develop It!</h4>
           <p class="fs-28 width-750">
@@ -294,18 +738,222 @@
           </p>
         </section>
 
+        <!-- Let's Develop It! - Media Queries-->
         <section>
-          <h3>Next Steps</h3>
+          <h4>Let's Develop It!</h4>
+          <p class="fs-28">Part 1</p>
+          <p class="fs-28">Set up the Media Queries</p>
+          <ol class="fs-24 width-750">
+            <li class="mb-16">
+              At the end of your stylesheet, add a media query breakpoint of
+              <code class="highlight--yellow">max-width: 800px</code>; see
+              snippet below
+            </li>
+            <li class="mb-16">
+              Create a second breakpoint of
+              <code class="highlight--yellow">max-width: 500px</code>
+            </li>
+            <li class="mb-16">
+              We are using <code>max-width</code> because we started our project
+              <em class="highlight--yellow">desktop-first</em>
+            </li>
+            <li>
+              The first breakpoint will set up the tablet styling; the second
+              breakpoint, the mobile styling
+            </li>
+          </ol>
+
+          <pre><code class="css">@media only screen and (max-width: 800px) {}</code></pre>
         </section>
 
+        <!-- Let's Develop It! - Tablet Styles -->
         <section>
-          <h4>Project Next Steps & Beyond!</h4>
-          <ul>
-            <li>Experiment with adding more styling to your project page</li>
-            <li>Get feedback, extra support on Slack</li>
-            <li>Publish your page to Github pages</li>
+          <h4>Let's Develop It!</h4>
+          <p class="fs-28">Part 2</p>
+          <p class="fs-28">In the tablet breakpoint:</p>
+          <ol class="fs-24">
+            <li class="mb-16">
+              Set <code>max-width</code> for the container to <code>616px</code>
+            </li>
+            <li class="mb-16">
+              Set the container's overall <code>padding</code> to
+              <code>24px</code>
+            </li>
+            <li class="mb-16">
+              Give the page title a <code>font-size</code> of <code>32px</code>
+            </li>
+            <li>Give the recipe headings, a <code>font-size</code> of 24px</li>
+          </ol>
+        </section>
+
+        <!-- Let's Develop It! - Mobile Styles-->
+        <section>
+          <h4>Let's Develop It!</h4>
+          <p class="fs-28">Part 3</p>
+          <p class="fs-28">In the mobile breakpoint:</p>
+          <ol class="fs-24 width-750">
+            <li class="mb-16">
+              Reduce the container's <code>padding</code> to <code>16px</code>
+            </li>
+            <li class="mb-16">
+              Reduce the page title's <code>font-size</code> to
+              <code>24px</code>
+            </li>
+            <li class="mb-16">
+              Give the callout-container an overall <code>padding</code> and
+              <code>margin-top</code> of <code>16px</code>
+            </li>
             <li>
-              Get more project practice on
+              Reduce the <code>font-size</code> of the callout-heading to
+              <code>18px</code> and that of the recipe headings to
+              <code>20px</code>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Let's Develop It! - Centering the Container-->
+        <section>
+          <h4>Let's Develop It!</h4>
+          <p class="fs-28">Part 4</p>
+          <p class="fs-28">Centering the Container</p>
+          <ol class="fs-24">
+            In the default / desktop CSS state:
+            <li class="mb-16">
+              Give the main container, a <code>margin-left</code> and
+              <code>margin-right</code> value of <code>auto</code>
+            </li>
+            <li class="mb-16">
+              Set the <code>margin-top</code> to <code>80px</code>
+            </li>
+            <li class="mb-16">
+              Apply a <code>border-radius</code> of <code>16px</code>
+            </li>
+            <li class="mb-16">
+              In the markup, give the Omelette image a class name of
+              <code>recipe-img</code>; in the stylesheet, apply the same
+              <code>border-radius</code> value from the previous step to the new
+              selector
+            </li>
+          </ol>
+        </section>
+
+        <!-- Let's Develop It! - Styling the Nutrition Data P1 -->
+        <section>
+          <h4>Let's Develop It!</h4>
+          <p class="fs-28">Part 5</p>
+          <p class="fs-28">Styling the Nutrition Table</p>
+          <ol class="fs-24">
+            To the
+            <code>data-row</code>
+            selector:
+            <li class="mb-16">
+              Apply a <code>border-bottom</code> of
+              <code>1px solid #5f564d</code>
+            </li>
+            <li class="mb-16">
+              Apply <code>padding-bottom</code> and <code>margin-top</code> of
+              <code>8px</code>
+            </li>
+            <li class="mb-16">
+              Apply a <code>padding-left</code> of <code>30px</code> to the
+              <code>dt</code> selector
+            </li>
+            <li class="mb-16">
+              Set the <code>font-weight</code> of the <code>dd</code> selector
+              to <code>600</code>, and give it a <code>color</code> of
+              <code>#854632</code>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Let's Develop It! - Styling the Nutrition Data P2 -->
+        <section>
+          <h4>Let's Develop It!</h4>
+          <p class="fs-28">Part 6</p>
+          <p class="fs-28">Styling the Nutrition Table contd.</p>
+          <ol class="fs-24">
+            The content in the table needs more spacing; typically, we should
+            fix this with
+            <code>Flexbox</code
+            >, but we haven't learned that yet! Here's an alternate approach:
+            <li class="mt-16 mb-16">
+              In your markup, give each of the four <code>dd</code> selectors
+              its own class name, for example:
+              <ul>
+                <li><code>dd-1, dd-2, dd-3, dd-4</code></li>
+              </ul>
+            </li>
+            <li class="mb-16">
+              In your stylesheet, apply the following
+              <code>margin-left</code> values to each respective dd class name
+              you've just created:
+              <ul>
+                <li><code>200px, 213px, 202px, 228px</code></li>
+              </ul>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Let's Develop It! -->
+        <section>
+          <h4>Let's Develop It!</h4>
+          <p class="fs-28">Part 7</p>
+          <p class="fs-28">Styling the Footer</p>
+          <ol class="fs-24">
+            The footer would be better outside of the container, not inside of
+            it:
+            <li class="mt-16 mb-16">
+              In your markup, move the <code>footer</code> section out of the
+              <code>container</code>; place it before the closing
+              <code>body</code>
+              tag
+            </li>
+            <li class="mb-16">
+              Give the <code>p</code> tag in the footer a class name of
+              <code>attribution</code>
+            </li>
+            <li class="mb-16">
+              Apply a top and bottom <code>padding</code> of
+              <code>30px</code> to the footer selector
+            </li>
+            <li class="mb-16">
+              Apply <code>text-align: center</code> to the footer selector
+            </li>
+            <li class="mb-16">
+              Apply a <code>display</code> property of
+              <code>inline-block</code> to the attribution selector
+            </li>
+            <li>
+              Style the attribution however you prefer! Add emojis, background
+              color, border style, etc!
+              <span class="highlight--yellow">Coder's Choice! 😀</span>
+            </li>
+          </ol>
+        </section>
+
+        <!-- You Did It! -->
+        <section>
+          <h3>🥳 You Did It! 🥳</h3>
+          <img
+            src="/shared-assets/imgs/stock-img/celebration_mircea-flickr.jpg"
+            alt="Two women celebrating at a concert"
+          />
+        </section>
+
+        <!-- Next Steps -->
+        <section>
+          <h3>What Comes Next?</h3>
+        </section>
+
+        <!-- Project Practice -->
+        <section>
+          <h4>More Projects, More Classes</h4>
+          <ul class="fs-28 width-750">
+            <li class="mb-16">
+              Experiment: add more styling to your project page
+            </li>
+            <li class="mb-16">
+              Build additional simple projects: Try
               <a
                 href="https://www.frontendmentor.io/"
                 target="_blank"
@@ -324,26 +972,30 @@
           </ul>
         </section>
 
+        <!-- Cultivating a Web Development Practice  -->
         <section>
-          <h4>Cultivating a Web<br />Development Practice</h4>
-          <ul>
-            <li>
-              Progressive, deliberative practice--Start small
-              <ul>
-                <li>How can I use what I currently know?</li>
-                <li>
-                  What do I want to do and what is my (current) knowledge gap?
-                </li>
-                <li>Where can I find answers?</li>
-              </ul>
+          <h4 class="width-750">
+            Cultivating a Web Design / <br />Web Development Practice
+          </h4>
+          <p class="fs-28 mt-32 mb-16 highlight--yellow inline-block">
+            Progressive, deliberative practice -- Start small
+          </p>
+          <ul class="fs-24">
+            <li class="mb-16">How can I use what I currently know?</li>
+            <li class="mb-16">
+              What do I want to do? What is my (current) knowledge gap?
             </li>
+            <li>Where can I find answers?</li>
           </ul>
         </section>
 
+        <!-- Cultivating a Web Development Practice  -->
         <section>
-          <h4>Cultivating a Web<br />Development Practice</h4>
-          <ul>
-            <li>
+          <h4 class="width-750">
+            Cultivating a Web Design / <br />Web Development Practice
+          </h4>
+          <ul class="fs-28 mt-16">
+            <li class="mb-16">
               Create checklists!
               <ul>
                 <li>Accessibility basics</li>
@@ -355,36 +1007,42 @@
           </ul>
         </section>
 
+        <!-- Cultivating a Web Development Practice  -->
         <section>
-          <h4>Cultivating a Web<br />Development Practice</h4>
-          <ul>
-            <li>
+          <h4 class="width-750">
+            Cultivating a Web Design / <br />Web Development Practice
+          </h4>
+          <ul class="fs-28 mt-16">
+            <li class="mb-16">
               80-20 Rule:
               <ul>
                 <li>Spend time pre-planning a project</li>
-                <li>Organize your markup/code (indentations, etc)</li>
+                <li>Organize and document your code</li>
               </ul>
             </li>
-            <li>
+            <li class="mb-16">
               Read documentation
               <ul>
                 <li>"Real" developers look things up!</li>
               </ul>
             </li>
-            <li>Review other developers' code</li>
-            <li>Be comfortable asking questions</li>
-            <li>Use Dev Tools--a lot!</li>
+            <li class="mb-16">Review other people's code</li>
+            <li class="mb-16">Be comfortable asking questions</li>
+            <li>Use Dev Tools--a lot! 😅</li>
           </ul>
         </section>
 
+        <!-- Cultivating a Web Development Practice  -->
         <section>
-          <h4>Cultivating a Web<br />Development Practice</h4>
+          <h4 class="width-750">
+            Cultivating a Web Design / <br />Web Development Practice
+          </h4>
           <img
             src="./imgs/learning-to-code.jpeg"
-            width="600px"
+            width="550px"
             alt="Graph of coding learning curve"
           />
-          <p style="font-size: 14px">
+          <p class="fs-20">
             Source:
             <a
               href="https://www.thinkful.com/blog/why-learning-to-code-is-so-damn-hard/"
@@ -395,17 +1053,20 @@
           </p>
         </section>
 
+        <!-- Cultivating a Web Development Practice  -->
         <section>
-          <h4>Cultivating a Web<br />Development Practice</h4>
-          <ul>
-            <li>
+          <h4 class="width-750">
+            Cultivating a Web Design / <br />Web Development Practice
+          </h4>
+          <ul class="fs-28 mt-16">
+            <li class="mb-16">
               Be prepared for the "dips"
               <ul>
                 <li>It's okay not knowing everything</li>
               </ul>
             </li>
-            <li>Take breaks!</li>
-            <li>Welcome "happy coincidences"</li>
+            <li class="mb-16">Take breaks!</li>
+            <li class="mb-16">Welcome "happy coincidences"</li>
             <li>Acknowledge your growth!</li>
           </ul>
         </section>
@@ -413,7 +1074,7 @@
         <!-- Resources -->
         <section>
           <h4>Resources</h4>
-          <ul>
+          <ul class="fs-28">
             <li>Frontend Mentor</li>
             <li>MDN - Mozilla Developer Network</li>
             <li>W3Schools</li>
@@ -421,7 +1082,7 @@
             <li>Free Code Camp</li>
             <li>And more!</li>
           </ul>
-          <p>
+          <p class="fs-24 mt-16">
             See
             <a
               href="https://docs.google.com/document/d/10Oq1GFWRp_79o6v8d0U7xF7Lk6R_0BYys5fqDEOwqao/edit?usp=sharing"
@@ -431,11 +1092,14 @@
           </p>
         </section>
 
-        <!-- End of lesson slides -->
+        <!-- Keep in Touch -->
+        <section>
+          <h3>Keep in Touch!</h3>
+        </section>
 
         <!-- Course Feedback Survey, if using -->
         <!-- <section>
-          <h4>Course Feedback</h4>
+          <h3>Course Feedback</h3>
           <p>
             <a
               href=""
@@ -445,9 +1109,9 @@
         </section> -->
 
         <!-- Q&A -->
-        <section>
-          <h2>Q&A</h2>
-        </section>
+        <!-- <section>
+          <h3>Q&A</h3>
+        </section> -->
 
         <!-- Thank You -->
         <section>
@@ -457,8 +1121,7 @@
             width="300px"
             class="noborder"
           />
-          <br />
-          <h2>Thank You!</h2>
+          <h3>Thank You!</h3>
         </section>
       </div>
       <!-- End of Slides container -->
@@ -473,7 +1136,7 @@
             width="40px"
             class="noborder"
           />
-          <p>Web Design Essentials - Class 4</p>
+          <p>Web Design Essentials 1 - Class 4</p>
           <a
             rel="license"
             href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"
