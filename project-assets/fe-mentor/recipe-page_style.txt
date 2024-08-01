@@ -4,20 +4,39 @@
 - Tablet width: 616px
 - Mobile width: 375px
 
+- Desktop container padding: 40px
+- Tablet container padding: 24px
+- Mobile container padding: 16px
+- Preparation container padding: 24px
+
+-----------------------------
+
+## Layout
+
+- Gap beneath h2 subheadings: 24px
+- Gap beneath h3 subheading: 16px
+- Gap beneath table data rows: 12px
+- Gap above/beneath section dividers: 32px
+
+-----------------------------
 
 ## Body Copy - Font Sizes
 
-- headline - h1: 40px
-- headline-mobile: 36px
-- subheadings - h2: 28px
-- subheading - h3: 20px
+- h1 headline: 40px
+- h1 headline: 36px
+
+- h2 subheadings: 28px
+
+- h3/p subheading: 20px
+
 - paragraph: 16px
 
+-----------------------------
 
 ## Fonts
 
 - Family: [Young Serif](https://fonts.google.com/specimen/Young+Serif)
-
-- Weights: 400
+- Weight: 400
 
 - Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weight: Embed the full axis
